@@ -1,0 +1,25 @@
+{
+  "short_name": "Resume",
+  "name": "Resume | Ajay Singh Raghav",
+  "icons": [
+    {
+      "src": "mdb.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "mdb.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "mdb.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

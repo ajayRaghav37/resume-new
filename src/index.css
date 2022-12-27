@@ -1,0 +1,444 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  padding: 0cm 1.5cm;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.very-large-text {
+  font-size: 42px;
+}
+
+.large-text {
+  font-size: 20px;
+}
+
+.medium-text {
+  font-size: 18px;
+}
+
+.small-text {
+  font-size: 15px;
+}
+
+.very-small-text {
+  font-size: 12px;
+}
+
+.extremely-small-text {
+  font-size: 11px;
+}
+
+.version {
+  margin-top: 30px;
+}
+
+.normal-font-weight {
+  font-weight: normal !important;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #333;
+  text-align: justify;
+}
+
+.contact {
+  font-size: 13px;
+  display: flex;
+}
+
+.contact-social {
+  margin-top: -4px;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.negative-margin {
+  margin-top: -10px;
+}
+
+.first-page-section {
+  padding-top: 1.5cm;
+}
+
+.name {
+  color: rgb(0, 130, 153);
+  font-weight: bold;
+  font-family: serif;
+}
+
+.section {
+  margin-top: 24px;
+}
+
+.heading {
+  color: rgb(0, 130, 153);
+  font-size: 20px;
+  font-family: serif;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.summary {
+  display: flex;
+}
+
+.summary-description {
+  margin-top: 15px;
+}
+
+.company-name,
+.duration {
+  font-weight: bold;
+}
+
+.summary {
+  font-family: serif;
+}
+
+.company {
+  flex: 1;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
+
+.icon {
+  height: 12px;
+  transform: translateY(1px);
+}
+
+.social {
+  height: 13px;
+  margin-right: 2px;
+  transform: translateY(3px);
+}
+
+.award {
+  height: 15px;
+  margin-top: -1px;
+  transform: translateY(1px);
+}
+
+.facebook {
+  height: 14.5px;
+  transform: translateY(3.5px);
+  margin-left: 2px;
+}
+
+.twitter {
+  margin-right: 0px;
+  margin-left: -2px;
+  height: 17px;
+  transform: translateY(6px);
+}
+
+.chesscom {
+  width: 16px;
+  margin-left: -2px;
+  margin-right: -1px;
+}
+
+.youtube {
+  height: 15px;
+}
+
+.stackoverflow {
+  height: 16px;
+  transform: translateY(4px);
+  margin: 0px;
+}
+
+.image-clickable {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.client {
+  display: flex;
+  margin-top: 15px;
+}
+
+.client-name {
+  color: white;
+  margin-right: 3px;
+  background-color: rgb(0, 130, 153);
+  width: 38px;
+  font-family: serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.client-name p {
+  position: relative;
+  top: 50%;
+  width: 500px;
+  text-align: center;
+  transform: rotate(-90deg) translateY(-233px);
+}
+
+.project {
+  display: flex;
+}
+
+.project-summary {
+  background-color: rgb(229, 251, 255);
+}
+
+.project-summary-intro {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 8px;
+  padding-right: 10px;
+}
+
+.roles-responsibilities-title {
+  padding-left: 15px;
+}
+
+.roles-responsibilities {
+  margin-top: 5px;
+}
+
+.project-header {
+  display: flex;
+  padding: 10px;
+  background-color: rgb(0, 130, 153);
+  color: white;
+  font-family: serif;
+}
+
+.project-header-multi {
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-bottom: -10px;
+  background-color: rgb(0, 130, 153);
+  color: white;
+  font-family: serif;
+}
+
+.project-timeline {
+  flex: 1;
+}
+
+.project-details {
+  flex: 1;
+}
+
+.project-name,
+.job-description {
+  font-weight: bold;
+}
+
+.job-description {
+  text-align: right;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px 10px 10px 32px;
+}
+
+.projects {
+  flex: 1;
+}
+
+.learning-experiences {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}
+
+.personal-details {
+  display: flex;
+}
+
+.personal-details-field {
+  width: 125px;
+}
+
+.declaration-date-name {
+  display: flex;
+}
+
+.declaration-name {
+  font-family: serif;
+  font-weight: bold;
+  text-align: right;
+}
+
+.company-name-duration {
+  display: flex;
+}
+
+.company-name {
+  flex: 1;
+}
+
+.project-divider {
+  margin: 3px;
+}
+
+.project-divider-large {
+  margin: 8px;
+}
+
+.vertical-ruler {
+  border-left: 1px solid rgb(0, 130, 153);
+  margin: 0px 36px;
+}
+
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.separator {
+  flex: 1;
+  min-height: 20px;
+}
+
+.vertical-separator {
+  width: 3px;
+}
+
+.exam {
+  flex: 1;
+  text-align: center;
+}
+
+.exam-title {
+  color: white;
+  background-color: rgb(0, 130, 153);
+}
+
+.exam-score {
+  background-color: rgb(229, 251, 255);
+}
+
+.exam-score-main {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.exam-score-max {
+  font-size: 12px;
+  font-weight: normal;
+  color: #666;
+}
+
+.exam-details-title {
+  background-color: rgb(0, 130, 153);
+  text-transform: uppercase;
+  color: white;
+  padding: 0px 5px;
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+.exam-details {
+  font-size: 12px;
+  text-align: left;
+}
+
+.exam-details-row {
+  display: flex;
+  padding: 0px 15px;
+}
+
+.exam-details-row-compact {
+  display: flex;
+  padding: 0px 25px;
+}
+
+.exam-details-row-super-compact {
+  display: flex;
+  padding: 0px 30px;
+}
+
+.personal-details-separator {
+  flex: 1;
+  min-height: 1px;
+}
+
+.skills {
+  text-align: right;
+  font-weight: normal;
+  margin-top: 3px;
+}
+
+.achievements {
+  padding: 0px 0px 0px 21px;
+}
+
+@media print {
+  html,
+  body {
+    background: white;
+    margin: 0;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
