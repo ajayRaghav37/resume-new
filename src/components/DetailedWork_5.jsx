@@ -82,8 +82,7 @@ export default <div className="section first-page-section">
               <ul className="roles-responsibilities">
                 <li>Creating Windows Phone application.</li>
                 <li>Ensuring session management in the application.</li>
-                <li>Creating hybrid components like attendees list, quiz, etc. to <b>reduce development effort</b>
-                  in other two platforms.</li>
+                <li>Creating hybrid components like attendees list, quiz, etc. to <b>reduce development effort</b> in other two platforms.</li>
                 <li>Upgrading the Windows 8 application to UWP app.</li>
               </ul>
             </div>

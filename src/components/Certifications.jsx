@@ -1,4 +1,4 @@
-export default <div className="section first-page-section">
+export default <div>
   <p className="heading">Certifications</p>
   <div className="learning-experience">
     <div className="summary">

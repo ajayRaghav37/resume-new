@@ -14,9 +14,7 @@ export default <div className="section"><p className="heading">Learning Experien
         </div>
         <p className="summary-description">Developed over 40 software applications ranging from Internet
           Security to Media management to Enterprise Feedback Management System. Finalists in OpenSoft
-          competition in Kshitij technical fest, IIT Kharagpur in 2011. Developed strong competency in
-          <strong>Visual Basic</strong>, <strong>VB.NET</strong>, <strong>VB Script</strong>,
-          <strong>C</strong> and <strong>Microsoft Office</strong>.
+          competition in Kshitij technical fest, IIT Kharagpur in 2011. Developed strong competency in <strong>Visual Basic</strong>, <strong>VB.NET</strong>, <strong>VB Script</strong>, <strong>C</strong> and <strong>Microsoft Office</strong>.
         </p>
       </div>
       <div className="separator"></div>

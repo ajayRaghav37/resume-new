@@ -10,7 +10,7 @@ export default <div className="section"><p className="heading">Work Experience</
         <div className="company-name-duration">
           <p className="company-name normal-font-weight">SOLUTIONS ARCHITECT</p>
           <p className="duration normal-font-weight"><img className="award" src="award.png" />
-            EXCELLENCE AND STANDARDS AWARD
+            &nbsp;EXCELLENCE AND STANDARDS AWARD
           </p>
         </div>
       </div>
@@ -132,8 +132,7 @@ export default <div className="section"><p className="heading">Work Experience</
               </div>
             </div>
             <div className="project-summary">
-              <p className="project-summary-intro">Ideated and developed <b>Botify</b>
-                for converting documents into FAQ bots reducing SME effort by up to 80%.</p>
+              <p className="project-summary-intro">Ideated and developed <b>Botify</b> for converting documents into FAQ bots reducing SME effort by up to 80%.</p>
             </div>
           </div>
         </div>

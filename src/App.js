@@ -54,8 +54,12 @@ const ResumeBasic = () => <div>
   {BasicWork}
   </page>
   <page>
+  <div className="section first-page-section">
   {Education}
+  </div>
+  <div className="section">
   {Certifications}
+  </div>
   {Scores}
   {Learning}
   {Research}
@@ -79,10 +83,14 @@ const ResumeDetailed = () => <div>
   </page>
   <page>
   {DetailedWork_5}
+  <div className="section">
   {Education}
+  </div>
   </page>
   <page>
+  <div className="section first-page-section">
   {Certifications}
+  </div>
   {LearningDetails}
   {Research}
   {Scores}
