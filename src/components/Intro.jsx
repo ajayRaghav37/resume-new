@@ -2,9 +2,9 @@ export default <div className="title first-page-section">
   <div className="summary">
     <p className="name very-large-text column">Ajay Singh Raghav</p>
     <p className="version extremely-small-text">
-      Last updated on October 5, 2022 | Latest version:&nbsp;
-      <a href="https://ajayraghav37.azurewebsites.net">Basic</a> or&nbsp;
-      <a href="https://ajayraghav37.azurewebsites.net/details">Detailed</a>
+      Last updated on December 29, 2022 | Latest version:&nbsp;
+      <a href="https://ajayraghav37.vercel.app">Basic</a> or&nbsp;
+      <a href="https://ajayraghav37.vercel.app/detailed">Detailed</a>
     </p>
   </div>
   <hr />
