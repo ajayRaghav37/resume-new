@@ -1,4 +1,4 @@
-export default <div><p className="heading">Work Experience</p>
+export default <div className="section"><p className="heading">Work Experience</p>
   <div className="experience">
     <div className="summary">
       <img className="logo" src="mdb.png" />

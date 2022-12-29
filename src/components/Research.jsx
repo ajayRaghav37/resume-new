@@ -1,4 +1,4 @@
-export default <div><p className="heading">Research Work</p>
+export default <div className="section"><p className="heading">Research Work</p>
   <ul className="achievements">
     <li>Linguistic microprocessor for NLP (unpublished) - Take a linguistic rather than mathematical
       approach for complex NLP.</li>

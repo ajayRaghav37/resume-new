@@ -1,4 +1,4 @@
-export default <div><p className="heading">Exam Scores</p>
+export default <div className="section"><p className="heading">Exam Scores</p>
 <div className="summary">
   <div className="exam">
     <div className="exam-title medium-text">

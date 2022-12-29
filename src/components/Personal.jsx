@@ -1,4 +1,4 @@
-export default <div><p className="heading">Personal Details</p>
+export default <div className="section"><p className="heading">Personal Details</p>
 <div className="learning-experiences">
   <div className="column vertical-flex">
     <div className="personal-details">

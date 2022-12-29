@@ -1,4 +1,4 @@
-export default <div><p className="heading">Education</p>
+export default <div className="section"><p className="heading">Education</p>
 <div className="learning-experience">
   <div className="summary">
     <img className="logo" src="rtu.png" />

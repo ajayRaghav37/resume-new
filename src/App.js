@@ -1,9 +1,11 @@
 import React from "react";
-import Basic from './components/Basic';
 import BasicWork from './components/BasicWork';
 import Certifications from './components/Certifications';
-import Detailed from './components/Detailed';
-import DetailedWork from './components/DetailedWork';
+import DetailedWork_1 from './components/DetailedWork_1';
+import DetailedWork_2 from './components/DetailedWork_2';
+import DetailedWork_3 from './components/DetailedWork_3';
+import DetailedWork_4 from './components/DetailedWork_4';
+import DetailedWork_5 from './components/DetailedWork_5';
 import Education from './components/Education';
 import Error from './components/Error';
 import Intro from './components/Intro';
@@ -47,24 +49,44 @@ export default function App() {
 }
 
 const ResumeBasic = () => <div>
+  <page>
   {Intro}
   {BasicWork}
+  </page>
+  <page>
   {Education}
   {Certifications}
   {Scores}
   {Learning}
   {Research}
   {Personal}
+  </page>
 </div>;
 
 const ResumeDetailed = () => <div>
+  <page>
   {Intro}
-  {DetailedWork}
+  {DetailedWork_1}
+  </page>
+  <page>
+  {DetailedWork_2}
+  </page>
+  <page>
+  {DetailedWork_3}
+  </page>
+  <page>
+  {DetailedWork_4}
+  </page>
+  <page>
+  {DetailedWork_5}
   {Education}
+  </page>
+  <page>
   {Certifications}
   {LearningDetails}
   {Research}
   {Scores}
   {Personal}
+  </page>
 </div>;
 

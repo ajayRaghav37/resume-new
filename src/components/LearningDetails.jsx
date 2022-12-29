@@ -1,4 +1,4 @@
-export default <div><p className="heading">Learning Experience<span className="small-text"> (UNPAID AND NON-PROFIT)</span></p>
+export default <div className="section"><p className="heading">Learning Experience<span className="small-text"> (UNPAID AND NON-PROFIT)</span></p>
   <div className="learning-experiences">
     <div className="column vertical-flex">
       <div className="learning-experience">
