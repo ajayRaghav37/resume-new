@@ -4,6 +4,87 @@ export default <div className="section first-page-section">
       <div className="projects">
         <div className="project">
           <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-name">ONTOFY 2.0</p>
+                <p className="project-duration">MAR 2020 - OCT 2020</p>
+              </div>
+              <div>
+                <p className="job-description">ARCHITECT | ALGORITHM SPECIALIST | UI/UX EXPERT | PRODUCT OWNER
+                </p>
+                <p className="skills very-small-text">PYTHON | JAVA | NODE.JS | REACT.JS | MONGODB | EXPRESS.JS |
+                  GITLAB | KEYCLOAK | OPENSHIFT</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Ontofy was a tool for creating semi-automatic ontologies. It was
+                rebooted and
+                revamped to increase quality and intelligence in different services. Improvements made in the
+                revamp
+                resulted in a <b>reduction of 80% manual effort</b> and a massive <b>1400% quality</b> boost.
+                Support for
+                knowledge graph was also added during the revamp.
+              </p>
+              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
+              <ul className="roles-responsibilities">
+                <li>Leading a team of 5 developers.</li>
+                <li>Conceptualizing and architecting the revamp defining the microservices and how they should
+                  interact.</li>
+                <li>Designing database, collections and setting indexing rules.</li>
+                <li>Conceptualizing and implementing <em>Disambiguator</em>, a service based on wikidata to
+                  extract
+                  automated ontologies by identifying the right entity for a concept based on corelation with
+                  other
+                  concepts.</li>
+                <li>Conceptualizing and implementing <em>nGrammer</em>, an extractor based on Google n-grams.</li>
+                <li>Formalizing, RESTifying and improving keyword extractor using multipartite algorithm and
+                  accurate TFIDF.</li>
+                <li>Creating UI mock-ups for complex components and implementing those components.</li>
+                <li>Conceptualizing and implementing wikidata extractor.</li>
+                <li>Rewriting the ontology creator, originally written in Java into Node.js.</li>
+                <li>Conceptualizing and implementing knowledge graph seeder.</li>
+                <li>Creating technical documentation and sales presentation.</li>
+                <li>Benchmarking Ontofy 2.0 against Cogito Studio, OntoText, IBM Watson Discovery and Google Knowledge
+                  Graph. Creating a report for the same, concluding <b>Ontofy 2.0 to be at least 6 per cent and up to
+                    550 per cent better than others.</b></li>
+                <li>Creating contributor guidelines for Python programming for the entire team of 100+ people.
+                </li>
+                <li>Reviewing Python, React.js and Node.js code written by the team.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="project-divider-large"></div>
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header-multi">
+              <div className="project-timeline">
+                <p className="project-name">LIVE SPEECH TRANSLATION</p>
+              </div>
+              <div>
+                <p className="job-description">CONSULTANT | DEVELOPER
+                </p>
+              </div>
+            </div>
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-duration">OCT 2019 - JAN 2020</p>
+              </div>
+              <div>
+                <p className="skills very-small-text">AZURE SPEECH TO TEXT | AZURE TRANSLATOR | NODE.JS | REACT.JS |
+                  MONGODB | GITLAB | OPENSHIFT</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Live Speech Translation was created to enable people working in
+                different geographies to work together. All users could speak, hear and read in their choice of
+                language even if other users are speaking a different language.</p>
+            </div>
+          </div>
+        </div>
+        <div className="project-divider-large"></div>
+        <div className="project">
+          <div className="project-details">
             <div className="project-summary">
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <ul className="roles-responsibilities">
@@ -48,80 +129,6 @@ export default <div className="section first-page-section">
                   multitenancy, data table, etc. This template has now been used by 8 assets and counting.</li>
                 <li>Creating technical documentation and sales presentation.</li>
                 <li>Reviewing Node.js and React.js code written by the team.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="project-divider-large"></div>
-        <div className="project">
-          <div className="project-details">
-            <div className="project-header">
-              <div className="project-timeline">
-                <p className="project-name">BOTIFY.KIT</p>
-                <p className="project-duration">OCT 2017 - JAN 2018</p>
-              </div>
-              <div>
-                <p className="job-description">DEVELOPMENT LEAD | UI/UX EXPERT
-                </p>
-                <p className="skills very-small-text">NODE.JS | REACT.JS | MONGODB | GITLAB</p>
-              </div>
-            </div>
-            <div className="project-summary">
-              <p className="project-summary-intro">Botify.kit was integration of IK Bot and Botify. IK Bot was a
-                virtual
-                assistant creation tool created by French counterparts. It supported complex conversation trees.
-              </p>
-              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
-              <ul className="roles-responsibilities">
-                <li>Leading a team of 5 developers.</li>
-                <li>Changing the data store of Botify from SQL to MongoDB.</li>
-                <li>Implementing cross origin communication for seamless communication between Botify and IK Bot.
-                </li>
-                <li>Writing algorithms for automatically creating conversation trees in IK Bot.</li>
-                <li>Creating billing screens in IK Bot.</li>
-                <li>Reviewing Node.js and React.js code written by the team.</li>
-                <li>Benchmarking Botify.kit against LivingActor and Recast.ai. Creating a report for the same,
-                  concluding <b>Botify.kit to be at least 20 per cent better than others.</b></li>
-                <li>Creating technical documentation and user manual.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="project-divider-large"></div>
-        <div className="project">
-          <div className="project-details">
-            <div className="project-header">
-              <div className="project-timeline">
-                <p className="project-name">BOTIFY</p>
-                <p className="project-duration">FEB 2017 - SEP 2017</p>
-              </div>
-              <div>
-                <p className="job-description">ARCHITECT | ALGORITHM EXPERT | DEVELOPER | UI/UX EXPERT | PRODUCT OWNER
-                </p>
-                <p className="skills very-small-text">NODE.JS | LYNC SDK | SQL | IBM BLUEMIX | ELASTIC SEARCH | HTML |
-                  JAVASCRIPT | CSS | VSTS</p>
-              </div>
-            </div>
-            <div className="project-summary">
-              <p className="project-summary-intro">Botify was created to convert documents into FAQ bots <b>reducing
-                  SME
-                  efforts by up to 80%</b> compared to IBM Watson Assistant.</p>
-              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
-              <ul className="roles-responsibilities">
-                <li>Leading a young team of 6 developers.</li>
-                <li>Designing database, tables and setting indexing rules.</li>
-                <li>Writing stored procedures for getting information to be displayed to the user.</li>
-                <li>Creating UI mock-ups of complex pages and implementing them.</li>
-                <li>Writing algorithms for text mining and automatic intent, entities and answers detection.</li>
-                <li>Styling the pages and making them responsive.</li>
-                <li>Creating wizard for setting up of the chatbot.</li>
-                <li>Creating guided training for adding more documents into the chatbot.</li>
-                <li>Reviewing Node.js, HTML, Javascript and CSS code written by team.</li>
-                <li>Creating technical documentation and sales presentation.</li>
-                <li>Delivering customer demonstrations. Demonstrated Botify to over 10 customers.</li>
-                <li>Ensuring successful customer deployment. Delivered the product successfully in production to 3
-                  internal
-                  customers.</li>
               </ul>
             </div>
           </div>

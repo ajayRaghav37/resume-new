@@ -6,6 +6,7 @@ import DetailedWork_2 from './components/DetailedWork_2';
 import DetailedWork_3 from './components/DetailedWork_3';
 import DetailedWork_4 from './components/DetailedWork_4';
 import DetailedWork_5 from './components/DetailedWork_5';
+import DetailedWork_6 from './components/DetailedWork_6';
 import Education from './components/Education';
 import Error from './components/Error';
 import Intro from './components/Intro';
@@ -50,51 +51,56 @@ export default function App() {
 
 const ResumeBasic = () => <div>
   <page>
-  {Intro}
-  {BasicWork}
+    {Intro}
+    {BasicWork}
   </page>
   <page>
-  <div className="section first-page-section">
-  {Education}
-  </div>
-  <div className="section">
-  {Certifications}
-  </div>
-  {Scores}
-  {Learning}
-  {Research}
-  {Personal}
+    <div className="section first-page-section">
+      {Education}
+    </div>
+    <div className="section">
+      {Certifications}
+    </div>
+    {Scores}
+    {Learning}
+    {Research}
+    {Personal}
   </page>
 </div>;
 
 const ResumeDetailed = () => <div>
   <page>
-  {Intro}
-  {DetailedWork_1}
+    {Intro}
+    {DetailedWork_1}
   </page>
   <page>
-  {DetailedWork_2}
+    {DetailedWork_2}
   </page>
   <page>
-  {DetailedWork_3}
+    {DetailedWork_3}
   </page>
   <page>
-  {DetailedWork_4}
+    {DetailedWork_4}
   </page>
   <page>
-  {DetailedWork_5}
-  <div className="section">
-  {Education}
-  </div>
+    {DetailedWork_5}
   </page>
   <page>
-  <div className="section first-page-section">
-  {Certifications}
-  </div>
-  {LearningDetails}
-  {Research}
-  {Scores}
-  {Personal}
+    {DetailedWork_6}
+    <div className="section">
+      {Education}
+    </div>
+    <div className="section">
+      {Certifications}
+    </div>
+  </page>
+  <page>
+    <div className="section first-page-section">
+    </div>
+    {LearningDetails}
+    {Research}
+    {Scores}
+    {Personal}
   </page>
 </div>;
 

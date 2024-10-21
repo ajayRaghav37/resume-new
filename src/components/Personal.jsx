@@ -22,12 +22,12 @@ export default <div className="section"><p className="heading">Personal Details<
   <div className="column vertical-flex">
     <div className="personal-details">
       <p className="personal-details-field">Active VISA(s): </p>
-      <p className="column">USA R B1/B2 (2018 - 2028)</p>
+      <p className="column">USA R B1/B2 (Exp 2028)<br/>UK BIVS C-VISIT (Exp Jun 2025)</p>
     </div>
     <div className="personal-details-separator"></div>
     <div className="personal-details">
       <p className="personal-details-field">Past VISA(s): </p>
-      <p className="column">Schengen ETATS (2017-18)<br />UK BIVS (2019)</p>
+      <p className="column">Schengen ETATS</p>
     </div>
     <div className="personal-details-separator"></div>
     <div className="personal-details">

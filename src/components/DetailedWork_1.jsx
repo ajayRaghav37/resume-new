@@ -3,18 +3,18 @@ export default <div className="section">
   <div className="experience">
     <div className="summary">
       <img className="logo" src="mdb.png" />
-        <div className="company">
-          <div className="company-name-duration">
-            <p className="company-name">MONGODB</p>
-            <p className="duration">SINCE NOV 2021</p>
-          </div>
-          <div className="company-name-duration">
-            <p className="company-name normal-font-weight">SOLUTIONS ARCHITECT</p>
-            <p className="duration normal-font-weight"><img className="award" src="award.png" />
-            &nbsp;EXCELLENCE AND STANDARDS AWARD
-            </p>
-          </div>
+      <div className="company">
+        <div className="company-name-duration">
+          <p className="company-name">MONGODB</p>
+          <p className="duration">SINCE NOV 2021</p>
         </div>
+        <div className="company-name-duration">
+          <p className="company-name normal-font-weight">PRE-SALES SENIOR SOLUTIONS ARCHITECT</p>
+          <p className="duration normal-font-weight"><img className="award" src="award.png" />
+            &nbsp;EXCELLENCE CLUB | 2x QUARTERLY SA AWARD
+          </p>
+        </div>
+      </div>
     </div>
     <div className="client">
       <div className="projects">
@@ -22,35 +22,55 @@ export default <div className="section">
           <div className="project-details">
             <div className="project-header">
               <div className="project-timeline">
-                <p className="project-name">CORPORATE APAC</p>
-                <p className="project-duration">SINCE NOV 2021</p>
+                <p className="project-name">ENTERPRISE (ACQUISITION)</p>
+                <p className="project-duration">SINCE OCT 2023</p>
               </div>
               <div>
-                <p className="job-description">PRESALES SOLUTIONS ARCHITECT</p>
-                <p className="skills very-small-text">MONGODB ATLAS | SALESFORCE | GOOGLE WORKSPACE</p>
+                <p className="job-description">SENIOR SOLUTIONS ARCHITECT</p>
+                <p className="skills very-small-text">MONGODB ATLAS | MONGODB ENTERPRISE ADVANCED | SALESFORCE | GOOGLE WORKSPACE</p>
               </div>
             </div>
             <div className="project-summary">
-              <p className="project-summary-intro">Collaborated with an acquisition team of 10+ account executives. Worked on&nbsp;<b>200+ accounts</b> (second-highest globally, highest in the APAC region) in just 7 months on the
-                field. Successfully led to a <b>closure of 70+ deals</b> amounting to near <b>$1M annual contract
-                  value</b>. Spent first 3 months in rigorous training for the SA role. Completed DBA and Developer
-                certifications on consecutive days.
+              <p className="project-summary-intro">Collaborated with an acquisition team of 2 account executives. Worked on&nbsp;<b>60+ accounts</b> and successfully led to a <b>closure of 11 new logos</b> amounting to an ERR of <b>$850K</b>. Became a Media SME in the team.
               </p>
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <p className="roles-responsibilities"></p>
               <ul>
-                <li>Working with customers during various stages like Technical Discovery, Product Demonstrations,
-                  Conducting POCs, Technical Feasibility Workshops, Technical Deep Dives, Total Cost of Ownership
-                  Discussions, Scoping, Sizing and understanding consulting requirements of the customer.</li>
-                <li>Because of the development experience, sometimes indulging in hands-on implementation with the
-                  customer
-                  as needed.</li>
-                <li>Visiting customer locations to conduct discovery and technical deep dive sessions. Conducting
-                  office-hours for high-value customers for education, enablement and QnA.</li>
-                <li>Actively participating in marketing activities including in-person developer sessions, webinars,
-                  partner sessions
-                  and CXO roundtables.</li>
+                <li>Demonstrate value of MongoDB and handle objections with respect to competitive solutions.</li>
+                <li>Design systems, applications, and infrastructure to help drive software development projects using MongoDB.</li>
+                <li>Provide architectural advice and strategies to customers for optimizing their use of MongoDB.</li>
+                <li>Clearly communicate the business value of MongoDB solutions.</li>
+                <li>Collaborate with sales by supporting technical discovery, delivering demos, proof of value, and documenting technical criteria across multiple opportunities.</li>
+                <li>Translate technical concepts into business value for management and executives.</li>
+                <li>Serve as a liaison, gathering field feedback to relay to the Product Management team.</li>
+                <li>Drive demand by participating in industry trade shows, MongoDB flagship events and account-based marketing events.</li>
+                <li>Display resilience and sound judgment when facing business challenges.</li>
+                <li>Actively mentor and support pre-sales team members, sharing best practices and reusable assets like demos and templates.</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="client">
+      <div className="projects">
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-name">DIGITAL NATIVE (HYBRID)</p>
+                <p className="project-duration">NOV 2021 - SEP 2023</p>
+              </div>
+              <div>
+                <p className="job-description">SOLUTIONS ARCHITECT</p>
+                <p className="skills very-small-text">MONGODB ATLAS | SALESFORCE | GOOGLE WORKSPACE</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Collaborated with acquisition and growth teams of 12+ account executives. Worked on&nbsp;<b>300+ accounts</b> (highest globally). Successfully led to a <b>closure of 90+ deals</b> amounting to near <b>$1M annual contract
+                value</b>. Spent first 3 months in rigorous training for the SA role. Completed DBA and Developer
+                certifications on consecutive days. Became a Gaming SME in the team.
+              </p>
             </div>
           </div>
         </div>
@@ -61,18 +81,18 @@ export default <div className="section">
   <div className="experience">
     <div className="summary">
       <img className="logo" src="soprasteria.png" />
-        <div className="company">
-          <div className="company-name-duration">
-            <p className="company-name">SOPRA STERIA</p>
-            <p className="duration">JUL 2014 - NOV 2021</p>
-          </div>
-          <div className="company-name-duration">
-            <p className="company-name normal-font-weight">ARCHITECT</p>
-            <p className="duration normal-font-weight"><img className="award" src="award.png" />5x
-              STAR OF SOPRA STERIA | 3x EINSTEIN AWARD | CODE NINJA
-            </p>
-          </div>
+      <div className="company">
+        <div className="company-name-duration">
+          <p className="company-name">SOPRA STERIA</p>
+          <p className="duration">JUL 2014 - NOV 2021</p>
         </div>
+        <div className="company-name-duration">
+          <p className="company-name normal-font-weight">ARCHITECT</p>
+          <p className="duration normal-font-weight"><img className="award" src="award.png" />5x
+            STAR OF SOPRA STERIA | 3x EINSTEIN AWARD | CODE NINJA
+          </p>
+        </div>
+      </div>
     </div>
     <div className="client">
       <div className="projects">
@@ -112,48 +132,6 @@ export default <div className="section">
                 <li>Ensuring successful customer deployment. Delivered the product successfully to 2 customers
                   in
                   production (1 on-premise).</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="project-divider-large"></div>
-        <div className="project">
-          <div className="project-details">
-            <div className="project-header">
-              <div className="project-timeline">
-                <p className="project-name">SMART SEARCH</p>
-                <p className="project-duration">JAN 2019 - NOV 2021</p>
-              </div>
-              <div>
-                <p className="job-description">ARCHITECT | ALGORITHM SPECIALIST | DEVELOPMENT LEAD
-                </p>
-                <p className="skills very-small-text">PYTHON | NODE.JS | REACT.JS | MONGODB | EXPRESS.JS
-                  | GITLAB | KEYCLOAK | OPENSHIFT | JMETER</p>
-              </div>
-            </div>
-            <div className="project-summary">
-              <p className="project-summary-intro">Created an enterprise search solution for searching across a
-                large
-                number of documents
-                with smart suggestions, Fasttext based paragraph extraction and BERT based short answers.
-                Supported
-                various sources of documents like
-                SharePoint, JIVE, JIRA, local repositories, etc. Smart Search had the ability to fetch relevant
-                documents and paragraphs in less than 1 second for a given query with ~100 simultaneous user
-                load.
-              </p>
-              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
-              <ul className="roles-responsibilities">
-                <li>Leading a team of 25 developers.</li>
-                <li>Designing database, collections and setting indexing rules.</li>
-                <li>Implementing adaptor pattern for handling different repository sources.</li>
-                <li>Creating RESTful APIs design for interactions between various microservices.</li>
-                <li>Implementing SharePoint connector.</li>
-                <li>Designing back-office workflows.</li>
-                <li>Benchmarking various BERT-based precise answer searching models from huggingface, deeppavlov
-                  and
-                  haystack.
-                </li>
               </ul>
             </div>
           </div>

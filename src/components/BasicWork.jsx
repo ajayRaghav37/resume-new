@@ -8,9 +8,9 @@ export default <div className="section"><p className="heading">Work Experience</
           <p className="duration">SINCE NOV 2021</p>
         </div>
         <div className="company-name-duration">
-          <p className="company-name normal-font-weight">SOLUTIONS ARCHITECT</p>
+          <p className="company-name normal-font-weight">PRE-SALES SENIOR SOLUTIONS ARCHITECT</p>
           <p className="duration normal-font-weight"><img className="award" src="award.png" />
-            &nbsp;EXCELLENCE AND STANDARDS AWARD
+            &nbsp;EXCELLENCE CLUB | 2x QUARTERLY SA AWARD
           </p>
         </div>
       </div>
@@ -21,12 +21,12 @@ export default <div className="section"><p className="heading">Work Experience</
           <div className="project-details">
             <div className="project-header">
               <div className="project-timeline">
-                <p className="project-name">CORPORATE APAC</p>
-                <p className="project-duration">SINCE NOV 2021</p>
+                <p className="project-name">ENTERPRISE (ACQUISITION)</p>
+                <p className="project-duration">SINCE OCT 2023</p>
               </div>
               <div>
-                <p className="job-description">PRESALES SOLUTIONS ARCHITECT</p>
-                <p className="skills very-small-text">MONGODB ATLAS | SALESFORCE | GOOGLE WORKSPACE</p>
+                <p className="job-description">SENIOR SOLUTIONS ARCHITECT</p>
+                <p className="skills very-small-text">MONGODB ATLAS | MONGODB ENTERPRISE ADVANCED | SALESFORCE | GOOGLE WORKSPACE</p>
               </div>
             </div>
             <div className="project-summary">
@@ -37,9 +37,36 @@ export default <div className="section"><p className="heading">Work Experience</
                   <li>Worked with customers during various stages like Business and Technical Discovery, Product Demonstrations,
                     Conducting POCs, Technical Feasibility Workshops, Technical Deep Dives, Total Cost of Ownership
                     Discussions, Scoping, Sizing and understanding consulting requirements of the customer.</li>
-                  <li>Involved in marketing activities including in-person developer sessions, webinars
+                  <li>Marketing activities including in-person developer sessions, webinars, MongoDB .locals events,
                     and CXO roundtables.</li>
-                  <li>Worked on 200+ new accounts and closed 70+ deals amounting to near $1M annual contract value.</li>
+                  <li>Closed 11 new logos with the sales team amounting to over USD 850,000 in ERR. Became a Media SME in the team.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="client">
+      <div className="projects">
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-name">DIGITAL NATIVE (HYBRID)</p>
+                <p className="project-duration">NOV 2021 - SEP 2023</p>
+              </div>
+              <div>
+                <p className="job-description">SOLUTIONS ARCHITECT</p>
+                <p className="skills very-small-text">MONGODB ATLAS | SALESFORCE | GOOGLE WORKSPACE</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro"></p>
+              <div className="negative-margin"></div>
+              <p className="roles-responsibilities">
+                <ul>
+                  <li>Worked on 300+ accounts and closed 90+ deals amounting to near $1M ACV. Became a Gaming SME in the team.</li>
                 </ul>
               </p>
             </div>
@@ -75,7 +102,7 @@ export default <div className="section"><p className="heading">Work Experience</
             <div className="project-header">
               <div className="project-timeline">
                 <p className="project-name">AI/ML STREAM</p>
-                <p className="project-duration">MAR 2018 - NOV 2022</p>
+                <p className="project-duration">MAR 2017 - NOV 2022</p>
               </div>
               <div>
                 <p className="job-description">ARCHITECT | TECHNICAL LEAD | ALGORITHM SPECIALIST |
@@ -86,14 +113,12 @@ export default <div className="section"><p className="heading">Work Experience</
               </div>
             </div>
             <div className="project-summary">
-              <p className="project-summary-intro">Contributed to, and reviewed AI/ML solutions.
-                Integrated them to create an enterprise grade contact center ecosystem.</p>
+              <p className="project-summary-intro">Created AI/ML enabled enterprise grade contact center ecosystem.</p>
               <ul>
-                <li><b>Alive Intelligence</b> - Large scale SME friendly bot building solution
+                <li><b>Alive Intelligence</b> - SME friendly bot building solution
                   that won over 10 mn Euros for the organization.</li>
                 <li><b>Smart Search and Constellation</b> - Enterprise search solution for large number of documents with
-                  smart suggestions, Fasttext based paragraph extraction and BERT based short answers from SharePoint or
-                  local repositories.</li>
+                  smart suggestions, Fasttext based paragraph extraction and BERT based short answers.</li>
                 <li><b>Automatic Test</b> - Cross-platform virtual assistant testing, specification building and
                   benchmarking solution.</li>
                 <li><b>Live Chat</b> - Cross-platform live agent chat solution for virtual assistant platforms' ultimate
@@ -104,35 +129,12 @@ export default <div className="section"><p className="heading">Work Experience</
                 </li>
                 <li><b>Ticket Prediction</b> - Predictions of resolver group, priority and resolution for new tickets in
                   ITSM tools.</li>
-                <li><b>Other Assets and POCs</b> - Live speech translation, demonstration showcase, InnerAuth and Anti
+                  <li><b>Other Assets and POCs</b> - Live speech translation, demonstration showcase, InnerAuth and Anti
                   Financial Crime.
                 </li>
+                <li><b>Botify</b> - Ideated and developed Botify for converting documents into FAQ bots reducing SME effort by up to 80%.
+                </li>
               </ul>
-            </div>
-          </div>
-        </div>
-        <div className="project-divider"></div>
-        <div className="project">
-          <div className="project-details">
-            <div className="project-header-multi">
-              <div className="project-timeline">
-                <p className="project-name">SMART MACHINES STREAM</p>
-              </div>
-              <div>
-                <p className="job-description">SENIOR DEVELOPMENT ENGINEER</p>
-              </div>
-            </div>
-            <div className="project-header">
-              <div className="project-timeline">
-                <p className="project-duration">MAR 2017 - FEB 2018</p>
-              </div>
-              <div>
-                <p className="skills very-small-text">NODE.JS | JAVASCRIPT | SQL | ELASTIC SEARCH |
-                  HTML | CSS | IBM BLUEMIX | LYNC SDK | POWERSHELL</p>
-              </div>
-            </div>
-            <div className="project-summary">
-              <p className="project-summary-intro">Ideated and developed <b>Botify</b> for converting documents into FAQ bots reducing SME effort by up to 80%.</p>
             </div>
           </div>
         </div>

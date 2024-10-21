@@ -2,6 +2,80 @@ export default <div className="section first-page-section">
   <div className="experience">
     <div className="client">
       <div className="projects">
+      <div className="project">
+          <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-name">BOTIFY.KIT</p>
+                <p className="project-duration">OCT 2017 - JAN 2018</p>
+              </div>
+              <div>
+                <p className="job-description">DEVELOPMENT LEAD | UI/UX EXPERT
+                </p>
+                <p className="skills very-small-text">NODE.JS | REACT.JS | MONGODB | GITLAB</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Botify.kit was integration of IK Bot and Botify. IK Bot was a
+                virtual
+                assistant creation tool created by French counterparts. It supported complex conversation trees.
+              </p>
+              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
+              <ul className="roles-responsibilities">
+                <li>Leading a team of 5 developers.</li>
+                <li>Changing the data store of Botify from SQL to MongoDB.</li>
+                <li>Implementing cross origin communication for seamless communication between Botify and IK Bot.
+                </li>
+                <li>Writing algorithms for automatically creating conversation trees in IK Bot.</li>
+                <li>Creating billing screens in IK Bot.</li>
+                <li>Reviewing Node.js and React.js code written by the team.</li>
+                <li>Benchmarking Botify.kit against LivingActor and Recast.ai. Creating a report for the same,
+                  concluding <b>Botify.kit to be at least 20 per cent better than others.</b></li>
+                <li>Creating technical documentation and user manual.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="project-divider-large"></div>
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-name">BOTIFY</p>
+                <p className="project-duration">FEB 2017 - SEP 2017</p>
+              </div>
+              <div>
+                <p className="job-description">ARCHITECT | ALGORITHM EXPERT | DEVELOPER | UI/UX EXPERT | PRODUCT OWNER
+                </p>
+                <p className="skills very-small-text">NODE.JS | LYNC SDK | SQL | IBM BLUEMIX | ELASTIC SEARCH | HTML |
+                  JAVASCRIPT | CSS | VSTS</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Botify was created to convert documents into FAQ bots <b>reducing
+                SME
+                efforts by up to 80%</b> compared to IBM Watson Assistant.</p>
+              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
+              <ul className="roles-responsibilities">
+                <li>Leading a young team of 6 developers.</li>
+                <li>Designing database, tables and setting indexing rules.</li>
+                <li>Writing stored procedures for getting information to be displayed to the user.</li>
+                <li>Creating UI mock-ups of complex pages and implementing them.</li>
+                <li>Writing algorithms for text mining and automatic intent, entities and answers detection.</li>
+                <li>Styling the pages and making them responsive.</li>
+                <li>Creating wizard for setting up of the chatbot.</li>
+                <li>Creating guided training for adding more documents into the chatbot.</li>
+                <li>Reviewing Node.js, HTML, Javascript and CSS code written by team.</li>
+                <li>Creating technical documentation and sales presentation.</li>
+                <li>Delivering customer demonstrations. Demonstrated Botify to over 10 customers.</li>
+                <li>Ensuring successful customer deployment. Delivered the product successfully in production to 3
+                  internal
+                  customers.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="project-divider-large"></div>
         <div className="project">
           <div className="project-details">
             <div className="project-header">
@@ -56,65 +130,6 @@ export default <div className="section first-page-section">
                 <li>Performing technical and functional analysis of complex business components like booking,
                   cancellations, invoicing, etc.</li>
                 <li>Creating technical documentation of the business components.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="project-divider-large"></div>
-        <div className="project">
-          <div className="project-details">
-            <div className="project-header">
-              <div className="project-timeline">
-                <p className="project-name">SOPRA STERIA EVENTS</p>
-                <p className="project-duration">JAN 2015 - FEB 2017</p>
-              </div>
-              <div>
-                <p className="job-description">DEVELOPER | UI/UX EXPERT | INDIVIDUAL CONTRIBUTOR
-                </p>
-                <p className="skills very-small-text">WPF | C# | AZURE APP SERVICES | SQL | JAVASCRIPT | HTML | CSS |
-                  VSTS</p>
-              </div>
-            </div>
-            <div className="project-summary">
-              <p className="project-summary-intro">Sopra Steria Events app was an enterprise-scale event management
-                application. It had features like attendees list, schedule, activity alerts, geofencing, etc.</p>
-              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
-              <ul className="roles-responsibilities">
-                <li>Creating Windows Phone application.</li>
-                <li>Ensuring session management in the application.</li>
-                <li>Creating hybrid components like attendees list, quiz, etc. to <b>reduce development effort</b> in other two platforms.</li>
-                <li>Upgrading the Windows 8 application to UWP app.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="project-divider-large"></div>
-        <div className="project">
-          <div className="project-details">
-            <div className="project-header">
-              <div className="project-timeline">
-                <p className="project-name">VAT INVOICING</p>
-                <p className="project-duration">SEP 2014 - DEC 2015</p>
-              </div>
-              <div>
-                <p className="job-description">DEVELOPER | BUSINESS ANALYST
-                </p>
-                <p className="skills very-small-text">C# | WINDOWS SERVICE | SQL | VSTS</p>
-              </div>
-            </div>
-            <div className="project-summary">
-              <p className="project-summary-intro">Developed a solution to reverse engineer invoices of billions of
-                bookings across various countries to ensure compliance. <b>Accuracy and performance SLAs were 98%
-                  and 150ms/booking. Results were 99.2% and 10ms/booking respectively</b>.
-              </p>
-              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
-              <ul className="roles-responsibilities">
-                <li>Querying the database to analyze various charge codes and finding out how taxes can be applied
-                  in them.</li>
-                <li>Sharing formal analysis with client for approval.</li>
-                <li>Writing various charge code processors.</li>
-                <li>Performing performance test of the service.</li>
-                <li>Creating a tool for automatically creating automated unit tests with random booking data.</li>
               </ul>
             </div>
           </div>
