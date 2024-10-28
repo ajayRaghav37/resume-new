@@ -31,7 +31,7 @@ export default <div className="section">
               </div>
             </div>
             <div className="project-summary">
-              <p className="project-summary-intro">Collaborated with an acquisition team of 2 account executives. Worked on&nbsp;<b>60+ accounts</b> and successfully led to a <b>closure of 11 new logos</b> amounting to an ERR of <b>$850K</b>. Became a Media SME in the team.
+              <p className="project-summary-intro">Collaborated with an acquisition team of 2 account executives. Worked on&nbsp;<b>60+ accounts</b> and successfully led to a <b>closure of 11 new logos</b> amounting to an ERR of <b>$1.2M</b>. Became a Media SME in the team.
               </p>
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <p className="roles-responsibilities"></p>

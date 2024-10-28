@@ -39,7 +39,7 @@ export default <div className="section"><p className="heading">Work Experience</
                     Discussions, Scoping, Sizing and understanding consulting requirements of the customer.</li>
                   <li>Marketing activities including in-person developer sessions, webinars, MongoDB .locals events,
                     and CXO roundtables.</li>
-                  <li>Closed 11 new logos with the sales team amounting to over USD 850,000 in ERR. Became a Media SME in the team.</li>
+                  <li>Closed 11 new logos with the sales team amounting to over USD 1.2 million in ERR. Became a Media SME in the team.</li>
                 </ul>
               </p>
             </div>
