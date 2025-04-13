@@ -31,7 +31,7 @@ export default <div className="section">
               </div>
             </div>
             <div className="project-summary">
-              <p className="project-summary-intro">Collaborated with an acquisition team of 2 account executives. Worked on&nbsp;<b>60+ accounts</b> and successfully led to a <b>closure of 11 new logos</b> amounting to an ERR of <b>$1.2M</b>. Became a Media SME in the team.
+              <p className="project-summary-intro">Collaborated with an acquisition team of 2 account executives. Worked on&nbsp;<b>61 accounts</b> and successfully led to a <b>closure of 23 new logos</b> amounting to an ARR of over <b>$2.5M</b>. Became a Media SME in the team.
               </p>
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <p className="roles-responsibilities"></p>
@@ -45,8 +45,9 @@ export default <div className="section">
                 <li>Serve as a liaison, gathering field feedback to relay to the Product Management team.</li>
                 <li>Drive demand by participating in industry trade shows, MongoDB flagship events and account-based marketing events.</li>
                 <li>Display resilience and sound judgment when facing business challenges.</li>
-                <li>Actively mentor and support pre-sales team members, sharing best practices and reusable assets like demos and templates.</li>
-              </ul>
+                <li>Actively mentor and support pre-sales team members, sharing best practices and answering to field queries.</li>
+                <li>Created multiple re-usable assets for cost optimization, sizing, pricing, TCO estimation, competition, integrations, etc.</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -67,8 +68,7 @@ export default <div className="section">
               </div>
             </div>
             <div className="project-summary">
-              <p className="project-summary-intro">Collaborated with acquisition and growth teams of 12+ account executives. Worked on&nbsp;<b>300+ accounts</b> (highest globally). Successfully led to a <b>closure of 90+ deals</b> amounting to near <b>$1M annual contract
-                value</b>. Spent first 3 months in rigorous training for the SA role. Completed DBA and Developer
+              <p className="project-summary-intro">Collaborated with acquisition and growth teams of 12+ account executives. Worked on&nbsp;<b>300+ accounts</b> (highest globally). Successfully led to a <b>closure of 73 deals</b> amounting to over <b>$3.7M annual run rate</b>. Spent first 3 months in rigorous training for the SA role. Completed DBA and Developer
                 certifications on consecutive days. Became a Gaming SME in the team.
               </p>
             </div>

@@ -1,7 +1,5 @@
 export default <div className="section"><p className="heading">Research Work (Unpublished)</p>
   <ul className="achievements">
-    <li>Linguistic microprocessor for NLP - Take a linguistic rather than mathematical
-      approach for complex NLP.</li>
     <li>Discriminating concepts - Find the most relevant question to ask in progressive search
       on large corpus.</li>
     <li>AURAmarker - Using colored bitmaps to store more data compared to QR codes with
