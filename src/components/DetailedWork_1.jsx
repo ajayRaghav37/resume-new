@@ -68,7 +68,7 @@ export default <div className="section">
               </div>
             </div>
             <div className="project-summary">
-              <p className="project-summary-intro">Collaborated with acquisition and growth teams of 12+ account executives. Worked on&nbsp;<b>300+ accounts</b> (highest globally). Successfully led to a <b>closure of 73 deals</b> amounting to over <b>$3.7M annual run rate</b>. Spent first 3 months in rigorous training for the SA role. Completed DBA and Developer
+              <p className="project-summary-intro">Collaborated with acquisition and growth teams of 12+ account executives. Worked on&nbsp;<b>300+ accounts</b> (highest globally). Successfully led to a <b>closure of 73 deals</b> amounting to over <b>$3.7M in ARR</b>. Spent first 3 months in rigorous training for the SA role. Completed DBA and Developer
                 certifications on consecutive days. Became a Gaming SME in the team.
               </p>
             </div>

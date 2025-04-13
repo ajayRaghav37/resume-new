@@ -39,7 +39,7 @@ export default <div className="section"><p className="heading">Work Experience</
                     Discussions, Scoping, Sizing and understanding consulting requirements of the customer.</li>
                   <li>Marketing activities including in-person developer sessions, webinars, MongoDB .locals events,
                     and CXO roundtables.</li>
-                  <li>Closed 23 new logos with the sales team amounting to over USD 2.5 million in ARR. Became a Media SME in the team.</li>
+                  <li>Closed 23 new logos with the sales team amounting to over 2.5 million USD in ARR. Became a Media SME in the team.</li>
                   <li>Created multiple re-usable assets for cost optimization, sizing, pricing, TCO estimation, competition, integrations, etc.</li>
                 </ul>
               </p>
@@ -67,7 +67,7 @@ export default <div className="section"><p className="heading">Work Experience</
               <div className="negative-margin"></div>
               <p className="roles-responsibilities">
                 <ul>
-                  <li>Worked on 300+ accounts and closed 73 deals amounting to over USD 3.7M ARR. Became a Gaming SME in the team.</li>
+                  <li>Worked on 300+ accounts and closed 73 deals amounting to over 3.7 million USD in ARR. Became a Gaming SME in the team.</li>
                 </ul>
               </p>
             </div>
