@@ -2,7 +2,7 @@ export default <div className="section">
   <p className="heading">Work Experience</p>
   <div className="experience">
     <div className="summary">
-      <img className="logo" src="mdb.png" />
+      <img className="logo" src="mdb.png" alt="MongoDB" />
       <div className="company">
         <div className="company-name-duration">
           <p className="company-name">MONGODB</p>
@@ -10,7 +10,7 @@ export default <div className="section">
         </div>
         <div className="company-name-duration">
           <p className="company-name normal-font-weight">PRE-SALES SENIOR SOLUTIONS ARCHITECT</p>
-          <p className="duration normal-font-weight"><img className="award" src="award.png" />
+          <p className="duration normal-font-weight"><img className="award" src="award.png" alt="Award" />
             &nbsp;EXCELLENCE CLUB | 2x QUARTERLY SA AWARD
           </p>
         </div>
@@ -80,7 +80,7 @@ export default <div className="section">
   <div className="separator"></div>
   <div className="experience">
     <div className="summary">
-      <img className="logo" src="soprasteria.png" />
+      <img className="logo" src="soprasteria.png" alt="Sopra Steria" />
       <div className="company">
         <div className="company-name-duration">
           <p className="company-name">SOPRA STERIA</p>
@@ -88,7 +88,7 @@ export default <div className="section">
         </div>
         <div className="company-name-duration">
           <p className="company-name normal-font-weight">ARCHITECT</p>
-          <p className="duration normal-font-weight"><img className="award" src="award.png" />5x
+          <p className="duration normal-font-weight"><img className="award" src="award.png" alt="Award" />5x
             STAR OF SOPRA STERIA | 3x EINSTEIN AWARD | CODE NINJA
           </p>
         </div>

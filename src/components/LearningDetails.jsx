@@ -3,7 +3,7 @@ export default <div className="section"><p className="heading">Learning Experien
     <div className="column vertical-flex">
       <div className="learning-experience">
         <div className="summary">
-          <img className="logo" src="anico.in.png" />
+          <img className="logo" src="anico.in.png" alt="Anico.in" />
           <div className="company">
             <div className="company-name-duration">
               <p className="company-name">ANICO.IN</p>
@@ -20,7 +20,7 @@ export default <div className="section"><p className="heading">Learning Experien
       <div className="separator"></div>
       <div className="learning-experience">
         <div className="summary">
-          <img className="logo" src="microsoft.png" />
+          <img className="logo" src="microsoft.png" alt="Microsoft" />
           <div className="company">
             <div className="company-name-duration">
               <p className="company-name">MICROSOFT</p>
@@ -36,7 +36,7 @@ export default <div className="section"><p className="heading">Learning Experien
       <div className="separator"></div>
       <div className="learning-experience">
         <div className="summary">
-          <img className="logo" src="augpace.png" />
+          <img className="logo" src="augpace.png" alt="Augpace" />
           <div className="company">
             <div className="company-name-duration">
               <p className="company-name">AUGPACE</p>
@@ -53,7 +53,7 @@ export default <div className="section"><p className="heading">Learning Experien
     <div className="column vertical-flex">
       <div className="learning-experience">
         <div className="summary">
-          <img className="logo" src="chessamo.png" />
+          <img className="logo" src="chessamo.png" alt="Chessamo" />
           <div className="company">
             <div className="company-name-duration">
               <p className="company-name">CHESSAMO</p>
@@ -68,7 +68,7 @@ export default <div className="section"><p className="heading">Learning Experien
       <div className="separator"></div>
       <div className="learning-experience">
         <div className="summary">
-          <img className="logo" src="nanowe.png" />
+          <img className="logo" src="nanowe.png" alt="NanoWE" />
           <div className="company">
             <div className="company-name-duration">
               <p className="company-name">NANOWE</p>
@@ -84,7 +84,7 @@ export default <div className="section"><p className="heading">Learning Experien
       <div className="separator"></div>
       <div className="learning-experience">
         <div className="summary">
-          <img className="logo" src="swat.png" />
+          <img className="logo" src="swat.png" alt="SWAT" />
           <div className="company">
             <div className="company-name-duration">
               <p className="company-name">SWAT</p>
@@ -99,7 +99,7 @@ export default <div className="section"><p className="heading">Learning Experien
       <div className="separator"></div>
       <div className="learning-experience">
         <div className="summary">
-          <img className="logo" src="ceo.png" />
+          <img className="logo" src="ceo.png" alt="C.E.O" />
           <div className="company">
             <div className="company-name-duration">
               <p className="company-name">C.E.O</p>
