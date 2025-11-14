@@ -8,7 +8,6 @@ import DetailedWork_4 from './components/DetailedWork_4';
 import DetailedWork_5 from './components/DetailedWork_5';
 import DetailedWork_6 from './components/DetailedWork_6';
 import Education from './components/Education';
-import Error from './components/Error';
 import Intro from './components/Intro';
 import Learning from './components/Learning';
 import LearningDetails from './components/LearningDetails';
@@ -18,8 +17,7 @@ import Scores from './components/Scores';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 export default function App() {

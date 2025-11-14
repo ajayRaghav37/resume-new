@@ -36,7 +36,7 @@ export default <div className="section"><p className="heading">Personal Details<
     </div>
     <div className="personal-details">
       <p className="personal-details-field">Other: </p>
-      <p className="column"><img className="icon" src="india.png"/> Indian | Male | Married</p>
+      <p className="column"><img className="icon" src="india.png" alt="India"/> Indian | Male | Married</p>
     </div>
   </div>
 </div></div>;
