@@ -246,7 +246,7 @@ p {
   padding: 10px;
   color: black;
   background-color: rgb(229, 251, 255);
-  border-left: rgb(0, 130, 153) solid 10px;
+  border-left: rgb(0, 130, 153) solid 7px;
   font-family: serif;
 }
 
@@ -260,7 +260,7 @@ p {
   padding-bottom: 0px;
   margin-bottom: -10px;
   background-color: rgb(229, 251, 255);
-  border-left: rgb(0, 130, 153) solid 10px;
+  border-left: rgb(0, 130, 153) solid 7px;
   color: black;
   font-family: serif;
 }
