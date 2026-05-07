@@ -6,6 +6,31 @@ export default <div className="section first-page-section">
           <div className="project-details">
             <div className="project-header">
               <div className="project-timeline">
+                <p className="project-name">SSO DIGITAL</p>
+                <p className="project-duration">APRIL 2020</p>
+              </div>
+              <div>
+                <p className="job-description">ARCHITECT | CONFIGURATION MANAGER | INDIVIDUAL CONTRIBUTOR
+                </p>
+                <p className="skills very-small-text">KEYCLOAK | OPENSHIFT</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Created a KeyCloak based single sign-on application that was later
+                used by all products developed in the team.</p>
+              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
+              <ul className="roles-responsibilities">
+                <li>Implementing KeyCloak.</li>
+                <li>Creating technical documentation and integration manual.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="project-divider-large"></div>
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
                 <p className="project-name">ONTOFY 2.0</p>
                 <p className="project-duration">MAR 2020 - OCT 2020</p>
               </div>
@@ -79,13 +104,6 @@ export default <div className="section first-page-section">
               <p className="project-summary-intro">Live Speech Translation was created to enable people working in
                 different geographies to work together. All users could speak, hear and read in their choice of
                 language even if other users are speaking a different language.</p>
-            </div>
-          </div>
-        </div>
-        <div className="project-divider-large"></div>
-        <div className="project">
-          <div className="project-details">
-            <div className="project-summary">
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <ul className="roles-responsibilities">
                 <li>Optimizing cost by using browser's speech-to-text and text-to-speech when available.</li>

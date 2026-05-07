@@ -1,7 +1,37 @@
 export default <div className="section first-page-section">
-    <div className="experience">
-      <div className="client">
-        <div className="projects">
+  <div className="experience">
+    <div className="client">
+      <div className="projects">
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-name">AZURE SUBSCRIPTION</p>
+                <p className="project-duration">MAY 2015 - NOV 2021</p>
+              </div>
+              <div>
+                <p className="job-description">SUBSCRIPTION OWNER | CONFIGURATION MANAGER
+                </p>
+                <p className="skills very-small-text">POWERSHELL</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Digital team in Sopra Steria have been using an Azure subscription
+                for creating various resources like virtual machines, app services, cognitive services, etc.</p>
+              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
+              <ul className="roles-responsibilities">
+                <li>Leading a team of 3 DevOps engineers.</li>
+                <li>Creating resources based on location and other requirements.</li>
+                <li>Enabling over 60 team members by creating Virtual Machines during CoVid as they did not have
+                  Sopra Steria machines.</li>
+                <li>Optimizing security and cost of the subscription by setting appropriate JIT settings and
+                  shutdown rules.</li>
+                <li>Identifying cost hogging resources and scaling them down or deleting them per case.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="project-divider-large"></div>
         <div className="project">
           <div className="project-details">
             <div className="project-header">
@@ -61,92 +91,59 @@ export default <div className="section first-page-section">
                 showcasing various products of AI/ML, Blockchain and IoT.</p>
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <ul className="roles-responsibilities">
+                <li>Conceptualizing and architecting the application in a way that its deployment is extremely
+                  cheap
+                  as no-one wanted to pay the cost of development or deployment.</li>
+                <li>Designing database, collections and setting indexing rules.</li>
+                <li>Working as the only developer and creating the complete end-to-end application.</li>
+                <li>Creating technical documentation, integration manual and user manual.</li>
+                <li>Adding 32 assets in the showcase.</li>
               </ul>
             </div>
           </div>
         </div>
-          <div className="project">
-            <div className="project-details">
-              <div className="project-summary">
-                <ul className="roles-responsibilities">
-                  <li>Conceptualizing and architecting the application in a way that its deployment is extremely
-                    cheap
-                    as no-one wanted to pay the cost of development or deployment.</li>
-                  <li>Designing database, collections and setting indexing rules.</li>
-                  <li>Working as the only developer and creating the complete end-to-end application.</li>
-                  <li>Creating technical documentation, integration manual and user manual.</li>
-                  <li>Adding 32 assets in the showcase.</li>
-                </ul>
+        <div className="project-divider-large"></div>
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header-multi">
+              <div className="project-timeline">
+                <p className="project-name">UNIFIED BILLING PORTAL</p>
               </div>
-            </div>
-          </div>
-          <div className="project-divider-large"></div>
-          <div className="project">
-            <div className="project-details">
-              <div className="project-header-multi">
-                <div className="project-timeline">
-                  <p className="project-name">UNIFIED BILLING PORTAL</p>
-                </div>
-                <div>
-                  <p className="job-description">ARCHITECT | UI/UX EXPERT | DEVELOPMENT LEAD | PRODUCT OWNER
-                  </p>
-                </div>
-              </div>
-              <div className="project-header">
-                <div className="project-timeline">
-                  <p className="project-duration">JUN 2020 - AUG 2020</p>
-                </div>
-                <div>
-                  <p></p>
-                  <p className="skills very-small-text">NODE.JS | REACT.JS | MONGODB | EXPRESS.JS | MICROSERVICES |
-                    GITLAB
-                    | KEYCLOAK | OPENSHIFT</p>
-                </div>
-              </div>
-              <div className="project-summary">
-                <p className="project-summary-intro">Created a multitenant portal for billing of all our internal assets
-                  with support for writing complex billing and invoicing rules.
+              <div>
+                <p className="job-description">ARCHITECT | UI/UX EXPERT | DEVELOPMENT LEAD | PRODUCT OWNER
                 </p>
-                <p className="roles-responsibilities-title">My roles and responsibilities:</p>
-                <ul className="roles-responsibilities">
-                  <li>Leading a team of 3 developers.</li>
-                  <li>Conceptualizing and architecting the application in a way that it is easy to integrate.</li>
-                  <li>Designing database, collections and setting indexing rules.</li>
-                  <li>Creating UI mock-ups for complex components.</li>
-                  <li>Designing RESTful API for interactions between various microservices.</li>
-                  <li>Creating technical documentation and integration manual.</li>
-                  <li>Integrating UBP with one asset called "Document Reader".</li>
-                  <li>Reviewing React.js and node.js code written by the team.</li>
-                </ul>
               </div>
             </div>
-          </div>
-          <div className="project-divider-large"></div>
-          <div className="project">
-            <div className="project-details">
-              <div className="project-header">
-                <div className="project-timeline">
-                  <p className="project-name">SSO DIGITAL</p>
-                  <p className="project-duration">APRIL 2020</p>
-                </div>
-                <div>
-                  <p className="job-description">ARCHITECT | CONFIGURATION MANAGER | INDIVIDUAL CONTRIBUTOR
-                  </p>
-                  <p className="skills very-small-text">KEYCLOAK | OPENSHIFT</p>
-                </div>
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-duration">JUN 2020 - AUG 2020</p>
               </div>
-              <div className="project-summary">
-                <p className="project-summary-intro">Created a KeyCloak based single sign-on application that was later
-                  used by all products developed in the team.</p>
-                <p className="roles-responsibilities-title">My roles and responsibilities:</p>
-                <ul className="roles-responsibilities">
-                  <li>Implementing KeyCloak.</li>
-                  <li>Creating technical documentation and integration manual.</li>
-                </ul>
+              <div>
+                <p></p>
+                <p className="skills very-small-text">NODE.JS | REACT.JS | MONGODB | EXPRESS.JS | MICROSERVICES |
+                  GITLAB
+                  | KEYCLOAK | OPENSHIFT</p>
               </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Created a multitenant portal for billing of all our internal assets
+                with support for writing complex billing and invoicing rules.
+              </p>
+              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
+              <ul className="roles-responsibilities">
+                <li>Leading a team of 3 developers.</li>
+                <li>Conceptualizing and architecting the application in a way that it is easy to integrate.</li>
+                <li>Designing database, collections and setting indexing rules.</li>
+                <li>Creating UI mock-ups for complex components.</li>
+                <li>Designing RESTful API for interactions between various microservices.</li>
+                <li>Creating technical documentation and integration manual.</li>
+                <li>Integrating UBP with one asset called "Document Reader".</li>
+                <li>Reviewing React.js and node.js code written by the team.</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>;
+  </div>
+</div>;

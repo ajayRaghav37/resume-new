@@ -8,10 +8,42 @@ export default <div className="section"><p className="heading">Work Experience</
           <p className="duration">SINCE NOV 2021</p>
         </div>
         <div className="company-name-duration">
-          <p className="company-name normal-font-weight">PRE-SALES SENIOR SOLUTIONS ARCHITECT</p>
+          <p className="company-name normal-font-weight">PRE-SALES ADVISORY SOLUTIONS ARCHITECT</p>
           <p className="duration normal-font-weight"><img className="award" src="award.png" />
-            &nbsp;EXCELLENCE CLUB | 2x QUARTERLY SA AWARD
+            &nbsp;EXCELLENCE CLUB | 5x QUARTERLY SA AWARD
           </p>
+        </div>
+      </div>
+    </div>
+    <p className="roles-responsibilities">
+      Collaborated with the sales teams to win complex opportunities through technical discovery, tailored demos, and high-impact POCs. Designed scalable deployments, translating technical complexity into tangible business value for executives. Drove demand through community engagement, mentored team members, created reusable assets, and provided a critical feedback loop to Product Management, while also ensuring a seamless hand-off from the sales cycle to implementation.
+    </p>
+    <div className="client">
+      <div className="projects">
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-name">ENTERPRISE (GROWTH)</p>
+                <p className="project-duration">SINCE MAY 2025</p>
+              </div>
+              <div>
+                <p className="job-description">ADVISORY SOLUTIONS ARCHITECT (SINCE AUG 2025)</p>
+                <p className="skills very-small-text">MONGODB ATLAS AND EA | SFDC | TABLEAU | GOOGLE WORKSPACE | AI TOOLS FOR DEV & RESEARCH</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro"></p>
+              <div className="negative-margin"></div>
+              <p className="roles-responsibilities">
+                <ul>
+                  <li>Worked with 1 AE. <b>Attainment of aligned AE in 4 Quarters</b> (FY26 Q2 to FY27 Q1): <b>185%</b>.</li>
+                  <li><b>$3.3M NARR</b> across 31 opportunities while working on 24 accounts. Became a Retail SME.</li>
+                  <li>Created multiple re-usable assets for competitive comparison, sales forecasting, account intelligence, etc.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -22,11 +54,11 @@ export default <div className="section"><p className="heading">Work Experience</
             <div className="project-header">
               <div className="project-timeline">
                 <p className="project-name">ENTERPRISE (ACQUISITION)</p>
-                <p className="project-duration">SINCE OCT 2023</p>
+                <p className="project-duration">OCT 2023 - APR 2025</p>
               </div>
               <div>
-                <p className="job-description">SENIOR SOLUTIONS ARCHITECT</p>
-                <p className="skills very-small-text">MONGODB ATLAS | MONGODB ENTERPRISE ADVANCED | SALESFORCE | GOOGLE WORKSPACE</p>
+                <p className="job-description">SENIOR SOLUTIONS ARCHITECT (FEB 2024 - JUL 2025)</p>
+                <p className="skills very-small-text">MONGODB ATLAS AND EA | SFDC | TABLEAU | GOOGLE WORKSPACE | MERN</p>
               </div>
             </div>
             <div className="project-summary">
@@ -34,13 +66,9 @@ export default <div className="section"><p className="heading">Work Experience</
               <div className="negative-margin"></div>
               <p className="roles-responsibilities">
                 <ul>
-                  <li>Worked with customers during various stages like Business and Technical Discovery, Product Demonstrations,
-                    Conducting POCs, Technical Feasibility Workshops, Technical Deep Dives, Total Cost of Ownership
-                    Discussions, Scoping, Sizing and understanding consulting requirements of the customer.</li>
-                  <li>Marketing activities including in-person developer sessions, webinars, MongoDB .locals events,
-                    and CXO roundtables.</li>
-                  <li>Closed <b>23 new logos</b> with the sales team amounting to over <b>$2.5M in ARR</b>. Became a <b>Media SME</b> in the team.</li>
-                  <li>Created multiple re-usable assets for cost optimization, sizing, pricing, TCO estimation, competition, integrations, etc.</li>
+                  <li>Worked with 2 AEs. <b>Average attainment of aligned AEs in 6 Quarters</b> (FY24 Q4 to FY26 Q1): <b>248%</b>.</li>
+                  <li><b>$2.2M NARR</b> across 32 new logos while working in 71 accounts. Became a Media SME.</li>
+                  <li>Created multiple re-usable assets for cost optimization, sizing, pricing, TCO estimation, competition, integrations, etc. Runners-up in global hackathon on AI.</li>
                 </ul>
               </p>
             </div>
@@ -58,8 +86,8 @@ export default <div className="section"><p className="heading">Work Experience</
                 <p className="project-duration">NOV 2021 - SEP 2023</p>
               </div>
               <div>
-                <p className="job-description">SOLUTIONS ARCHITECT</p>
-                <p className="skills very-small-text">MONGODB ATLAS | SALESFORCE | GOOGLE WORKSPACE</p>
+                <p className="job-description">SOLUTIONS ARCHITECT (NOV 2021 - JAN 2024)</p>
+                <p className="skills very-small-text">MONGODB ATLAS | SFDC | TABLEAU | GOOGLE WORKSPACE | MERN</p>
               </div>
             </div>
             <div className="project-summary">
@@ -67,7 +95,8 @@ export default <div className="section"><p className="heading">Work Experience</
               <div className="negative-margin"></div>
               <p className="roles-responsibilities">
                 <ul>
-                  <li>Worked on 300+ accounts and closed <b>73 deals</b> amounting to over <b>$3.7M in ARR</b>. Became a <b>Gaming SME</b> in the team.</li>
+                  <li>Worked with 5-8 AEs. <b>Average attainment of aligned AEs in 8 Quarters</b> (FY22 Q4 to FY24 Q3): <b>240%</b>.</li>
+                  <li><b>$4.7M NARR</b> across 73 opportunities while working in 200+ accounts. Became a Gaming SME.</li>
                 </ul>
               </p>
             </div>
@@ -88,14 +117,14 @@ export default <div className="section"><p className="heading">Work Experience</
         <div className="company-name-duration">
           <p className="company-name normal-font-weight">ARCHITECT</p>
           <p className="duration normal-font-weight"><img className="award" src="award.png" />5x
-            STAR OF SOPRA STERIA | 3x EINSTEIN AWARD | CODE NINJA
+            STAR OF SOPRA STERIA | 3x EINSTEIN AWARD | CODE NINJA | 5 PROMOTIONS IN 6.5 YEARS
           </p>
         </div>
       </div>
     </div>
     <div className="client">
       <div className="client-name">
-        <p>Digital Transformation</p>
+        <p className="adjust-to-top">Digital Transformation</p>
       </div>
       <div className="projects">
         <div className="project">
@@ -114,28 +143,7 @@ export default <div className="section"><p className="heading">Work Experience</
               </div>
             </div>
             <div className="project-summary">
-              <p className="project-summary-intro">Created AI/ML enabled enterprise grade contact center ecosystem.</p>
-              <ul>
-                <li><b>Alive Intelligence</b> - SME friendly bot building solution
-                  that won over 10 mn Euros for the organization.</li>
-                <li><b>Smart Search and Constellation</b> - Enterprise search solution for large number of documents with
-                  smart suggestions, Fasttext based paragraph extraction and BERT based short answers.</li>
-                <li><b>Automatic Test</b> - Cross-platform virtual assistant testing, specification building and
-                  benchmarking solution.</li>
-                <li><b>Live Chat</b> - Cross-platform live agent chat solution for virtual assistant platforms' ultimate
-                  fallback.</li>
-                <li><b>Ontofy</b> - Creation of knowledge graphs from documents with auto-extraction of entities and
-                  relationships.</li>
-                <li><b>Unified Billing Portal</b> - Portal that handles complex billing requirements of various assets.
-                </li>
-                <li><b>Ticket Prediction</b> - Predictions of resolver group, priority and resolution for new tickets in
-                  ITSM tools.</li>
-                  <li><b>Other Assets and POCs</b> - Live speech translation, demonstration showcase, InnerAuth and Anti
-                  Financial Crime.
-                </li>
-                <li><b>Botify</b> - Ideated and developed Botify for converting documents into FAQ bots reducing SME effort by up to 80%.
-                </li>
-              </ul>
+              <p className="project-summary-intro">Led a team of 14 developers, architected and developed a €10M+ AI-driven enterprise ecosystem that automates bot creation, document intelligence, and predictive support to streamline end-to-end contact center operations.</p>
             </div>
           </div>
         </div>
@@ -155,15 +163,7 @@ export default <div className="section"><p className="heading">Work Experience</
               </div>
             </div>
             <div className="project-summary">
-              <p className="project-summary-intro"></p>
-              <div className="negative-margin"></div>
-              <ul>
-                <li> <b>Sopra Steria Events</b> - Single handedly created Windows app and
-                  hybrid components of an enterprise-scale event management application.</li>
-                <li><b>Project Ekho (Orange Business Services)</b> - Solutioned cross-platform
-                  barcode scanning and push notifications in website created for job
-                  management of on-site technicians.</li>
-              </ul>
+              <p className="project-summary-intro">Developed enterprise-scale Windows Phone and hybrid applications for event management and field technician job tracking, featuring integrated barcode scanning and push notification solutions.</p>
             </div>
           </div>
         </div>
@@ -188,7 +188,7 @@ export default <div className="section"><p className="heading">Work Experience</
             </div>
             <div className="project-summary">
               <p className="project-summary-intro">Performed technical and functional analysis of
-                complex business systems in easyJet's transformation project called FCP.</p>
+                complex business systems in easyJet's transformation project.</p>
             </div>
           </div>
         </div>

@@ -61,9 +61,9 @@ const ResumeBasic = () => <div>
     <div className="section">
       {Certifications}
     </div>
-    {Scores}
-    {Learning}
     {Research}
+    {Learning}
+    {Scores}
     {Personal}
   </page>
 </div>;
@@ -93,12 +93,14 @@ const ResumeDetailed = () => <div>
     <div className="section">
       {Certifications}
     </div>
+    <div className="section">
+      {Research}
+    </div>
   </page>
   <page>
     <div className="section first-page-section">
     </div>
     {LearningDetails}
-    {Research}
     {Scores}
     {Personal}
   </page>

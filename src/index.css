@@ -195,6 +195,10 @@ p {
   transform: rotate(-90deg) translateY(-233px);
 }
 
+.client-name .adjust-to-top {
+  margin-top: -10px;
+}
+
 .project {
   display: flex;
 }
