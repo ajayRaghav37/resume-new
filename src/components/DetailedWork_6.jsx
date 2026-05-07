@@ -45,7 +45,7 @@ export default <div className="section first-page-section">
             </div>
             <div className="project-summary">
               <p className="project-summary-intro">Developed a solution to reverse engineer invoices of billions of
-                bookings across various countries to ensure compliance. <b>Accuracy and performance SLAs were 98%
+                bookings across various countries to ensure compliance for a European Airline. <b>Accuracy and performance SLAs were 98%
                   and 150ms/booking. Results were 99.2% and 10ms/booking respectively</b>.
               </p>
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
