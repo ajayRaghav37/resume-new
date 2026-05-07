@@ -6,76 +6,6 @@ export default <div className="section first-page-section">
           <div className="project-details">
             <div className="project-header">
               <div className="project-timeline">
-                <p className="project-name">AZURE SUBSCRIPTION</p>
-                <p className="project-duration">MAY 2015 - NOV 2021</p>
-              </div>
-              <div>
-                <p className="job-description">SUBSCRIPTION OWNER | CONFIGURATION MANAGER
-                </p>
-                <p className="skills very-small-text">POWERSHELL</p>
-              </div>
-            </div>
-            <div className="project-summary">
-              <p className="project-summary-intro">Digital team in Sopra Steria have been using an Azure subscription
-                for creating various resources like virtual machines, app services, cognitive services, etc.</p>
-              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
-              <ul className="roles-responsibilities">
-                <li>Leading a team of 3 DevOps engineers.</li>
-                <li>Creating resources based on location and other requirements.</li>
-                <li>Enabling over 60 team members by creating Virtual Machines during CoVid as they did not have
-                  Sopra Steria machines.</li>
-                <li>Optimizing security and cost of the subscription by setting appropriate JIT settings and
-                  shutdown rules.</li>
-                <li>Identifying cost hogging resources and scaling them down or deleting them per case.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="project-divider-large"></div>
-        <div className="project">
-          <div className="project-details">
-            <div className="project-header">
-              <div className="project-timeline">
-                <p className="project-name">AFC SANDBOX</p>
-                <p className="project-duration">JUN 2021 - NOV 2021</p>
-              </div>
-              <div>
-                <p className="job-description">ARCHITECT | DEVELOPMENT LEAD | UI/UX EXPERT | PRODUCT OWNER
-                </p>
-                <p className="skills very-small-text">PYTHON | ANGULAR | VUE.JS | BOKEH | LEAFLET | GITLAB | OPENSHIFT</p>
-              </div>
-            </div>
-            <div className="project-summary">
-              <p className="project-summary-intro">Anti Financial Crime is a tool to monitor transactions and customer
-                behaviours to identify suspicious activities. On the dashboard, multiple graphs are plotted to
-                have
-                an overview about the bank's respective Transaction Monitoring systems, including information
-                like:
-                number of customers/accounts/transactions in monitoring, number of indicator hits, number of
-                alerts,
-                etc. The alerts could also be visualized on a map.</p>
-              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
-              <ul className="roles-responsibilities">
-                <li>Leading a team of 3 developers.</li>
-                <li>Analyzing user stories and finalizing the acceptance criteria with the client.</li>
-                <li>Rewriting RESTful APIs written for interactions between the dashboard and the backend services
-                  to support infinite graphs.</li>
-                <li>Rewriting frontend to support infinite graphs and variations with effectively zero effort.
-                </li>
-                <li>Creating complex dataframe queries to extract the relevant data for each graph and then
-                  creating
-                  those graphs using the Bokeh library.</li>
-                <li>Creating technical documentation.</li>
-                <li>Reviewing Python and Angular code written by the team.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="project-divider-large"></div>
-        <div className="project">
-          <div className="project-details">
-            <div className="project-header">
-              <div className="project-timeline">
                 <p className="project-name">GLOBAL ASSETS SHOWCASE</p>
                 <p className="project-duration">DEC 2020 - MAR 2021</p>
               </div>
@@ -91,13 +21,8 @@ export default <div className="section first-page-section">
                 showcasing various products of AI/ML, Blockchain and IoT.</p>
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <ul className="roles-responsibilities">
-                <li>Conceptualizing and architecting the application in a way that its deployment is extremely
-                  cheap
-                  as no-one wanted to pay the cost of development or deployment.</li>
-                <li>Designing database, collections and setting indexing rules.</li>
-                <li>Working as the only developer and creating the complete end-to-end application.</li>
-                <li>Creating technical documentation, integration manual and user manual.</li>
-                <li>Adding 32 assets in the showcase.</li>
+                <li>Solo-developed cost-effective SaaS product showcase for AI/ML, Blockchain, IoT.</li>
+                <li>Added 32 assets with database design and technical documentation.</li>
               </ul>
             </div>
           </div>
@@ -131,19 +56,130 @@ export default <div className="section first-page-section">
               </p>
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <ul className="roles-responsibilities">
-                <li>Leading a team of 3 developers.</li>
-                <li>Conceptualizing and architecting the application in a way that it is easy to integrate.</li>
-                <li>Designing database, collections and setting indexing rules.</li>
-                <li>Creating UI mock-ups for complex components.</li>
-                <li>Designing RESTful API for interactions between various microservices.</li>
-                <li>Creating technical documentation and integration manual.</li>
-                <li>Integrating UBP with one asset called "Document Reader".</li>
-                <li>Reviewing React.js and node.js code written by the team.</li>
+                <li>Led 3 developers; architected multitenant billing platform with complex rules engine.</li>
+                <li>Designed database, microservices APIs, and integrated with Document Reader asset.</li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
+        <div className="project-divider-large"></div>
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-name">SSO DIGITAL</p>
+                <p className="project-duration">APRIL 2020</p>
+              </div>
+              <div>
+                <p className="job-description">ARCHITECT | CONFIGURATION MANAGER | INDIVIDUAL CONTRIBUTOR
+                </p>
+                <p className="skills very-small-text">KEYCLOAK | OPENSHIFT</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Created a KeyCloak based single sign-on application that was later
+                used by all products developed in the team.</p>
+              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
+              <ul className="roles-responsibilities">
+                <li>Implemented KeyCloak-based SSO used across all team products.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="project-divider-large"></div>
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-name">ONTOFY 2.0</p>
+                <p className="project-duration">MAR 2020 - OCT 2020</p>
+              </div>
+              <div>
+                <p className="job-description">ARCHITECT | ALGORITHM SPECIALIST | UI/UX EXPERT | PRODUCT OWNER
+                </p>
+                <p className="skills very-small-text">PYTHON | JAVA | NODE.JS | REACT.JS | MONGODB | EXPRESS.JS |
+                  GITLAB | KEYCLOAK | OPENSHIFT</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Ontofy was a tool for creating semi-automatic ontologies. It was
+                rebooted and
+                revamped to increase quality and intelligence in different services. Improvements made in the
+                revamp
+                resulted in a <b>reduction of 80% manual effort</b> and a massive <b>1400% quality</b> boost.
+                Support for
+                knowledge graph was also added during the revamp.
+              </p>
+              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
+              <ul className="roles-responsibilities">
+                <li>Led 5 developers; architected ontology revamp achieving <b>80% effort reduction, 1400% quality boost</b>.</li>
+                <li>Designed Disambiguator, nGrammer, knowledge graph seeder; migrated Java → Node.js.</li>
+                <li>Benchmarked vs. Cogito Studio, OntoText, IBM Watson—<b>6-550% better</b>; created Python guidelines for 100+ team.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="project-divider-large"></div>
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header-multi">
+              <div className="project-timeline">
+                <p className="project-name">LIVE SPEECH TRANSLATION</p>
+              </div>
+              <div>
+                <p className="job-description">CONSULTANT | DEVELOPER
+                </p>
+              </div>
+            </div>
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-duration">OCT 2019 - JAN 2020</p>
+              </div>
+              <div>
+                <p className="skills very-small-text">AZURE SPEECH TO TEXT | AZURE TRANSLATOR | NODE.JS | REACT.JS |
+                  MONGODB | GITLAB | OPENSHIFT</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Live Speech Translation was created to enable people working in
+                different geographies to work together. All users could speak, hear and read in their choice of
+                language even if other users are speaking a different language.</p>
+              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
+              <ul className="roles-responsibilities">
+                <li>Optimized cost using browser APIs; implemented WebSocket-based rooms for real-time translation.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="project-divider-large"></div>
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-name">AUTOMATIC TEST</p>
+                <p className="project-duration">DEC 2018 - SEP 2019</p>
+              </div>
+              <div>
+                <p className="job-description">ARCHITECT | DEVELOPER | UI/UX EXPERT | PRODUCT OWNER
+                </p>
+                <p className="skills very-small-text">NODE.JS | REACT.JS | MONGODB | GITLAB | KEYCLOAK | OPENSHIFT</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Automatic Test is a cross-platform application created for
+                automation
+                testing of chatbots. It can detect regressions in the classifier and can also record test cases.
+                Most powerful feature of Automatic Test is that it can automatically create test cases based on
+                conversation trees created in the chatbot. Reduced the manual effort by <b>22 times</b>.</p>
+              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
+              <ul className="roles-responsibilities">
+                <li>Led 12 developers; architected multitenant chatbot automation testing platform reducing effort <b>22x</b>.</li>
+                <li>Created Next.js template with auth, i18n, multitenancy, data table (used by 8+ assets).</li>
+                <li>Created contributor guidelines for 100+ developers.</li>
+              </ul>
+            </div>
+          </div>
+        </div>      </div>
     </div>
   </div>
 </div>;

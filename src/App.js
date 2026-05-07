@@ -5,8 +5,6 @@ import DetailedWork_1 from './components/DetailedWork_1';
 import DetailedWork_2 from './components/DetailedWork_2';
 import DetailedWork_3 from './components/DetailedWork_3';
 import DetailedWork_4 from './components/DetailedWork_4';
-import DetailedWork_5 from './components/DetailedWork_5';
-import DetailedWork_6 from './components/DetailedWork_6';
 import Education from './components/Education';
 import Intro from './components/Intro';
 import Learning from './components/Learning';
@@ -81,10 +79,6 @@ const ResumeDetailed = () => <div>
     {DetailedWork_4}
   </page>
   <page>
-    {DetailedWork_5}
-  </page>
-  <page>
-    {DetailedWork_6}
     <div className="section">
       {Education}
     </div>
@@ -93,12 +87,12 @@ const ResumeDetailed = () => <div>
     </div>
     <div className="section">
       {Research}
+      {LearningDetails}
     </div>
   </page>
   <page>
     <div className="section first-page-section">
     </div>
-    {LearningDetails}
     {Scores}
     {Personal}
   </page>

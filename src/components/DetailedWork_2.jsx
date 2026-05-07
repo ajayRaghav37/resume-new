@@ -44,17 +44,9 @@ export default <div className="section first-page-section">
               </p>
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <ul className="roles-responsibilities">
-                <li>Leading a team of 12 geographically diverse developers.</li>
-                <li>Optimizing deployment to minimize system requirements.</li>
-                <li>Designing RESTful API for interactions between various assets.</li>
-                <li>Creating technical documentation and sales presentation.</li>
-                <li>Creating demonstration environments with generic data corresponding to various domains like
-                  Finance, Aeroline, Medical, Telecom, etc.</li>
-                <li>Delivering customer demonstrations. Demonstrated Alive Intelligence to over 30 customers.
-                </li>
-                <li>Ensuring successful customer deployment. Delivered the product successfully to 2 customers
-                  in
-                  production (1 on-premise).</li>
+                <li>Led team of 12 developers; designed RESTful APIs for microservices integration.</li>
+                <li>Optimized deployment requirements and created demo environments for Finance/Airline/Medical/Telecom domains.</li>
+                <li>Delivered product to 2 production customers (1 on-premise); demonstrated to 30+ customers.</li>
               </ul>
             </div>
           </div>
@@ -90,26 +82,9 @@ export default <div className="section first-page-section">
               </p>
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <ul className="roles-responsibilities">
-                <li>Leading a team of 25 developers.</li>
-                <li>Designing database, collections and setting indexing rules.</li>
-                <li>Implementing adaptor pattern for handling different repository sources.</li>
-                <li>Creating RESTful APIs design for interactions between various microservices.</li>
-                <li>Implementing SharePoint connector.</li>
-                <li>Designing back-office workflows.</li>
-                <li>Benchmarking various BERT-based precise answer searching models from huggingface, deeppavlov
-                  and
-                  haystack.
-                </li>
-                <li>Designing and implementing <em>Discriminator</em>, an algorithm for smart filtering of the
-                  documents.</li>
-                <li>Implementing WebSockets for faster chat performance.</li>
-                <li>Creating technical documentation and sales presentation.</li>
-                <li>Ensuring successful customer deployment. Delivered the product successfully in production to
-                  5
-                  customers (2 on-premise). Also deployed internally for 45,000 employees of Sopra Steria who
-                  could search in their respective project documents.</li>
-                <li>Writing performance test scripts.</li>
-                <li>Reviewing Python, React.js and node.js code written by the team.</li>
+                <li>Led 25 developers; architected database, microservices APIs, and adapters for SharePoint/JIVE/JIRA sources.</li>
+                <li>Benchmarked BERT models; designed <em>Discriminator</em> algorithm for smart document filtering; implemented WebSockets.</li>
+                <li>Deployed to 5 customers (2 on-premise) + 45,000 internal Sopra Steria employees.</li>
               </ul>
             </div>
           </div>
@@ -136,14 +111,64 @@ export default <div className="section first-page-section">
                 features like cobrowsing, fair queue management, context carry-over, etc.</p>
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <ul className="roles-responsibilities">
-                <li>Leading a team of 8 developers.</li>
-                <li>Migrating code from PHP to Node.js.</li>
-                <li>Migrating database MySQL to MongoDB.</li>
-                <li>Integrating with Botify.kit.</li>
-                <li>Creating UI mock-ups for complex components.</li>
-                <li>Conceptualizing and architecting WebRTC based cobrowsing solution.</li>
-                <li>Creating technical documentation and sales presentation.</li>
-                <li>Reviewing Node.js and React.js code written by the team.</li>
+                <li>Led 8 developers; migrated PHP → Node.js and MySQL → MongoDB.</li>
+                <li>Architected WebRTC-based cobrowsing solution; integrated with Botify.kit.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="project-divider-large"></div>
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-name">AZURE SUBSCRIPTION</p>
+                <p className="project-duration">MAY 2015 - NOV 2021</p>
+              </div>
+              <div>
+                <p className="job-description">SUBSCRIPTION OWNER | CONFIGURATION MANAGER
+                </p>
+                <p className="skills very-small-text">POWERSHELL</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Digital team in Sopra Steria have been using an Azure subscription
+                for creating various resources like virtual machines, app services, cognitive services, etc.</p>
+              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
+              <ul className="roles-responsibilities">
+                <li>Led 3 DevOps engineers managing Azure infrastructure and resources.</li>
+                <li>Enabled 60+ team members with VMs during COVID; optimized security and cost via JIT and resource cleanup.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="project-divider-large"></div>
+        <div className="project">
+          <div className="project-details">
+            <div className="project-header">
+              <div className="project-timeline">
+                <p className="project-name">AFC SANDBOX</p>
+                <p className="project-duration">JUN 2021 - NOV 2021</p>
+              </div>
+              <div>
+                <p className="job-description">ARCHITECT | DEVELOPMENT LEAD | UI/UX EXPERT | PRODUCT OWNER
+                </p>
+                <p className="skills very-small-text">PYTHON | ANGULAR | VUE.JS | BOKEH | LEAFLET | GITLAB | OPENSHIFT</p>
+              </div>
+            </div>
+            <div className="project-summary">
+              <p className="project-summary-intro">Anti Financial Crime is a tool to monitor transactions and customer
+                behaviours to identify suspicious activities. On the dashboard, multiple graphs are plotted to
+                have
+                an overview about the bank's respective Transaction Monitoring systems, including information
+                like:
+                number of customers/accounts/transactions in monitoring, number of indicator hits, number of
+                alerts,
+                etc. The alerts could also be visualized on a map.</p>
+              <p className="roles-responsibilities-title">My roles and responsibilities:</p>
+              <ul className="roles-responsibilities">
+                <li>Led 3 developers; rewrote APIs and frontend to support infinite graphs with zero effort overhead.</li>
+                <li>Created complex Bokeh dataframe queries for transaction monitoring visualizations.</li>
               </ul>
             </div>
           </div>
