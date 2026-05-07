@@ -187,8 +187,7 @@ export default <div className="section"><p className="heading display-none">Work
               </div>
             </div>
             <div className="project-summary">
-              <p className="project-summary-intro">Performed technical and functional analysis of
-                complex business systems in a European Airline's transformation project.</p>
+              <p className="project-summary-intro">Performed technical and functional analysis of business systems in a European Airline's transformation project.</p>
             </div>
           </div>
         </div>
