@@ -12,7 +12,7 @@ export default <div className="section first-page-section">
               <div>
                 <p className="job-description">DEVELOPER | UI/UX EXPERT | INDIVIDUAL CONTRIBUTOR
                 </p>
-                <p className="skills very-small-text">WPF | C# | AZURE APP SERVICES | SQL | JAVASCRIPT | HTML | CSS |
+                <p className="skills very-small-text">WPF | C# | AZURE APP SERVICES | MSSQL | JAVASCRIPT | HTML | CSS |
                   VSTS</p>
               </div>
             </div>
@@ -40,7 +40,7 @@ export default <div className="section first-page-section">
               <div>
                 <p className="job-description">DEVELOPER | BUSINESS ANALYST
                 </p>
-                <p className="skills very-small-text">C# | WINDOWS SERVICE | SQL | VSTS</p>
+                <p className="skills very-small-text">C# | WINDOWS SERVICE | MSSQL | VSTS</p>
               </div>
             </div>
             <div className="project-summary">

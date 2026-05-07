@@ -1,7 +1,7 @@
 export default <div className="section">
   <p className="heading">Work Experience</p>
   <div className="experience">
-    <div className="summary">
+    <div className="org">
       <img className="logo" src="mdb.png" />
       <div className="company">
         <div className="company-name-duration">
@@ -16,21 +16,22 @@ export default <div className="section">
         </div>
       </div>
     </div>
-    <div className="separator"></div>
-    <p className="roles-responsibilities-title">My roles and responsibilities:</p>
-    <p className="roles-responsibilities"></p>
-    <ul>
-      <li>Collaborating with sales teams to lead technical discovery, deliver tailored demonstrations, and manage high-impact Proof of Concepts (POCs) for complex opportunities.</li>
-      <li>Designing scalable MongoDB infrastructure and provide strategic advisory to optimize performance across diverse software development projects.</li>
-      <li>Executing feasibility workshops and deep dives to validate solution viability and build consensus among engineering stakeholders.</li>
-      <li>Communicating technical benefits to executives using TCO estimation, pricing models, and value-based consulting.</li>
-      <li>Driving engagement through industry events, CXO roundtables, and developer sessions to expand the MongoDB community.</li>
-      <li>Cultivating internal "Champions" within customer organizations to advocate for solutions and streamline procurement.</li>
-      <li>Creating reusable technical assets to standardize and accelerate the global pre-sales lifecycle.</li>
-      <li>Serving as a feedback loop between the field and Product Management, ensuring market trends directly inform the product roadmap.</li>
-      <li>Supporting team members by sharing best practices and fostering a culture of technical excellence.</li>
-      <li>Defining project scopes and consulting requirements to ensure seamless hand-offs to post-sales teams.</li>
-    </ul>
+    <p className="org-roles-responsibilities">
+      As a Presales Solutions Architect, my roles and responsibilities are as follows:
+      <ul>
+        <li>Collaborating with sales teams to lead technical discovery, deliver tailored demonstrations, and manage high-impact Proof of Concepts (POCs) for complex opportunities.</li>
+        <li>Designing scalable MongoDB infrastructure and provide strategic advisory to optimize performance across diverse software development projects.</li>
+        <li>Executing feasibility workshops and deep dives to validate solution viability and build consensus among engineering stakeholders.</li>
+        <li>Communicating technical benefits to executives using TCO estimation, pricing models, and value-based consulting.</li>
+        <li>Driving engagement through industry events, CXO roundtables, and developer sessions to expand the MongoDB community.</li>
+        <li>Cultivating internal "Champions" within customer organizations to advocate for solutions and streamline procurement.</li>
+        <li>Creating reusable technical assets to standardize and accelerate the global pre-sales lifecycle.</li>
+        <li>Serving as a feedback loop between the field and Product Management, ensuring market trends directly inform the product roadmap.</li>
+        <li>Supporting team members by sharing best practices and fostering a culture of technical excellence.</li>
+        <li>Defining project scopes and consulting requirements to ensure seamless hand-offs to post-sales teams.</li>
+      </ul>
+      Detailed work experience is provided below, categorized by segments worked in:
+    </p>
     <div className="client">
       <div className="projects">
         <div className="project">

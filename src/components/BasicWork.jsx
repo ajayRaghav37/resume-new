@@ -1,6 +1,6 @@
-export default <div className="section"><p className="heading">Work Experience</p>
+export default <div className="section"><p className="heading display-none">Work Experience</p>
   <div className="experience">
-    <div className="summary">
+    <div className="org">
       <img className="logo" src="mdb.png" />
       <div className="company">
         <div className="company-name-duration">
@@ -15,10 +15,10 @@ export default <div className="section"><p className="heading">Work Experience</
         </div>
       </div>
     </div>
-    <p className="roles-responsibilities">
-      Collaborated with the sales teams to win complex opportunities through technical discovery, tailored demos, and high-impact POCs. Designed scalable deployments, translating technical complexity into tangible business value for executives. Drove demand through community engagement, mentored team members, created reusable assets, and provided a critical feedback loop to Product Management, while also ensuring a seamless hand-off from the sales cycle to implementation.
+    <p className="org-roles-responsibilities">
+      As a Presales Solutions Architect, I collaborated with the sales teams to win complex opportunities through technical discovery, tailored demos, and high-impact POCs. Designed scalable deployments, translating technical complexity into tangible business value for executives. Drove demand through community engagement, mentored team members, created reusable assets, and provided a critical feedback loop to Product Management, while also ensuring a seamless hand-off from the sales cycle to implementation.
     </p>
-    <div className="client">
+    <div className="client narrow-top">
       <div className="projects">
         <div className="project">
           <div className="project-details">
@@ -47,7 +47,7 @@ export default <div className="section"><p className="heading">Work Experience</
         </div>
       </div>
     </div>
-    <div className="client">
+    <div className="client narrow-top">
       <div className="projects">
         <div className="project">
           <div className="project-details">
@@ -76,7 +76,7 @@ export default <div className="section"><p className="heading">Work Experience</
         </div>
       </div>
     </div>
-    <div className="client">
+    <div className="client narrow-top">
       <div className="projects">
         <div className="project">
           <div className="project-details">
@@ -105,9 +105,9 @@ export default <div className="section"><p className="heading">Work Experience</
       </div>
     </div>
   </div>
-  <div className="separator"></div>
+  <div className="narrow-separator"></div>
   <div className="experience">
-    <div className="summary">
+    <div className="org">
       <img className="logo" src="soprasteria.png" />
       <div className="company">
         <div className="company-name-duration">
@@ -122,14 +122,14 @@ export default <div className="section"><p className="heading">Work Experience</
         </div>
       </div>
     </div>
-    <div className="client">
+    <div className="client narrow-top">
       <div className="client-name">
         <p className="adjust-to-top">Digital Transformation</p>
       </div>
       <div className="projects">
         <div className="project">
           <div className="project-details">
-            <div className="project-header">
+            <div className="project-header no-border">
               <div className="project-timeline">
                 <p className="project-name">AI/ML STREAM</p>
                 <p className="project-duration">MAR 2017 - NOV 2022</p>
@@ -150,14 +150,14 @@ export default <div className="section"><p className="heading">Work Experience</
         <div className="project-divider"></div>
         <div className="project">
           <div className="project-details">
-            <div className="project-header">
+            <div className="project-header no-border">
               <div className="project-timeline">
                 <p className="project-name">MOBILITY STREAM</p>
                 <p className="project-duration">JAN 2015 - MAY 2017</p>
               </div>
               <div>
                 <p className="job-description">APP DEVELOPER AND AZURE ADMINISTRATOR</p>
-                <p className="skills very-small-text">C# | WPF | APP SERVICES | NOTIFICATION HUB | SQL | JAVASCRIPT
+                <p className="skills very-small-text">C# | WPF | APP SERVICES | NOTIFICATION HUB | MSSQL | JAVASCRIPT
                   |
                   HTML | CSS | APACHE CORDOVA</p>
               </div>
@@ -169,40 +169,40 @@ export default <div className="section"><p className="heading">Work Experience</
         </div>
       </div>
     </div>
-    <div className="client summary-description">
+    <div className="client summary-description narrow-top">
       <div className="client-name">
-        <p>easyJet</p>
+        <p className="adjust-to-top">European Airline</p>
       </div>
       <div className="projects">
         <div className="project">
           <div className="project-details">
-            <div className="project-header">
+            <div className="project-header no-border">
               <div className="project-timeline">
                 <p className="project-name">FUTURE COMMERCIAL PLATFORM</p>
                 <p className="project-duration">JAN 2016 - APR 2016</p>
               </div>
               <div>
                 <p className="job-description">BUSINESS SYSTEM ANALYST</p>
-                <p className="skills very-small-text">VISIO | DRAW.IO | SQL</p>
+                <p className="skills very-small-text">VISIO | DRAW.IO | MSSQL</p>
               </div>
             </div>
             <div className="project-summary">
               <p className="project-summary-intro">Performed technical and functional analysis of
-                complex business systems in easyJet's transformation project.</p>
+                complex business systems in a European Airline's transformation project.</p>
             </div>
           </div>
         </div>
         <div className="project-divider"></div>
         <div className="project">
           <div className="project-details">
-            <div className="project-header">
+            <div className="project-header no-border">
               <div className="project-timeline">
                 <p className="project-name">VAT INVOICING</p>
                 <p className="project-duration">SEP 2014 - DEC 2015</p>
               </div>
               <div>
                 <p className="job-description">DEVELOPMENT ENGINEER AND BUSINESS ANALYST</p>
-                <p className="skills very-small-text">C# | WINDOWS SERVICE | SQL | VISUAL STUDIO |
+                <p className="skills very-small-text">C# | WINDOWS SERVICE | MSSQL | VISUAL STUDIO |
                   AGILE | TFS</p>
               </div>
             </div>

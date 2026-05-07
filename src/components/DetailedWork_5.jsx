@@ -23,7 +23,7 @@ export default <div className="section first-page-section">
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <ul className="roles-responsibilities">
                 <li>Leading a team of 5 developers.</li>
-                <li>Changing the data store of Botify from SQL to MongoDB.</li>
+                <li>Changing the data store of Botify from MSSQL to MongoDB.</li>
                 <li>Implementing cross origin communication for seamless communication between Botify and IK Bot.
                 </li>
                 <li>Writing algorithms for automatically creating conversation trees in IK Bot.</li>
@@ -47,7 +47,7 @@ export default <div className="section first-page-section">
               <div>
                 <p className="job-description">ARCHITECT | ALGORITHM EXPERT | DEVELOPER | UI/UX EXPERT | PRODUCT OWNER
                 </p>
-                <p className="skills very-small-text">NODE.JS | LYNC SDK | SQL | IBM BLUEMIX | ELASTIC SEARCH | HTML |
+                <p className="skills very-small-text">NODE.JS | LYNC SDK | MSSQL | IBM BLUEMIX | ELASTIC SEARCH | HTML |
                   JAVASCRIPT | CSS | VSTS</p>
               </div>
             </div>
@@ -93,14 +93,14 @@ export default <div className="section first-page-section">
             </div>
             <div className="project-summary">
               <p className="project-summary-intro">Project Ekho was a solution for cross-platform barcode scanning and
-                push notifications in Orange Business Services website created for job management of on-site
+                push notifications in a Telco Services website created for job management of on-site
                 technicians.</p>
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <ul className="roles-responsibilities">
                 <li>Implementing barcode scanning using Quagga.js.</li>
                 <li>Implementing push notifications using Google Firebase and Azure Notification Hub.</li>
                 <li>Delivering customer demonstration.</li>
-                <li>Handing over the source code and knowledge transfer to Orange Business Services.</li>
+                <li>Handing over the source code and knowledge transfer to the Telco Services company.</li>
               </ul>
             </div>
           </div>
@@ -116,14 +116,14 @@ export default <div className="section first-page-section">
               <div>
                 <p className="job-description">BUSINESS ANALYST
                 </p>
-                <p className="skills very-small-text">VISIO | DRAW.IO | SQL</p>
+                <p className="skills very-small-text">VISIO | DRAW.IO | MSSQL</p>
               </div>
             </div>
             <div className="project-summary">
-              <p className="project-summary-intro">FCP was a revamp project of easyJet. They were using age-old
-                technologies and techniques in their systems. EasyJet wanted to</p>
+              <p className="project-summary-intro">FCP was a revamp project of a European Airline. They were using age-old
+                technologies and techniques in their systems. They wanted to</p>
               <p className="project-summary-intro">move to latest technology. Because
-                almost all the work was outsourced by easyJet to various consultancies, they wanted technical
+                almost all the work was outsourced by them to various consultancies, they wanted technical
                 documentation of their current systems.</p>
               <p className="roles-responsibilities-title">My roles and responsibilities:</p>
               <ul className="roles-responsibilities">

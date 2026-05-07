@@ -1,6 +1,6 @@
 export default <div className="section first-page-section">
   <div className="experience">
-    <div className="summary">
+    <div className="org">
       <img className="logo" src="soprasteria.png" />
       <div className="company">
         <div className="company-name-duration">
@@ -15,8 +15,7 @@ export default <div className="section first-page-section">
         </div>
       </div>
     </div>
-    <div className="separator"></div>
-    <p className="roles-responsibilities">
+    <p className="org-roles-responsibilities">
       <b>Promotions:</b> Architect in Jan 2021, Senior Product Analyst in Jan 2019, Product Analyst in Jan 2018, Senior Software Engineer in Jan 2017, Software Engineer in Jul 2015. Started as Software Engineer Trainee in Jul 2014.<br/><br/>
       <b>Projects:</b> Worked on 16 different projects over a span of 7.5 years, many of them were done parallely.
     </p>
