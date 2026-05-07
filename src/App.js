@@ -79,6 +79,7 @@ const ResumeDetailed = () => <div>
     {DetailedWork_4}
   </page>
   <page>
+    <div className="section first-page-section"></div>
     <div className="section">
       {Education}
     </div>
@@ -91,8 +92,7 @@ const ResumeDetailed = () => <div>
     </div>
   </page>
   <page>
-    <div className="section first-page-section">
-    </div>
+    <div className="section first-page-section"></div>
     {Scores}
     {Personal}
   </page>
