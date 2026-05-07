@@ -2,7 +2,7 @@ export default <div>
   <p className="heading">Certifications</p>
   <div className="learning-experience">
     <div className="summary">
-      <img className="logo" src="mdbuniv.png" />
+      <img className="logo" src="mdbuniv.png" alt="MongoDB University" />
       <div className="company">
         <div className="company-name-duration">
           <p className="company-name">MONGODB CERTIFIED DEVELOPER AND DBA</p>
@@ -15,7 +15,7 @@ export default <div>
   <div className="separator"></div>
   <div className="learning-experience">
     <div className="summary">
-      <img className="logo" src="aws.png" />
+      <img className="logo" src="aws.png" alt="AWS" />
       <div className="company">
         <div className="company-name-duration">
           <p className="company-name">AWS ASSOCIATE SOLUTIONS ARCHITECT</p>
@@ -28,7 +28,7 @@ export default <div>
   <div className="separator"></div>
   <div className="learning-experience">
     <div className="summary">
-      <img className="logo" src="gcp.png" />
+      <img className="logo" src="gcp.png" alt="GCP" />
       <div className="company">
         <div className="company-name-duration">
           <p className="company-name">GCP PROFESSIONAL CLOUD ARCHITECT</p>
@@ -41,7 +41,7 @@ export default <div>
   <div className="separator"></div>
   <div className="learning-experience">
     <div className="summary">
-      <img className="logo" src="mcsd.png" />
+      <img className="logo" src="mcsd.png" alt="Microsoft Certified Solutions Developer" />
       <div className="company">
         <div className="company-name-duration">
           <p className="company-name">MICROSOFT CERTIFIED SOLUTIONS DEVELOPER</p>

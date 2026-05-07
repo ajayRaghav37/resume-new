@@ -1,7 +1,7 @@
 export default <div><p className="heading">Education</p>
 <div className="learning-experience">
   <div className="summary">
-    <img className="logo" src="rtu.png" />
+    <img className="logo" src="rtu.png" alt="Rajasthan Technical University" />
     <div className="company">
       <div className="company-name-duration">
         <p className="company-name">RAJASTHAN TECHNICAL UNIVERSITY</p>
@@ -16,7 +16,7 @@ export default <div><p className="heading">Education</p>
 <div className="separator"></div>
 <div className="learning-experience">
   <div className="summary">
-    <img className="logo" src="cbse.png" />
+    <img className="logo" src="cbse.png" alt="CBSE" />
     <div className="company">
       <div className="company-name-duration">
         <p className="company-name">CENTRAL BOARD OF SECONDARY EDUCATION</p>

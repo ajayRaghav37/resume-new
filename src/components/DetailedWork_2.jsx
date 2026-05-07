@@ -1,7 +1,7 @@
 export default <div className="section first-page-section">
   <div className="experience">
     <div className="org">
-      <img className="logo" src="soprasteria.png" />
+      <img className="logo" src="soprasteria.png" alt="Sopra Steria" />
       <div className="company">
         <div className="company-name-duration">
           <p className="company-name">SOPRA STERIA</p>
@@ -9,7 +9,7 @@ export default <div className="section first-page-section">
         </div>
         <div className="company-name-duration">
           <p className="company-name normal-font-weight">ARCHITECT</p>
-          <p className="duration normal-font-weight"><img className="award" src="award.png" />5x
+          <p className="duration normal-font-weight"><img className="award" src="award.png" alt="Award" />5x
             STAR OF SOPRA STERIA | 3x EINSTEIN AWARD | CODE NINJA | 5 PROMOTIONS IN 6.5 YEARS
           </p>
         </div>

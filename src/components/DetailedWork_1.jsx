@@ -2,7 +2,7 @@ export default <div className="section">
   <p className="heading">Work Experience</p>
   <div className="experience">
     <div className="org">
-      <img className="logo" src="mdb.png" />
+      <img className="logo" src="mdb.png" alt="MongoDB" />
       <div className="company">
         <div className="company-name-duration">
           <p className="company-name">MONGODB</p>
@@ -10,7 +10,7 @@ export default <div className="section">
         </div>
         <div className="company-name-duration">
           <p className="company-name normal-font-weight">PRE-SALES ADVISORY SOLUTIONS ARCHITECT</p>
-          <p className="duration normal-font-weight"><img className="award" src="award.png" />
+          <p className="duration normal-font-weight"><img className="award" src="award.png" alt="Award" />
             &nbsp;EXCELLENCE CLUB | 5x QUARTERLY SA AWARD
           </p>
         </div>

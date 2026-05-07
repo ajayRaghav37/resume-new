@@ -3,7 +3,7 @@ export default <div className="section"><p className="heading">Learning Experien
   <div className="column vertical-flex">
     <div className="learning-experience">
       <div className="summary">
-        <img className="logo" src="anico.in.png" />
+        <img className="logo" src="anico.in.png" alt="ANICO.IN" />
         <div className="company">
           <div className="company-name-duration">
             <p className="company-name">ANICO.IN</p>
@@ -23,7 +23,7 @@ export default <div className="section"><p className="heading">Learning Experien
   <div className="column vertical-flex">
     <div className="learning-experience">
       <div className="summary">
-        <img className="logo" src="microsoft.png" />
+        <img className="logo" src="microsoft.png" alt="Microsoft" />
         <div className="company">
           <div className="company-name-duration">
             <p className="company-name">MICROSOFT</p>
