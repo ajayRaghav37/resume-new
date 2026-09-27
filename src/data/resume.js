@@ -125,7 +125,7 @@ const resume = {
       title: 'Lead Developer and Architect',
       start: 'Jul 2014',
       end: 'Nov 2021',
-      awards: '5x Star of Sopra Steria | 3x Einstein Award | Code Ninja | 5 promotions in 6.5 years',
+      awards: '5x Star of Sopra Steria | 3x Einstein Award | Code Ninja',
       titles: [
         { title: 'Architect', start: 'Jan 2021', end: 'Nov 2021' },
         { title: 'Senior Product Analyst', start: 'Jan 2019', end: 'Jan 2021' },

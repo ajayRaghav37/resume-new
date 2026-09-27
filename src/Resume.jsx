@@ -82,7 +82,7 @@ const OrgHeader = ({ logo, name, right, title, sub, subRight }) => (
       {(sub || subRight) && (
         <div className="row sub">
           <span>{sub}</span>
-          {subRight && <span className="awards">{subRight}</span>}
+          {subRight && <span>{subRight}</span>}
         </div>
       )}
     </div>
@@ -167,10 +167,7 @@ const ClientGroups = ({ job }) =>
                 <b>
                   {s.name} ({plural(own.length, 'project')})
                 </b>
-                <span className="role">
-                  {' \u2014 '}
-                  {[s.role, range(s.start, s.end)].filter(Boolean).join(', ')}
-                </span>
+                {s.role && <span className="role">{' \u2014 '}{s.role}</span>}
               </p>
               {s.summary && <p>{rich(s.summary)}</p>}
               <ProjectIndex projects={own} />
@@ -208,13 +205,6 @@ const jobSkills = (job) => {
   return out;
 };
 
-const Awards = ({ text }) => (
-  <span className="awards">
-    <img className="icon" src="award.png" alt="" />
-    {text}
-  </span>
-);
-
 const Summary = () =>
   resume.summary ? (
     <section>
@@ -233,8 +223,12 @@ const Experience = ({ detailed }) => (
           name={job.company}
           right={range(job.start, job.end)}
           title={job.title}
-          sub={job.awards && <Awards text={job.awards} />}
         />
+        {job.awards && (
+          <p className="titles">
+            <b>Awards:</b> {job.awards}
+          </p>
+        )}
         <Promotions titles={job.titles} />
         <p className="tools">
           <b>Skills:</b> {jobSkills(job).join(', ')}
@@ -263,19 +257,14 @@ const Experience = ({ detailed }) => (
         <div className="children">
           {job.segments &&
             job.segments.map((s) => (
-              <SubEntry
-                key={s.name}
-                name={`Segment: ${s.name}`}
-                start={s.start}
-                end={s.end}
-                bullets={s.bullets}
-                detailed={detailed}
-              />
+              <SubEntry key={s.name} name={`Segment: ${s.name}`} bullets={s.bullets} detailed={detailed} />
             ))}
 
           {job.projects &&
             detailed &&
-            byRecent(job.projects).map((p) => <SubEntry key={p.name} {...p} name={`Project: ${p.name}`} detailed />)}
+            byRecent(job.projects).map((p) => (
+              <SubEntry key={p.name} {...p} start={undefined} end={undefined} name={`Project: ${p.name}`} detailed />
+            ))}
 
           {job.clients && !detailed && <ClientGroups job={job} />}
         </div>
