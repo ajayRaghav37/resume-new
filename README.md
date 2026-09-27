@@ -2,8 +2,9 @@
 
 All content lives in `src/data/resume.js`. To update the resume, edit that file only; `src/Resume.jsx` renders it.
 
-- `/` is the brief resume, `/detailed` includes every project. Print either with the browser (A4) to produce the PDF.
+- `/` is the brief resume (2 pages), `/detailed` expands every project (4 pages). Print either with the browser (A4) to produce the PDF.
 - Bullets are strings (detailed only) or `{ text, brief }` objects. `brief: true` shows the same text in the brief resume; a string gives shorter wording for it.
+- Every Sopra Steria project has a `client`, optional `stream` and a one-line `brief`. The brief resume groups projects by client and stream (with counts) and shows one line per project; the detailed resume shows the full entry. Learning items likewise carry a `brief` one-liner.
 - `**bold**` and `*italic*` are supported in text.
 - Each company's **Skills** line is derived from the `tools` fields of its segments and projects.
 - Update `lastUpdated` when publishing.

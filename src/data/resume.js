@@ -27,7 +27,6 @@ const resume = {
       { label: 'Instagram', url: 'https://www.instagram.com/ajayRaghav37', icon: 'instagram.ico' },
     ],
     socialHandle: '@ajayRaghav37',
-    youtube: { label: 'YouTube', text: 'PerfectMusicMismatch', url: 'https://www.youtube.com/PerfectMusicMismatch', icon: 'youtube.ico' },
   },
 
   // Aggregates below are derived from the MongoDB segments: NARR 4.3 + 2.2 + 4.7,
@@ -61,6 +60,7 @@ const resume = {
         'Mentor team members and share best practices; define project scope and consulting requirements for seamless hand-offs to post-sales.',
       ],
       responsibilitiesOutro: '**Results by segment, most recent first.**',
+      sectors: ['Finance', 'Retail', 'Gaming', 'Media', 'Travel (airline)', 'Energy', 'Education', 'Telco', 'Insurance'],
       segments: [
         {
           name: 'Enterprise (Growth)',
@@ -71,8 +71,14 @@ const resume = {
           bullets: [
             { text: 'Aligned to 1 AE; **196% attainment over 5 quarters** (FY26 Q2 – FY27 Q2).', brief: true },
             { text: "**$4.3M NARR** from 37 opportunities across 27 accounts; became the team's Retail SME.", brief: true },
-            'Prevented **$3.1M+ churn** in crucial accounts against Firestore, Percona and MongoDB Community, averting cascading losses.',
-            'Displaced DynamoDB, CosmosDB and AstraDB as primary databases; migrated customers from Elasticsearch to Atlas Search, one now the second-largest Atlas Search customer in APAC.',
+            {
+              text: 'Prevented **$3.1M+ churn** in crucial accounts against Firestore, Percona and MongoDB Community, averting cascading losses.',
+              brief: 'Prevented **$3.1M+ churn** against Firestore, Percona and MongoDB Community.',
+            },
+            {
+              text: 'Displaced DynamoDB, CosmosDB and AstraDB as primary databases; migrated customers from Elasticsearch to Atlas Search, one now the second-largest Atlas Search customer in APAC.',
+              brief: "Displaced DynamoDB, CosmosDB, AstraDB and Elasticsearch; drove APAC's first Atlas Stream Processing and Voyage AI adoptions.",
+            },
             "Drove APAC's first adoptions of Atlas Stream Processing and the Voyage AI integration.",
             { text: 'Built reusable assets for competitive comparison, sales forecasting, account intelligence and live-transcription-based discovery suggestions.', brief: true },
           ],
@@ -86,7 +92,10 @@ const resume = {
           bullets: [
             { text: 'Aligned to 2 AEs; **248% average attainment over 6 quarters** (FY24 Q4 – FY26 Q1).', brief: true },
             { text: '**$2.2M NARR** from 32 new logos across 71 accounts, including two $700K+ deals in one year; most workloads closed in APAC (54).', brief: true },
-            'Won mostly new-application launches alongside migrations from DocumentDB, MongoDB Community and CosmosDB; replaced MySQL in a market-intelligence platform.',
+            {
+              text: 'Won mostly new-application launches alongside migrations from DocumentDB, MongoDB Community and CosmosDB; replaced MySQL in a market-intelligence platform.',
+              brief: 'Won new-application launches and migrations from DocumentDB, MongoDB Community, CosmosDB and MySQL.',
+            },
             { text: 'Became the Media SME after closing four deals in Indian print and digital media.', brief: 'Became the Media SME.' },
             {
               text: 'Built champions in almost every account; created reusable assets for cost optimization, sizing, pricing, TCO estimation, competition and integrations.',
@@ -104,7 +113,7 @@ const resume = {
             { text: 'Aligned to 5–8 AEs; **240% average attainment over 8 quarters** (FY22 Q4 – FY24 Q3).', brief: true },
             { text: '**$4.7M NARR** from 73 opportunities across 200+ accounts.', brief: true },
             { text: 'Became the Gaming SME by closing two major gaming deals.', brief: 'Became the Gaming SME.' },
-            'Closed 20 acquisition deals of $50K+ across industries; eight have since grown into $600K+ accounts.',
+            { text: 'Closed 20 acquisition deals of $50K+ across industries; eight have since grown into $600K+ accounts.', brief: true },
             'Built strong champions by drawing on an application-development background.',
           ],
         },
@@ -125,15 +134,14 @@ const resume = {
         { title: 'Software Engineer', start: 'Jul 2015', end: 'Jan 2017' },
         { title: 'Software Engineer Trainee', start: 'Jul 2014', end: 'Jul 2015' },
       ],
-      notes: [
-        'Delivered 17 projects over 7.5 years, many in parallel, across the Digital Transformation practice and a European airline account.',
-        '**Projects worked on, most recent first.**',
-      ],
-      // Brief resume: streams grouped by client.
-      groups: [
+      notes: ['Delivered 17 projects over 7.5 years, many in parallel, across the Digital Transformation practice and a European airline account.'],
+      projectsLeadIn: '**Projects worked on, most recent first.**',
+      // Brief resume groups projects by client and stream. A project belongs to
+      // a stream via `stream`, or directly to a client via `client`.
+      clients: [
         {
           name: 'Digital Transformation',
-          items: [
+          streams: [
             {
               name: 'AI/ML Stream',
               start: 'Mar 2017',
@@ -149,42 +157,22 @@ const resume = {
               end: 'May 2017',
               role: 'App Developer and Azure Administrator',
               tools: 'C#, WPF, App Services, Notification Hub, MSSQL, JavaScript, HTML, CSS, Apache Cordova',
-              summary:
-                'Built enterprise Windows Phone and hybrid apps for event management and field-technician job tracking, with barcode scanning and push notifications.',
             },
           ],
         },
-        {
-          name: 'European Airline',
-          items: [
-            {
-              name: 'Future Commercial Platform',
-              start: 'Jan 2016',
-              end: 'Apr 2016',
-              role: 'Business System Analyst',
-              tools: 'Visio, Draw.io, MSSQL',
-              summary: "Performed technical and functional analysis of the airline's business systems for its transformation programme.",
-            },
-            {
-              name: 'VAT Invoicing',
-              start: 'Sep 2014',
-              end: 'Dec 2015',
-              role: 'Development Engineer and Business Analyst',
-              tools: 'C#, Windows Service, MSSQL, Visual Studio, Agile, TFS',
-              summary:
-                'Reverse-engineered invoices for billions of bookings across countries for tax compliance; delivered **99.2% accuracy at 10ms/booking** against SLAs of 98% and 150ms.',
-            },
-          ],
-        },
+        { name: 'European Airline', streams: [] },
       ],
-      // Detailed resume: every project.
+      // Every project. `brief` is the one-line highlight used by the brief resume.
       projects: [
         {
           name: 'Alive Intelligence',
+          client: 'Digital Transformation',
+          stream: 'AI/ML Stream',
           start: 'Jul 2019',
           end: 'Nov 2021',
           role: 'Architect | UI/UX Expert',
           tools: 'Node.js, React.js, MongoDB, Express.js, Microservices, GitLab, OpenShift',
+          brief: 'Unified 7 AI assets into one contact-center SaaS; **5M+ users**, **€10M+** won; led 12 developers.',
           summary:
             'Unified the AI/ML assets (Masterbot, Botify.kit, Smart Search, Ticket Prediction, Ontofy, Live Chat, Automatic Test) into one SaaS platform powering AI-enabled contact centers. **5M+ users**; won **€10M+** for Sopra Steria.',
           bullets: [
@@ -195,10 +183,13 @@ const resume = {
         },
         {
           name: 'Smart Search',
+          client: 'Digital Transformation',
+          stream: 'AI/ML Stream',
           start: 'Jan 2019',
           end: 'Nov 2021',
           role: 'Architect | Algorithm Specialist | Development Lead',
           tools: 'Python, Node.js, React.js, MongoDB, Express.js, GitLab, Keycloak, OpenShift, JMeter',
+          brief: 'BERT-based enterprise search answering in **under 1s**; 5 customers, 45K employees; led 25 developers.',
           summary:
             'Enterprise search across large document corpora with smart suggestions, FastText paragraph extraction and BERT short answers; sources included SharePoint, JIVE, JIRA and local repositories. Returned relevant documents and paragraphs in **under 1 second** at ~100 concurrent users.',
           bullets: [
@@ -209,10 +200,13 @@ const resume = {
         },
         {
           name: 'Live Chat',
+          client: 'Digital Transformation',
+          stream: 'AI/ML Stream',
           start: 'Mar 2019',
           end: 'Nov 2021',
           role: 'Architect | Development Lead',
           tools: 'Node.js, React.js, MySQL, PHP, GitLab, Keycloak, OpenShift',
+          brief: 'Bot-to-operator hand-off with WebRTC cobrowsing; PHP/MySQL → Node.js/MongoDB; led 8 developers.',
           summary:
             'Cross-platform operator hand-off for chatbot users, with seamless bot integration, cobrowsing, fair queue management and context carry-over.',
           bullets: [
@@ -222,10 +216,12 @@ const resume = {
         },
         {
           name: 'Azure Subscription',
+          client: 'Digital Transformation',
           start: 'May 2015',
           end: 'Nov 2021',
           role: 'Subscription Owner | Configuration Manager',
           tools: 'PowerShell',
+          brief: "Owned the team's Azure subscription; led 3 DevOps engineers; provisioned 60+ VMs in COVID.",
           summary: "Owned the Digital team's Azure subscription for VMs, app services, cognitive services and other resources.",
           bullets: [
             'Led 3 DevOps engineers managing the infrastructure.',
@@ -234,10 +230,13 @@ const resume = {
         },
         {
           name: 'AFC Sandbox',
+          client: 'Digital Transformation',
+          stream: 'AI/ML Stream',
           start: 'Jun 2021',
           end: 'Nov 2021',
           role: 'Architect | Development Lead | UI/UX Expert | Product Owner',
           tools: 'Python, Angular, Vue.js, Bokeh, Leaflet, GitLab, OpenShift',
+          brief: "Anti-financial-crime dashboard charting a bank's transaction-monitoring alerts; led 3 developers.",
           summary:
             "Anti-Financial-Crime dashboard that monitors transactions and customer behaviour for suspicious activity, charting a bank's transaction-monitoring systems (customers, accounts and transactions under watch, indicator hits, alerts) and plotting alerts on a map.",
           bullets: [
@@ -247,19 +246,25 @@ const resume = {
         },
         {
           name: 'Global Assets Showcase',
+          client: 'Digital Transformation',
+          stream: 'AI/ML Stream',
           start: 'Dec 2020',
           end: 'Mar 2021',
           role: 'Architect | Individual Contributor | UI/UX Expert',
           tools: 'Azure Functions, React.js, Cosmos DB, Azure Storage, GitLab, Keycloak',
+          brief: 'Solo-built serverless SaaS showcase for 32 AI/ML, Blockchain and IoT assets.',
           summary: 'Low-cost SaaS showcase for the AI/ML, Blockchain and IoT product portfolio.',
           bullets: ['Solo-built the platform and onboarded 32 assets with database design and technical documentation.'],
         },
         {
           name: 'Unified Billing Portal',
+          client: 'Digital Transformation',
+          stream: 'AI/ML Stream',
           start: 'Jun 2020',
           end: 'Aug 2020',
           role: 'Architect | UI/UX Expert | Development Lead | Product Owner',
           tools: 'Node.js, React.js, MongoDB, Express.js, Microservices, GitLab, Keycloak, OpenShift',
+          brief: 'Multitenant billing portal with a rules engine for all internal assets; led 3 developers.',
           summary: 'Multitenant billing portal for all internal assets, with a rules engine for complex billing and invoicing.',
           bullets: [
             'Led 3 developers; architected the platform and rules engine.',
@@ -268,19 +273,25 @@ const resume = {
         },
         {
           name: 'SSO Digital',
+          client: 'Digital Transformation',
+          stream: 'AI/ML Stream',
           start: 'Apr 2020',
           end: 'Apr 2020',
           role: 'Architect | Configuration Manager | Individual Contributor',
           tools: 'Keycloak, OpenShift',
+          brief: 'Keycloak-based single sign-on adopted by every product in the team.',
           summary: 'Keycloak-based single sign-on adopted by every product in the team.',
           bullets: [],
         },
         {
           name: 'Ontofy 2.0',
+          client: 'Digital Transformation',
+          stream: 'AI/ML Stream',
           start: 'Mar 2020',
           end: 'Oct 2020',
           role: 'Architect | Algorithm Specialist | UI/UX Expert | Product Owner',
           tools: 'Python, Java, Node.js, React.js, MongoDB, Express.js, GitLab, Keycloak, OpenShift',
+          brief: 'Ontology tool: **80%** less manual effort, **1400%** better quality, **6–550%** ahead of Cogito and IBM Watson.',
           summary:
             'Rebuilt the semi-automatic ontology tool with knowledge-graph support, cutting manual effort by **80%** and improving quality **1400%**.',
           bullets: [
@@ -290,20 +301,26 @@ const resume = {
         },
         {
           name: 'Live Speech Translation',
+          client: 'Digital Transformation',
+          stream: 'AI/ML Stream',
           start: 'Oct 2019',
           end: 'Jan 2020',
           role: 'Consultant | Developer',
           tools: 'Azure Speech to Text, Azure Translator, Node.js, React.js, MongoDB, GitLab, OpenShift',
+          brief: 'Real-time multilingual speech rooms via WebSockets and Azure Speech/Translator.',
           summary:
             'Let geographically distributed teams speak, hear and read in their own language while others use a different one.',
           bullets: ['Implemented WebSocket rooms for real-time translation and cut cost by using browser APIs.'],
         },
         {
           name: 'Automatic Test',
+          client: 'Digital Transformation',
+          stream: 'AI/ML Stream',
           start: 'Dec 2018',
           end: 'Sep 2019',
           role: 'Architect | Developer | UI/UX Expert | Product Owner',
           tools: 'Node.js, React.js, MongoDB, GitLab, Keycloak, OpenShift',
+          brief: 'Chatbot test automation, **22x** less effort; template reused by 8+ assets; led 12 developers.',
           summary:
             'Cross-platform chatbot test automation that detects classifier regressions, records test cases and generates them from conversation trees, cutting manual effort **22x**.',
           bullets: [
@@ -313,10 +330,13 @@ const resume = {
         },
         {
           name: 'Botify.kit',
+          client: 'Digital Transformation',
+          stream: 'AI/ML Stream',
           start: 'Oct 2017',
           end: 'Jan 2018',
           role: 'Development Lead | UI/UX Expert',
           tools: 'Node.js, React.js, MongoDB, GitLab',
+          brief: 'Integrated Botify with the IK Bot assistant; **20% better** than LivingActor and Recast.ai; led 5 developers.',
           summary: 'Integrated Botify with IK Bot, a French-built virtual-assistant tool supporting complex conversation trees.',
           bullets: [
             'Led 5 developers; migrated MSSQL → MongoDB and implemented cross-origin communication.',
@@ -325,10 +345,13 @@ const resume = {
         },
         {
           name: 'Botify',
+          client: 'Digital Transformation',
+          stream: 'AI/ML Stream',
           start: 'Feb 2017',
           end: 'Sep 2017',
           role: 'Architect | Algorithm Expert | Developer | UI/UX Expert | Product Owner',
           tools: 'Node.js, Lync SDK, MSSQL, IBM Bluemix, Elastic Search, HTML, JavaScript, CSS, VSTS',
+          brief: 'Turned documents into FAQ bots, cutting SME effort up to **80%** vs IBM Watson Assistant; led 6 developers.',
           summary: 'Converted documents into FAQ bots, cutting SME effort by up to **80%** versus IBM Watson Assistant.',
           bullets: [
             'Led 6 developers; designed the database, UI and text-mining algorithms for intent, entity and answer detection.',
@@ -337,10 +360,13 @@ const resume = {
         },
         {
           name: 'Project Ekho',
+          client: 'Digital Transformation',
+          stream: 'Mobility Stream',
           start: 'Oct 2016',
           end: 'May 2017',
           role: 'Developer',
           tools: 'Apache Cordova, HTML, JavaScript, CSS, Azure Notification Hub',
+          brief: 'Cross-platform barcode scanning and push notifications for a telco field-technician app.',
           summary: 'Cross-platform barcode scanning and push notifications for a telco job-management site used by on-site technicians.',
           bullets: [
             'Implemented scanning (Quagga.js) and notifications (Firebase, Azure Notification Hub).',
@@ -349,20 +375,25 @@ const resume = {
         },
         {
           name: 'Future Commercial Platform',
+          client: 'European Airline',
           start: 'Jan 2016',
           end: 'Apr 2016',
           role: 'Business Analyst',
           tools: 'Visio, Draw.io, MSSQL',
+          brief: "Analyzed and documented the airline's booking, cancellation and invoicing systems.",
           summary:
             "Modernization programme for a European airline whose outsourced legacy systems lacked documentation; produced the technical documentation of the current systems.",
           bullets: ['Analyzed the booking, cancellation and invoicing systems and documented them.'],
         },
         {
           name: 'Sopra Steria Events',
+          client: 'Digital Transformation',
+          stream: 'Mobility Stream',
           start: 'Jan 2015',
           end: 'Feb 2017',
           role: 'Developer | UI/UX Expert | Individual Contributor',
           tools: 'WPF, C#, Azure App Services, MSSQL, JavaScript, HTML, CSS, VSTS',
+          brief: 'Windows Phone/UWP and hybrid event-management app with alerts and geofencing.',
           summary: 'Enterprise event-management app with attendee lists, schedules, activity alerts and geofencing.',
           bullets: [
             'Built the Windows Phone/UWP app with session management.',
@@ -371,10 +402,12 @@ const resume = {
         },
         {
           name: 'VAT Invoicing',
+          client: 'European Airline',
           start: 'Sep 2014',
           end: 'Dec 2015',
           role: 'Developer | Business Analyst',
-          tools: 'C#, Windows Service, MSSQL, VSTS',
+          tools: 'C#, Windows Service, MSSQL, Visual Studio, Agile, TFS, VSTS',
+          brief: 'Tax invoices for billions of bookings; **99.2% accuracy at 10ms/booking** vs SLAs of 98% and 150ms.',
           summary:
             'Reverse-engineered invoices for billions of bookings across countries to ensure tax compliance for a European airline. Delivered **99.2% accuracy at 10ms/booking** against SLAs of 98% and 150ms.',
           bullets: [
@@ -432,33 +465,34 @@ const resume = {
     ],
   },
 
-  // `brief: true` entries also appear in the brief resume.
+  // The brief resume lists every entry as a one-liner; the detailed resume uses full entries.
   learning: {
     title: 'Learning Experience',
     subtitle: '(Unpaid and non-profit)',
     items: [
       {
         name: 'Anico.in',
+        brief: 'Built 40+ apps in internet security, media and enterprise feedback management; OpenSoft finalist, Kshitij IIT Kharagpur 2011. Skills: Visual Basic, VB.NET, VB Script, C, Microsoft Office.',
         logo: 'anico.in.png',
         role: 'Cofounder and Open Source Evangelist',
         start: 'Feb 2009',
         end: 'Jun 2014',
-        brief: true,
         summary:
           'Built 40+ applications spanning internet security, media management and enterprise feedback management. OpenSoft finalist at Kshitij, IIT Kharagpur, 2011. Strong competency in **Visual Basic**, **VB.NET**, **VB Script**, **C** and **Microsoft Office**.',
       },
       {
         name: 'Microsoft',
+        brief: 'Campus evangelist, built Windows 8 apps; **ranked #1 globally** in round 1 of Imagine Cup 2012.',
         logo: 'microsoft.png',
         role: 'Student Partner',
         start: 'Dec 2012',
         end: 'Jun 2014',
-        brief: true,
         summary:
           'Evangelized Microsoft technologies on campus through presentations and sessions; built Windows 8 apps. **Ranked #1 globally** in round 1 of Microsoft Imagine Cup 2012.',
       },
       {
         name: 'Augpace',
+        brief: 'Invented AURAmarker, an augmented-reality marker storing far more data than QR codes.',
         logo: 'augpace.png',
         role: 'Cofounder and CTO',
         start: 'Jun 2012',
@@ -467,6 +501,7 @@ const resume = {
       },
       {
         name: 'Chessamo',
+        brief: 'Designed and programmed an online chess website.',
         logo: 'chessamo.png',
         role: 'Cofounder',
         start: 'Jun 2013',
@@ -475,6 +510,7 @@ const resume = {
       },
       {
         name: 'nanoWE',
+        brief: 'Metro app prototype; pitched at the Global Entrepreneurship Summit, IIT Kharagpur, 2012.',
         logo: 'nanowe.png',
         role: 'Developer and Social Media Manager',
         start: 'Jan 2012',
@@ -483,6 +519,7 @@ const resume = {
       },
       {
         name: 'SWAT',
+        brief: 'Students Working for Advanced Technology, a college community for technical competency.',
         logo: 'swat.png',
         role: 'Cofounder and President',
         start: 'May 2013',
@@ -491,6 +528,7 @@ const resume = {
       },
       {
         name: 'C.E.O',
+        brief: "Led 30 colleagues in the creativity department of the college's entrepreneurship cell.",
         logo: 'ceo.png',
         role: 'Vice President',
         start: 'Aug 2011',

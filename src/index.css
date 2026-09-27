@@ -1,5 +1,6 @@
 :root {
   --accent: rgb(0, 130, 153);
+  --link: #1a7a37;
   --text: #333;
   --muted: #666;
   --rule: #d5dfe2;
@@ -22,7 +23,8 @@ body {
 }
 
 a {
-  color: var(--accent);
+  color: var(--link);
+  text-decoration: none;
 }
 
 p {
@@ -41,6 +43,15 @@ li {
 ul.plain {
   list-style: none;
   padding-left: 0;
+}
+
+/* Compact one-line-per-item lists used by the brief resume. */
+ul.index {
+  padding-left: 16px;
+}
+
+ul.index li {
+  margin: 1px 0;
 }
 
 h1,
@@ -184,7 +195,6 @@ h3 {
 
 .header {
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--accent);
 }
 
 .icon {
@@ -278,13 +288,22 @@ dl.kv dd {
 /* Print */
 @page {
   size: A4;
-  margin: 9mm 11mm;
+  margin: 8mm 11mm;
 }
 
 @media print {
   html {
     font-size: 9pt;
-    line-height: 1.28;
+    line-height: 1.26;
+  }
+
+  ul.index {
+    padding-left: 12px;
+    font-size: 8.5pt;
+  }
+
+  ul.index li {
+    margin: 0.5pt 0;
   }
 
   .role,
@@ -316,6 +335,14 @@ dl.kv dd {
     margin: 5px 0 2px 2px;
   }
 
+  .group {
+    margin-top: 4px;
+  }
+
+  .group-name {
+    margin-top: 5px;
+  }
+
   body {
     background: #fff;
   }
@@ -332,7 +359,7 @@ dl.kv dd {
   }
 
   a {
-    color: inherit;
+    color: var(--link);
     text-decoration: none;
   }
 
@@ -355,7 +382,7 @@ dl.kv dd {
 
   h2 {
     font-size: 12pt;
-    margin: 5pt 0 2pt;
+    margin: 4pt 0 2pt;
   }
 
   section ul,

@@ -65,13 +65,6 @@ const Header = () => {
           ))}
           {contact.socialHandle}
         </span>
-        <span className="contact-item">
-          {' | '}
-          <a href={contact.youtube.url} target="_blank" rel="noreferrer" title={contact.youtube.label}>
-            <img className="icon" src={contact.youtube.icon} alt={contact.youtube.label} />
-            {contact.youtube.text}
-          </a>
-        </span>
       </p>
     </header>
   );
@@ -133,6 +126,71 @@ const stamp = (d) => {
 const byRecent = (items) =>
   [...items].sort((a, b) => stamp(b.end) - stamp(a.end) || stamp(b.start) - stamp(a.start));
 
+// "2019–21", "2020" or "2015–Present".
+const years = (start, end) => {
+  const y1 = start.split(' ')[1];
+  if (!end || end === start) return y1;
+  if (end === 'Present') return `${y1}–Present`;
+  const y2 = end.split(' ')[1];
+  return y1 === y2 ? y1 : `${y1}–${y2.slice(2)}`;
+};
+
+const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
+
+// One line per project: name, years and the brief highlight.
+const ProjectIndex = ({ projects }) =>
+  projects.length ? (
+    <ul className="index">
+      {byRecent(projects).map((p) => (
+        <li key={p.name}>
+          <b>{p.name}</b> ({years(p.start, p.end)}) — {rich(p.brief)}
+        </li>
+      ))}
+    </ul>
+  ) : null;
+
+// Brief resume: projects grouped by client, then stream.
+const ClientGroups = ({ job }) =>
+  job.clients.map((c) => {
+    const inClient = job.projects.filter((p) => p.client === c.name);
+    const loose = inClient.filter((p) => !p.stream);
+    return (
+      <div key={c.name} className="group">
+        <p className="group-name">
+          Client: {c.name} ({plural(inClient.length, 'project')})
+        </p>
+        {c.streams.map((s) => {
+          const own = inClient.filter((p) => p.stream === s.name);
+          return (
+            <div key={s.name} className="entry">
+              <p className="subhead">
+                <b>
+                  {s.name} ({plural(own.length, 'project')})
+                </b>
+                <span className="role">
+                  {' \u2014 '}
+                  {[s.role, range(s.start, s.end)].filter(Boolean).join(', ')}
+                </span>
+              </p>
+              {s.summary && <p>{rich(s.summary)}</p>}
+              <ProjectIndex projects={own} />
+            </div>
+          );
+        })}
+        {loose.length > 0 && (
+          <div className="entry">
+            {c.streams.length > 0 && (
+              <p className="subhead">
+                <b>Other ({plural(loose.length, 'project')})</b>
+              </p>
+            )}
+            <ProjectIndex projects={loose} />
+          </div>
+        )}
+      </div>
+    );
+  });
+
 const jobSkills = (job) => {
   const seen = new Set();
   const out = [];
@@ -145,7 +203,7 @@ const jobSkills = (job) => {
       }
     });
   (job.segments || []).forEach((s) => add(s.tools));
-  (job.groups || []).forEach((g) => g.items.forEach((i) => add(i.tools)));
+  (job.clients || []).forEach((c) => c.streams.forEach((s) => add(s.tools)));
   (job.projects || []).forEach((p) => add(p.tools));
   return out;
 };
@@ -181,6 +239,11 @@ const Experience = ({ detailed }) => (
         <p className="tools">
           <b>Skills:</b> {jobSkills(job).join(', ')}
         </p>
+        {job.sectors && (
+          <p className="tools">
+            <b>Sectors:</b> {job.sectors.join(', ')}
+          </p>
+        )}
 
         {job.segments && !detailed && <p>{job.summary}</p>}
         {job.segments && detailed && (
@@ -194,7 +257,8 @@ const Experience = ({ detailed }) => (
           </>
         )}
         {job.segments && <p>{rich(job.responsibilitiesOutro)}</p>}
-        {job.projects && detailed && job.notes.map((n) => <p key={n}>{rich(n)}</p>)}
+        {job.notes && job.notes.map((n) => <p key={n}>{rich(n)}</p>)}
+        {job.projects && detailed && <p>{rich(job.projectsLeadIn)}</p>}
 
         <div className="children">
           {job.segments &&
@@ -213,42 +277,57 @@ const Experience = ({ detailed }) => (
             detailed &&
             byRecent(job.projects).map((p) => <SubEntry key={p.name} {...p} name={`Project: ${p.name}`} detailed />)}
 
-          {job.groups &&
-            !detailed &&
-            job.groups.map((g) => (
-              <div key={g.name} className="group">
-                <p className="group-name">Client: {g.name}</p>
-                {g.items.map((it) => (
-                  <SubEntry key={it.name} {...it} name={`Project: ${it.name}`} detailed={false} />
-                ))}
-              </div>
-            ))}
+          {job.clients && !detailed && <ClientGroups job={job} />}
         </div>
       </div>
     ))}
   </section>
 );
 
-const Education = () => (
+// Brief resume: one row per item with the logo as an inline icon.
+const CompactRow = ({ logo, name, start, end, when, rest }) => (
+  <li>
+    {logo && <img className="icon" src={logo} alt="" />}
+    <b>{name}</b> ({when || range(start, end)}) — {rest}
+  </li>
+);
+
+const Education = ({ detailed }) => (
   <section>
     <h2>Education</h2>
-    {resume.education.map((e) => (
-      <div className="entry" key={e.institution}>
-        <OrgHeader logo={e.logo} name={e.institution} right={range(e.start, e.end)} sub={e.detail} />
-        <p>{e.summary}</p>
-      </div>
-    ))}
+    {detailed ? (
+      resume.education.map((e) => (
+        <div className="entry" key={e.institution}>
+          <OrgHeader logo={e.logo} name={e.institution} right={range(e.start, e.end)} sub={e.detail} />
+          <p>{e.summary}</p>
+        </div>
+      ))
+    ) : (
+      <ul className="index">
+        {resume.education.map((e) => (
+          <CompactRow key={e.institution} {...e} name={e.institution} rest={`${e.summary} ${e.detail}.`} />
+        ))}
+      </ul>
+    )}
   </section>
 );
 
-const Certifications = () => (
+const Certifications = ({ detailed }) => (
   <section>
     <h2>Certifications</h2>
-    {resume.certifications.map((c) => (
-      <div className="entry" key={c.name}>
-        <OrgHeader logo={c.logo} name={c.name} right={range(c.start, c.end)} sub={c.detail} />
-      </div>
-    ))}
+    {detailed ? (
+      resume.certifications.map((c) => (
+        <div className="entry" key={c.name}>
+          <OrgHeader logo={c.logo} name={c.name} right={range(c.start, c.end)} sub={c.detail} />
+        </div>
+      ))
+    ) : (
+      <ul className="index">
+        {resume.certifications.map((c) => (
+          <CompactRow key={c.name} {...c} rest={c.detail} />
+        ))}
+      </ul>
+    )}
   </section>
 );
 
@@ -264,18 +343,35 @@ const Research = () => (
 );
 
 const Learning = ({ detailed }) => {
-  const items = resume.learning.items.filter((i) => detailed || i.brief);
+  const { title, subtitle, items } = resume.learning;
   return (
     <section>
       <h2>
-        {resume.learning.title} <span className="subtitle">{resume.learning.subtitle}</span>
+        {title} <span className="subtitle">{subtitle}</span>
       </h2>
-      {items.map((l) => (
-        <div className="entry" key={l.name}>
-          <OrgHeader logo={l.logo} name={l.name} right={range(l.start, l.end)} sub={l.role} />
-          <p>{rich(l.summary)}</p>
-        </div>
-      ))}
+      {detailed ? (
+        items.map((l) => (
+          <div className="entry" key={l.name}>
+            <OrgHeader logo={l.logo} name={l.name} right={range(l.start, l.end)} sub={l.role} />
+            <p>{rich(l.summary)}</p>
+          </div>
+        ))
+      ) : (
+        <ul className="index">
+          {byRecent(items).map((l) => (
+            <CompactRow
+              key={l.name}
+              {...l}
+              when={years(l.start, l.end)}
+              rest={
+                <>
+                  {l.role}. {rich(l.brief)}
+                </>
+              }
+            />
+          ))}
+        </ul>
+      )}
     </section>
   );
 };
@@ -324,8 +420,8 @@ export default function Resume({ detailed = false }) {
       <Header />
       <Summary />
       <Experience detailed={detailed} />
-      <Education />
-      <Certifications />
+      <Education detailed={detailed} />
+      <Certifications detailed={detailed} />
       <Research />
       <Learning detailed={detailed} />
       <Scores />
