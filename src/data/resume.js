@@ -11,7 +11,7 @@ const resume = {
   headline: 'Pre-Sales Advisory Solutions Architect',
   lastUpdated: 'September 27, 2026',
   site: 'https://ajayraghav37.vercel.app',
-  location: 'Greater Noida, India',
+  location: 'Gurugram/Delhi NCR, India',
   contact: {
     email: 'ajay.raghav@hotmail.com',
     phones: ['+91 9643899538', '+91 9660991612'],
@@ -33,7 +33,7 @@ const resume = {
   // Aggregates below are derived from the MongoDB segments: NARR 4.3 + 2.2 + 4.7,
   // opportunities 37 + 32 + 73, largest team led at Sopra Steria = 25.
   summary:
-    'Pre-sales Solutions Architect with 12+ years in software, including nearly five at MongoDB serving enterprise and digital-native accounts across APAC. Contributed to **$11.2M NARR** across 140+ opportunities, with aligned AEs attaining **196–248%** of quota, and prevented **$3.1M+** in churn. Previously led teams of up to 25 developers at Sopra Steria building a **€10M+** AI/ML product suite. MongoDB, AWS and GCP certified.',
+    'Pre-sales Solutions Architect with 12+ years in software, including nearly five at MongoDB serving enterprise and digital-native accounts in India. Contributed to **$11.2M NARR** across 140+ opportunities, with aligned AEs attaining **196–248%** of quota, and prevented **$3.1M+** in churn. Previously led teams of up to 25 developers at Sopra Steria building a **€10M+** AI/ML product suite. MongoDB, AWS and GCP certified.',
 
   experience: [
     {
@@ -42,7 +42,7 @@ const resume = {
       title: 'Pre-Sales Advisory Solutions Architect',
       start: 'Nov 2021',
       end: 'Present',
-      awards: 'Excellence Club | 5x Quarterly SA Award',
+      awards: 'Excellence Club | 5x Quarterly SA Award | Global Hackathon Runners-up',
       titles: [
         { title: 'Advisory Solutions Architect', start: 'Aug 2025', end: 'Present' },
         { title: 'Senior Solutions Architect', start: 'Feb 2024', end: 'Jul 2025' },
@@ -60,7 +60,7 @@ const resume = {
         'Serve as the feedback loop between the field and Product Management so market trends inform the roadmap.',
         'Mentor team members and share best practices; define project scope and consulting requirements for seamless hand-offs to post-sales.',
       ],
-      responsibilitiesOutro: 'Results by segment:',
+      responsibilitiesOutro: '**Results by segment, most recent first.**',
       segments: [
         {
           name: 'Enterprise (Growth)',
@@ -92,7 +92,6 @@ const resume = {
               text: 'Built champions in almost every account; created reusable assets for cost optimization, sizing, pricing, TCO estimation, competition and integrations.',
               brief: 'Built reusable assets for cost optimization, sizing, pricing, TCO estimation, competition and integrations.',
             },
-            { text: "Runners-up in MongoDB's global AI hackathon.", brief: true },
           ],
         },
         {
@@ -126,7 +125,10 @@ const resume = {
         { title: 'Software Engineer', start: 'Jul 2015', end: 'Jan 2017' },
         { title: 'Software Engineer Trainee', start: 'Jul 2014', end: 'Jul 2015' },
       ],
-      notes: ['Delivered 17 projects over 7.5 years, many in parallel, across the Digital Transformation practice and a European airline account.'],
+      notes: [
+        'Delivered 17 projects over 7.5 years, many in parallel, across the Digital Transformation practice and a European airline account.',
+        '**Projects worked on, most recent first.**',
+      ],
       // Brief resume: streams grouped by client.
       groups: [
         {
@@ -499,7 +501,7 @@ const resume = {
   },
 
   scores: [
-    { exam: 'GRE', score: '326/340', note: 'section-wise best', details: [['Quantitative', '169/170'], ['Verbal', '158/170'], ['Analytical writing', '4.5/6']] },
+    { exam: 'GRE', score: '327/340', note: 'section-wise best', details: [['Quantitative', '169/170'], ['Verbal', '158/170'], ['Analytical writing', '4.5/6']] },
     { exam: 'TOEFL', score: '113/120', details: [['Listening', '30/30'], ['Speaking', '29/30'], ['Reading', '29/30'], ['Writing', '25/30']] },
     { exam: 'IELTS', score: '7.5/9', details: [['Listening', '8.5/9'], ['Speaking', '7.5/9'], ['Reading', '7.5/9'], ['Writing', '7/9']] },
     { exam: 'CAT', score: '96.2 percentile', details: [['Quantitative', '93.96'], ['Verbal', '94.27']] },
@@ -507,13 +509,10 @@ const resume = {
   ],
 
   personal: [
-    { label: 'Date of birth', value: '16 May 1991' },
     { label: 'Languages', value: 'Fluent in Hindi and English' },
     { label: 'Hobbies', value: 'Recreational mathematics, cricket, table tennis, travelling, programming, chess and music.' },
     { label: 'Active visas', value: 'USA R B1/B2 (exp. 2028), Singapore MJV (exp. 2028)' },
-    { label: 'Past visas', value: 'Schengen tourist, UK visitor' },
-    { label: 'Permanent address', value: 'B-279, Alpha 1, Greater Noida' },
-    { label: 'Other', value: 'Indian | Male | Married', icon: 'india.png' },
+    { label: 'Past visas', value: "Schengen Type C (France, Finland), UK Type C, Ireland Short Stay 'C' (Business)" },
   ],
 };
 

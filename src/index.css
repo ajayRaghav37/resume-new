@@ -70,11 +70,18 @@ h3 {
   text-transform: uppercase;
 }
 
-h4 {
-  font-size: 13px;
-  color: var(--accent);
-  font-family: sans-serif;
+.job-title {
+  margin: 1px 0 0;
   font-weight: 700;
+  font-size: 13.5px;
+}
+
+.subhead {
+  margin: 0;
+}
+
+.subhead .role {
+  font-weight: normal;
 }
 
 .subtitle {
@@ -365,13 +372,15 @@ dl.kv dd {
     font-size: 10.5pt;
   }
 
-  h4 {
+  .job-title,
+  .subhead {
     font-size: 9.5pt;
   }
 
   h2,
   h3,
-  h4,
+  .job-title,
+  .subhead,
   .role,
   .tools,
   .titles,

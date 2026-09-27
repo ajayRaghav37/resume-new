@@ -77,7 +77,7 @@ const Header = () => {
   );
 };
 
-const OrgHeader = ({ logo, name, right, sub, subRight }) => (
+const OrgHeader = ({ logo, name, right, title, sub, subRight }) => (
   <div className="org-header">
     {logo && <img className="logo" src={logo} alt="" />}
     <div className="grow">
@@ -85,6 +85,7 @@ const OrgHeader = ({ logo, name, right, sub, subRight }) => (
         <h3>{name}</h3>
         {right && <span className="dates">{right}</span>}
       </div>
+      {title && <p className="job-title">{title}</p>}
       {(sub || subRight) && (
         <div className="row sub">
           <span>{sub}</span>
@@ -95,13 +96,13 @@ const OrgHeader = ({ logo, name, right, sub, subRight }) => (
   </div>
 );
 
-const Titles = ({ titles }) => (
+const Promotions = ({ titles }) => (
   <p className="titles">
-    <b>Titles held:</b>{' '}
-    {titles.map((t, i) => (
+    <b>Promotions:</b>{' '}
+    {[...titles].reverse().map((t, i) => (
       <span key={t.title}>
-        {i > 0 && ' \u00b7 '}
-        {t.title} ({range(t.start, t.end)})
+        {i > 0 && ' \u2192 '}
+        {t.title} ({t.start})
       </span>
     ))}
   </p>
@@ -109,15 +110,28 @@ const Titles = ({ titles }) => (
 
 const SubEntry = ({ name, start, end, role, summary, bullets, detailed }) => (
   <div className="entry">
-    <div className="row">
-      <h4>{name}</h4>
-      <span className="dates">{range(start, end)}</span>
-    </div>
-    {role && <p className="role">{role}</p>}
+    <p className="subhead">
+      <b>{name}</b>
+      {(role || start) && (
+        <span className="role">
+          {' \u2014 '}
+          {[role, start && range(start, end)].filter(Boolean).join(', ')}
+        </span>
+      )}
+    </p>
     {summary && <p>{rich(summary)}</p>}
     {bullets && <Bullets items={bullets} detailed={detailed} />}
   </div>
 );
+
+const MONTHS = { Jan: 1, Feb: 2, Mar: 3, Apr: 4, May: 5, Jun: 6, Jul: 7, Aug: 8, Sep: 9, Oct: 10, Nov: 11, Dec: 12 };
+const stamp = (d) => {
+  if (!d || d === 'Present') return 999999;
+  const [month, year] = d.split(' ');
+  return Number(year) * 12 + (MONTHS[month] || 0);
+};
+const byRecent = (items) =>
+  [...items].sort((a, b) => stamp(b.end) - stamp(a.end) || stamp(b.start) - stamp(a.start));
 
 const jobSkills = (job) => {
   const seen = new Set();
@@ -158,11 +172,12 @@ const Experience = ({ detailed }) => (
       <div className="job" key={job.company}>
         <OrgHeader
           logo={job.logo}
-          name={`${job.title}, ${job.company}`}
+          name={job.company}
           right={range(job.start, job.end)}
+          title={job.title}
           sub={job.awards && <Awards text={job.awards} />}
         />
-        <Titles titles={job.titles} />
+        <Promotions titles={job.titles} />
         <p className="tools">
           <b>Skills:</b> {jobSkills(job).join(', ')}
         </p>
@@ -176,9 +191,9 @@ const Experience = ({ detailed }) => (
                 <li key={r}>{r}</li>
               ))}
             </ul>
-            <p>{job.responsibilitiesOutro}</p>
           </>
         )}
+        {job.segments && <p>{rich(job.responsibilitiesOutro)}</p>}
         {job.projects && detailed && job.notes.map((n) => <p key={n}>{rich(n)}</p>)}
 
         <div className="children">
@@ -189,7 +204,6 @@ const Experience = ({ detailed }) => (
                 name={`Segment: ${s.name}`}
                 start={s.start}
                 end={s.end}
-                role={s.role}
                 bullets={s.bullets}
                 detailed={detailed}
               />
@@ -197,7 +211,7 @@ const Experience = ({ detailed }) => (
 
           {job.projects &&
             detailed &&
-            job.projects.map((p) => <SubEntry key={p.name} {...p} name={`Project: ${p.name}`} detailed />)}
+            byRecent(job.projects).map((p) => <SubEntry key={p.name} {...p} name={`Project: ${p.name}`} detailed />)}
 
           {job.groups &&
             !detailed &&
