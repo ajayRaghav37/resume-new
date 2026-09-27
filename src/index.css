@@ -1,446 +1,370 @@
-body {
-  background: darkslategray;
+:root {
+  --accent: rgb(0, 130, 153);
+  --text: #333;
+  --muted: #666;
+  --rule: #d5dfe2;
 }
 
-.very-large-text {
-  font-size: 42px;
-}
-
-.large-text {
-  font-size: 20px;
-}
-
-.medium-text {
-  font-size: 18px;
-}
-
-.small-text {
-  font-size: 15px;
-}
-
-.very-small-text {
-  font-size: 12px;
-}
-
-.extremely-small-text {
-  font-size: 11px;
-}
-
-.version {
-  margin-top: 30px;
-}
-
-.normal-font-weight {
-  font-weight: normal !important;
+* {
+  box-sizing: border-box;
 }
 
 html {
   font-family: sans-serif;
   font-size: 14px;
-  font-weight: lighter;
-  color: #333;
-  text-align: justify;
+  color: var(--text);
+  line-height: 1.35;
+}
+
+body {
+  margin: 0;
+  background: #e6ecee;
+}
+
+a {
+  color: var(--accent);
+}
+
+p {
+  margin: 3px 0;
+}
+
+ul {
+  margin: 3px 0 0;
+  padding-left: 18px;
+}
+
+li {
+  margin: 2px 0;
+}
+
+ul.plain {
+  list-style: none;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--accent);
+  font-family: serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 19px;
+  margin: 20px 0 8px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--accent);
+}
+
+h3 {
+  font-size: 15px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 13.5px;
+  color: #222;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: normal;
+}
+
+/* Layout */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 8px 16px;
+  background: #fff;
+  border-bottom: 1px solid var(--rule);
+  font-size: 13px;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 2px 4px;
+}
+
+.nav a.active {
+  border-bottom: 2px solid var(--accent);
+}
+
+.nav button {
+  border: 1px solid var(--accent);
+  background: #fff;
+  color: var(--accent);
+  border-radius: 3px;
+  padding: 2px 8px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.resume {
+  max-width: 21cm;
+  margin: 16px auto 32px;
+  padding: 1.3cm 1.5cm;
+  background: #fff;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.25);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.row.sub {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.grow {
+  flex: 1;
+  min-width: 0;
+}
+
+.dates {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 12.5px;
+  color: #444;
+}
+
+/* Header */
+.headline {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.version {
+  font-size: 11px;
+  color: var(--muted);
+  text-align: right;
+  white-space: nowrap;
 }
 
 .contact {
   font-size: 13px;
-  display: flex;
+  margin-top: 6px;
 }
 
-.contact-social {
-  margin-top: -4px;
+.contact.social {
+  margin-top: 2px;
 }
 
-page {
-  background: white;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 0.5cm;
-  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
-  width: 21cm;
-  height: 33.9cm;
-  padding: 0cm 1.5cm;
-}
-
-p {
-  padding: 0px;
-  margin: 0px;
-}
-
-.negative-margin {
-  margin-top: -10px;
-}
-
-.first-page-section {
-  padding-top: 1.5cm;
-}
-
-.name {
-  color: rgb(0, 130, 153);
-  font-weight: bold;
-  font-family: serif;
-}
-
-.section {
-  margin-top: 24px;
-}
-
-.heading {
-  color: rgb(0, 130, 153);
-  font-size: 20px;
-  font-family: serif;
-  font-weight: bold;
-  padding-bottom: 15px;
-}
-
-.summary {
-  display: flex;
-  font-family: serif;
-}
-
-.org {
-  display: flex;
-  font-family: serif;
-  background-color: rgb(0, 130, 153);
-  padding: 10px;
-  color: white;
-}
-
-.summary-description {
-  margin-top: 15px;
-}
-
-.company-name,
-.duration {
-  font-weight: bold;
-}
-
-.company {
-  flex: 1;
-}
-
-.logo {
-  width: 35px;
-  height: 35px;
-  margin-right: 15px;
+.header {
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent);
 }
 
 .icon {
-  height: 12px;
-  transform: translateY(1px);
-}
-
-.social {
+  width: 13px;
   height: 13px;
+  vertical-align: -2px;
+  margin-right: 4px;
+}
+
+.contact.social a {
   margin-right: 2px;
-  transform: translateY(3px);
 }
 
-.award {
-  height: 15px;
-  margin-top: -1px;
-  transform: translateY(1px);
+/* Entries */
+.job {
+  margin-bottom: 14px;
 }
 
-.facebook {
-  height: 14.5px;
-  transform: translateY(3.5px);
-  margin-left: 2px;
-}
-
-.twitter {
-  margin-right: 0px;
-  margin-left: -2px;
-  height: 17px;
-  transform: translateY(6px);
-}
-
-.chesscom {
-  width: 16px;
-  margin-left: -2px;
-  margin-right: -1px;
-}
-
-.youtube {
-  height: 15px;
-}
-
-.stackoverflow {
-  height: 16px;
-  transform: translateY(4px);
-  margin: 0px;
-}
-
-.image-clickable {
-  text-decoration: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-.client {
+.org-header {
   display: flex;
-  margin-top: 15px;
+  align-items: flex-start;
+  margin-top: 8px;
 }
 
-.narrow-top {
-  margin-top: 7px !important;
+.logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-right: 10px;
+  flex: none;
 }
 
-.client-name {
-  color: white;
-  margin-right: 3px;
-  background-color: rgb(0, 130, 153);
-  width: 38px;
-  font-family: serif;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.client-name p {
-  position: relative;
-  top: 50%;
-  width: 500px;
-  text-align: center;
-  transform: rotate(-90deg) translateY(-233px);
-}
-
-.client-name .adjust-to-top {
-  margin-top: -10px;
-}
-
-.display-none {
-  display: none;
-}
-
-.project {
-  display: flex;
-}
-
-.project-summary {
-  background-color: rgb(241, 250, 251);
-}
-
-.org-roles-responsibilities {
-  background-color: rgb(229, 251, 255);
-  margin-top: 2px;
-  padding: 10px 10px 8px 15px;
-}
-
-.project-summary-intro {
-  padding-top: 10px;
-  padding-left: 15px;
-  padding-bottom: 8px;
-  padding-right: 10px;
-}
-
-.roles-responsibilities-title {
-  padding-left: 15px;
-}
-
-.roles-responsibilities {
-  margin-top: 5px;
-}
-
-.project-header {
-  display: flex;
-  padding: 10px;
-  color: black;
-  background-color: rgb(229, 251, 255);
-  border-left: rgb(0, 130, 153) solid 7px;
-  font-family: serif;
-}
-
-.no-border {
-  border: none !important;
-}
-
-.project-header-multi {
-  display: flex;
-  padding: 10px;
-  padding-bottom: 0px;
-  margin-bottom: -10px;
-  background-color: rgb(229, 251, 255);
-  border-left: rgb(0, 130, 153) solid 7px;
-  color: black;
-  font-family: serif;
-}
-
-.project-timeline {
-  flex: 1;
-}
-
-.project-details {
-  flex: 1;
-}
-
-.project-name,
-.job-description {
-  font-weight: bold;
-}
-
-.job-description {
-  text-align: right;
-}
-
-ul {
-  margin: 0px;
-  padding: 0px 10px 10px 32px;
-}
-
-.projects {
-  flex: 1;
-}
-
-.learning-experiences {
-  display: flex;
-}
-
-.column {
-  flex: 1;
-}
-
-.personal-details {
-  display: flex;
-}
-
-.personal-details-field {
-  width: 125px;
-}
-
-.declaration-date-name {
-  display: flex;
-}
-
-.declaration-name {
-  font-family: serif;
-  font-weight: bold;
-  text-align: right;
-}
-
-.company-name-duration {
-  display: flex;
-}
-
-.company-name {
-  flex: 1;
-}
-
-.project-divider {
-  margin: 3px;
-}
-
-.project-divider-large {
-  margin: 8px;
-}
-
-.vertical-ruler {
-  border-left: 1px solid rgb(0, 130, 153);
-  margin: 0px 36px;
-}
-
-.vertical-flex {
-  display: flex;
-  flex-direction: column;
-}
-
-.separator {
-  flex: 1;
-  min-height: 20px;
-}
-
-.narrow-separator {
-  flex: 1;
-  min-height: 10px;
-}
-
-.vertical-separator {
-  width: 3px;
-}
-
-.exam {
-  flex: 1;
-  text-align: center;
-}
-
-.exam-title {
-  color: white;
-  background-color: rgb(0, 130, 153);
-}
-
-.exam-score {
-  background-color: rgb(229, 251, 255);
-}
-
-.exam-score-main {
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.exam-score-max {
+.titles {
+  margin: 2px 0 4px;
   font-size: 12px;
-  font-weight: normal;
-  color: #666;
+  color: var(--muted);
 }
 
-.exam-details-title {
-  background-color: rgb(0, 130, 153);
-  text-transform: uppercase;
-  color: white;
-  padding: 0px 5px;
-  border-radius: 2px;
-  font-size: 13px;
+.awards {
+  color: var(--muted);
 }
 
-.exam-details {
+.entry {
+  margin-top: 8px;
+}
+
+.role,
+.tools {
   font-size: 12px;
-  text-align: left;
-}
-
-.exam-details-row {
-  display: flex;
-  padding: 0px 15px;
-}
-
-.exam-details-row-compact {
-  display: flex;
-  padding: 0px 25px;
-}
-
-.exam-details-row-super-compact {
-  display: flex;
-  padding: 0px 30px;
-}
-
-.personal-details-separator {
-  flex: 1;
-  min-height: 1px;
-}
-
-.skills {
-  text-align: right;
-  font-weight: normal;
-  margin-top: 3px;
-}
-
-.achievements {
-  padding: 0px 0px 0px 21px;
-}
-
-@page {
-  /* size: A4; */
+  color: var(--muted);
   margin: 0;
 }
 
-@media print {
+.group {
+  margin-top: 8px;
+}
 
-  html,
+.group-name {
+  font-weight: bold;
+  margin: 8px 0 0;
+}
+
+dl.kv {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 2px 14px;
+  margin: 0;
+}
+
+dl.kv dt {
+  font-weight: bold;
+}
+
+dl.kv dd {
+  margin: 0;
+}
+
+/* Print */
+@page {
+  size: A4;
+  margin: 9mm 11mm;
+}
+
+@media print {
+  html {
+    font-size: 9pt;
+    line-height: 1.28;
+  }
+
+  .role,
+  .tools,
+  .titles,
+  .row.sub,
+  .version {
+    font-size: 8pt;
+  }
+
+  .dates {
+    font-size: 8.5pt;
+  }
+
+  .logo {
+    width: 22px;
+    height: 22px;
+  }
+
+  .entry {
+    margin-top: 5px;
+  }
+
+  .job {
+    margin-bottom: 8px;
+  }
+
   body {
-    background: white;
+    background: #fff;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .resume {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 22pt;
+  }
+
+  .header {
+    padding-bottom: 4pt;
+  }
+
+  .headline {
+    font-size: 10.5pt;
     margin: 0;
   }
 
-  page {
-    box-shadow: none !important;
-    margin: 0;
+  .contact {
+    margin-top: 3pt;
+  }
+
+  h2 {
+    font-size: 12pt;
+    margin: 6pt 0 2pt;
+  }
+
+  section ul,
+  section p {
+    margin-top: 1.5pt;
+    margin-bottom: 1.5pt;
+  }
+
+  li {
+    margin: 1pt 0;
+  }
+
+  h3 {
+    font-size: 10.5pt;
+  }
+
+  h4 {
+    font-size: 9.5pt;
+  }
+
+  h2,
+  h3,
+  h4,
+  .role,
+  .tools,
+  .titles,
+  .group-name {
+    break-after: avoid;
+  }
+
+  .org-header,
+  li {
+    break-inside: avoid;
+  }
+
+  p {
+    orphans: 2;
+    widows: 2;
   }
 }
