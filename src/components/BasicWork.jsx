@@ -37,9 +37,9 @@ export default <div className="section"><p className="heading display-none">Work
               <div className="negative-margin"></div>
               <p className="roles-responsibilities">
                 <ul>
-                  <li>Worked with 1 AE. <b>Attainment of aligned AE in 4 Quarters</b> (FY26 Q2 to FY27 Q1): <b>185%</b>.</li>
-                  <li><b>$3.3M NARR</b> across 31 opportunities while working on 24 accounts. Became a Retail SME.</li>
-                  <li>Created multiple re-usable assets for competitive comparison, sales forecasting, account intelligence, etc.</li>
+                  <li>Worked with 1 AE. <b>Attainment of aligned AE in 5 Quarters</b> (FY26 Q2 to FY27 Q2): <b>196%</b>.</li>
+                  <li><b>$4.3M NARR</b> across 37 opportunities while working on 27 accounts. Became a Retail SME.</li>
+                  <li>Created multiple re-usable assets for competitive comparison, sales forecasting, account intelligence, and live transcription-based automatic suggestions for discovery.</li>
                 </ul>
               </p>
             </div>

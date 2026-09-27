@@ -51,14 +51,13 @@ export default <div className="section">
               <div className="negative-margin"></div>
               <p className="roles-responsibilities">
                 <ul>
-                  <li>Worked with 1 AE. <b>Attainment of aligned AE in 4 Quarters</b> (FY26 Q2 to FY27 Q1): <b>185%</b>.</li>
-                  <li><b>$3.3M NARR</b> across 31 opportunities while working on 24 accounts. Became a Retail SME.</li>
-                  <li>Prevented churn of over $400K in crucial accounts that could've led to further cascading churn.</li>
-                  <li>Replaced DynamoDB and CosmosDB in accounts where they were the primary databases.</li>
-                  <li>Replaced a customer from ElasticSearch to Atlas Search and now they are its second largest customer in APAC.</li>
-                  <li>AstraDB replace is in progress in another account.</li>
+                  <li>Worked with 1 AE. <b>Attainment of aligned AE in 5 Quarters</b> (FY26 Q2 to FY27 Q2): <b>196%</b>.</li>
+                  <li><b>$4.3M NARR</b> across 37 opportunities while working on 27 accounts. Became a Retail SME.</li>
+                  <li>Prevented churn of over $3.1M in crucial accounts against Firestore, Percona and MongoDB Community, that could've led to further cascading churn.</li>
+                  <li>Replaced DynamoDB, CosmosDB and AstraDB in accounts where they were the primary databases.</li>
+                  <li>Replaced customers from ElasticSearch to Atlas Search, one of them is now its second largest customer in APAC.</li>
                   <li>First adoption of Atlas Stream Processing and Voyage AI Atlas integration in APAC.</li>
-                  <li>Created multiple re-usable assets for competitive comparison, sales forecasting, account intelligence, etc.</li>
+                  <li>Created multiple re-usable assets for competitive comparison, sales forecasting, account intelligence, and live transcription-based automatic suggestions for discovery.</li>
                 </ul>
               </p>
             </div>
