@@ -44,6 +44,7 @@ const Header = () => {
             {p}
           </span>
         ))}
+        {resume.location && <span className="contact-item"> | {resume.location}</span>}
       </p>
       <p className="contact">
         {contact.links.map((l, i) => (
@@ -142,6 +143,14 @@ const Awards = ({ text }) => (
   </span>
 );
 
+const Summary = () =>
+  resume.summary ? (
+    <section>
+      <h2>Summary</h2>
+      <p>{rich(resume.summary)}</p>
+    </section>
+  ) : null;
+
 const Experience = ({ detailed }) => (
   <section>
     <h2>Work Experience</h2>
@@ -170,39 +179,37 @@ const Experience = ({ detailed }) => (
             <p>{job.responsibilitiesOutro}</p>
           </>
         )}
-        {job.segments &&
-          job.segments.map((s) => (
-            <SubEntry
-              key={s.name}
-              name={`Segment: ${s.name}`}
-              start={s.start}
-              end={s.end}
-              role={s.role}
-              bullets={s.bullets}
-              detailed={detailed}
-            />
-          ))}
+        {job.projects && detailed && job.notes.map((n) => <p key={n}>{rich(n)}</p>)}
 
-        {job.projects && detailed && (
-          <>
-            {job.notes.map((n) => (
-              <p key={n}>{rich(n)}</p>
+        <div className="children">
+          {job.segments &&
+            job.segments.map((s) => (
+              <SubEntry
+                key={s.name}
+                name={`Segment: ${s.name}`}
+                start={s.start}
+                end={s.end}
+                role={s.role}
+                bullets={s.bullets}
+                detailed={detailed}
+              />
             ))}
-            {job.projects.map((p) => (
-              <SubEntry key={p.name} {...p} name={`Project: ${p.name}`} detailed />
+
+          {job.projects &&
+            detailed &&
+            job.projects.map((p) => <SubEntry key={p.name} {...p} name={`Project: ${p.name}`} detailed />)}
+
+          {job.groups &&
+            !detailed &&
+            job.groups.map((g) => (
+              <div key={g.name} className="group">
+                <p className="group-name">Client: {g.name}</p>
+                {g.items.map((it) => (
+                  <SubEntry key={it.name} {...it} name={`Project: ${it.name}`} detailed={false} />
+                ))}
+              </div>
             ))}
-          </>
-        )}
-        {job.groups &&
-          !detailed &&
-          job.groups.map((g) => (
-            <div key={g.name} className="group">
-              <p className="group-name">Client: {g.name}</p>
-              {g.items.map((it) => (
-                <SubEntry key={it.name} {...it} name={`Project: ${it.name}`} detailed={false} />
-              ))}
-            </div>
-          ))}
+        </div>
       </div>
     ))}
   </section>
@@ -236,7 +243,7 @@ const Research = () => (
     <h2>{resume.research.title}</h2>
     <ul>
       {resume.research.items.map((r) => (
-        <li key={r}>{r}</li>
+        <li key={r}>{rich(r)}</li>
       ))}
     </ul>
   </section>
@@ -301,6 +308,7 @@ export default function Resume({ detailed = false }) {
   return (
     <main className="resume">
       <Header />
+      <Summary />
       <Experience detailed={detailed} />
       <Education />
       <Certifications />

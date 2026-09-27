@@ -11,6 +11,7 @@ const resume = {
   headline: 'Pre-Sales Advisory Solutions Architect',
   lastUpdated: 'September 27, 2026',
   site: 'https://ajayraghav37.vercel.app',
+  location: 'Greater Noida, India',
   contact: {
     email: 'ajay.raghav@hotmail.com',
     phones: ['+91 9643899538', '+91 9660991612'],
@@ -29,6 +30,11 @@ const resume = {
     youtube: { label: 'YouTube', text: 'PerfectMusicMismatch', url: 'https://www.youtube.com/PerfectMusicMismatch', icon: 'youtube.ico' },
   },
 
+  // Aggregates below are derived from the MongoDB segments: NARR 4.3 + 2.2 + 4.7,
+  // opportunities 37 + 32 + 73, largest team led at Sopra Steria = 25.
+  summary:
+    'Pre-sales Solutions Architect with 12+ years in software, including nearly five at MongoDB serving enterprise and digital-native accounts across APAC. Contributed to **$11.2M NARR** across 140+ opportunities, with aligned AEs attaining **196–248%** of quota, and prevented **$3.1M+** in churn. Previously led teams of up to 25 developers at Sopra Steria building a **€10M+** AI/ML product suite. MongoDB, AWS and GCP certified.',
+
   experience: [
     {
       company: 'MongoDB',
@@ -43,21 +49,18 @@ const resume = {
         { title: 'Solutions Architect', start: 'Nov 2021', end: 'Jan 2024' },
       ],
       summary:
-        'As a Presales Solutions Architect, I collaborated with the sales teams to win complex opportunities through technical discovery, tailored demos, and high-impact POCs. Designed scalable deployments, translating technical complexity into tangible business value for executives. Drove demand through community engagement, mentored team members, created reusable assets, and provided a critical feedback loop to Product Management, while also ensuring a seamless hand-off from the sales cycle to implementation.',
-      responsibilitiesIntro: 'As a Presales Solutions Architect, my roles and responsibilities are as follows:',
+        'Partner with sales to win complex opportunities through technical discovery, tailored demos and high-impact POCs; design scalable deployments and translate technical complexity into business value for executives. Drive demand through community engagement, mentor SAs, build reusable assets and feed field insight back to Product Management, ensuring a seamless hand-off from sale to implementation.',
+      responsibilitiesIntro: 'Roles and responsibilities:',
       responsibilities: [
-        'Collaborating with sales teams to lead technical discovery, deliver tailored demonstrations, and manage high-impact Proof of Concepts (POCs) for complex opportunities.',
-        'Designing scalable MongoDB infrastructure and provide strategic advisory to optimize performance across diverse software development projects.',
-        'Executing feasibility workshops and deep dives to validate solution viability and build consensus among engineering stakeholders.',
-        'Communicating technical benefits to executives using TCO estimation, pricing models, and value-based consulting.',
-        'Driving engagement through industry events, CXO roundtables, and developer sessions to expand the MongoDB community.',
-        'Cultivating internal "Champions" within customer organizations to advocate for solutions and streamline procurement.',
-        'Creating reusable technical assets to standardize and accelerate the global pre-sales lifecycle.',
-        'Serving as a feedback loop between the field and Product Management, ensuring market trends directly inform the product roadmap.',
-        'Supporting team members by sharing best practices and fostering a culture of technical excellence.',
-        'Defining project scopes and consulting requirements to ensure seamless hand-offs to post-sales teams.',
+        'Lead technical discovery, tailored demonstrations and high-impact POCs for complex opportunities.',
+        'Design scalable MongoDB architectures and advise on performance across diverse projects; run feasibility workshops and deep dives to validate solutions and align engineering stakeholders.',
+        'Communicate business value to executives through TCO estimation, pricing models and value-based consulting.',
+        'Drive demand through industry events, CXO roundtables and developer sessions; cultivate internal champions who advocate for the solution and streamline procurement.',
+        'Build reusable technical assets that standardize and accelerate the global pre-sales lifecycle.',
+        'Serve as the feedback loop between the field and Product Management so market trends inform the roadmap.',
+        'Mentor team members and share best practices; define project scope and consulting requirements for seamless hand-offs to post-sales.',
       ],
-      responsibilitiesOutro: 'Detailed work experience is provided below, categorized by segments worked in:',
+      responsibilitiesOutro: 'Results by segment:',
       segments: [
         {
           name: 'Enterprise (Growth)',
@@ -66,13 +69,12 @@ const resume = {
           role: 'Advisory Solutions Architect (since Aug 2025)',
           tools: 'MongoDB Atlas and EA, SFDC, Tableau, Google Workspace, AI tools for dev & research',
           bullets: [
-            { text: 'Worked with 1 AE. **Attainment of aligned AE in 5 Quarters** (FY26 Q2 to FY27 Q2): **196%**.', brief: true },
-            { text: '**$4.3M NARR** across 37 opportunities while working on 27 accounts. Became a Retail SME.', brief: true },
-            "Prevented churn of over $3.1M in crucial accounts against Firestore, Percona and MongoDB Community, that could've led to further cascading churn.",
-            'Replaced DynamoDB, CosmosDB and AstraDB in accounts where they were the primary databases.',
-            'Replaced customers from ElasticSearch to Atlas Search, one of them is now its second largest customer in APAC.',
-            'First adoption of Atlas Stream Processing and Voyage AI Atlas integration in APAC.',
-            { text: 'Created multiple re-usable assets for competitive comparison, sales forecasting, account intelligence, and live transcription-based automatic suggestions for discovery.', brief: true },
+            { text: 'Aligned to 1 AE; **196% attainment over 5 quarters** (FY26 Q2 – FY27 Q2).', brief: true },
+            { text: "**$4.3M NARR** from 37 opportunities across 27 accounts; became the team's Retail SME.", brief: true },
+            'Prevented **$3.1M+ churn** in crucial accounts against Firestore, Percona and MongoDB Community, averting cascading losses.',
+            'Displaced DynamoDB, CosmosDB and AstraDB as primary databases; migrated customers from Elasticsearch to Atlas Search, one now the second-largest Atlas Search customer in APAC.',
+            "Drove APAC's first adoptions of Atlas Stream Processing and the Voyage AI integration.",
+            { text: 'Built reusable assets for competitive comparison, sales forecasting, account intelligence and live-transcription-based discovery suggestions.', brief: true },
           ],
         },
         {
@@ -82,14 +84,15 @@ const resume = {
           role: 'Senior Solutions Architect (Feb 2024 – Jul 2025)',
           tools: 'MongoDB Atlas and EA, SFDC, Tableau, Google Workspace, MERN',
           bullets: [
-            { text: 'Worked with 2 AEs. **Average attainment of aligned AEs in 6 Quarters** (FY24 Q4 to FY26 Q1): **248%**.', brief: true },
-            { text: '**$2.2M NARR** across 32 new logos while working in 71 accounts. Landed two $700K+ deals in the same year.', brief: true },
-            'While launch of new applications was most prominent, migration from DocumentDB, MongoDB Community and CosmosDB was also significant. Replaced MySQL in a market intelligence platform.',
-            { text: 'Created multiple re-usable assets for cost optimization, sizing, pricing, TCO estimation, competition, integrations, etc.', brief: true },
-            { text: 'Became a Media SME after closing four deals in Indian print and digital Media.', brief: 'Became a Media SME.' },
-            'Built strong champions in almost all accounts.',
-            'Maximum number of workloads closed in APAC (54).',
-            { text: 'Runners-up in global hackathon on AI.', brief: true },
+            { text: 'Aligned to 2 AEs; **248% average attainment over 6 quarters** (FY24 Q4 – FY26 Q1).', brief: true },
+            { text: '**$2.2M NARR** from 32 new logos across 71 accounts, including two $700K+ deals in one year; most workloads closed in APAC (54).', brief: true },
+            'Won mostly new-application launches alongside migrations from DocumentDB, MongoDB Community and CosmosDB; replaced MySQL in a market-intelligence platform.',
+            { text: 'Became the Media SME after closing four deals in Indian print and digital media.', brief: 'Became the Media SME.' },
+            {
+              text: 'Built champions in almost every account; created reusable assets for cost optimization, sizing, pricing, TCO estimation, competition and integrations.',
+              brief: 'Built reusable assets for cost optimization, sizing, pricing, TCO estimation, competition and integrations.',
+            },
+            { text: "Runners-up in MongoDB's global AI hackathon.", brief: true },
           ],
         },
         {
@@ -99,11 +102,11 @@ const resume = {
           role: 'Solutions Architect (Nov 2021 – Jan 2024)',
           tools: 'MongoDB Atlas, SFDC, Tableau, Google Workspace, MERN',
           bullets: [
-            { text: 'Worked with 5-8 AEs. **Average attainment of aligned AEs in 8 Quarters** (FY22 Q4 to FY24 Q3): **240%**.', brief: true },
-            { text: '**$4.7M NARR** across 73 opportunities while working in 200+ accounts.', brief: true },
-            { text: 'Became a Gaming SME by closing two major deals in the gaming sector.', brief: 'Became a Gaming SME.' },
-            'Closed 20 acquisition deals of $50K+ across various industries. Eight of them are now $600K+ accounts.',
-            'Built strong champions with the help of my background in application development.',
+            { text: 'Aligned to 5–8 AEs; **240% average attainment over 8 quarters** (FY22 Q4 – FY24 Q3).', brief: true },
+            { text: '**$4.7M NARR** from 73 opportunities across 200+ accounts.', brief: true },
+            { text: 'Became the Gaming SME by closing two major gaming deals.', brief: 'Became the Gaming SME.' },
+            'Closed 20 acquisition deals of $50K+ across industries; eight have since grown into $600K+ accounts.',
+            'Built strong champions by drawing on an application-development background.',
           ],
         },
       ],
@@ -123,9 +126,7 @@ const resume = {
         { title: 'Software Engineer', start: 'Jul 2015', end: 'Jan 2017' },
         { title: 'Software Engineer Trainee', start: 'Jul 2014', end: 'Jul 2015' },
       ],
-      notes: [
-        '**Projects:** Worked on 17 different projects over a span of 7.5 years, many of them were done parallely.',
-      ],
+      notes: ['Delivered 17 projects over 7.5 years, many in parallel, across the Digital Transformation practice and a European airline account.'],
       // Brief resume: streams grouped by client.
       groups: [
         {
@@ -138,7 +139,7 @@ const resume = {
               role: 'Architect | Technical Lead | Algorithm Specialist | UI/UX Expert',
               tools: 'Node.js, React.js, MongoDB, Python, GitLab, OpenShift, Azure, Keycloak, Angular',
               summary:
-                'Led a team of 14 developers, architected and developed a €10M+ AI-driven enterprise ecosystem that automates bot creation, document intelligence, and predictive support to streamline end-to-end contact center operations.',
+                'Led 14 developers to architect and build a **€10M+** AI ecosystem that automates bot creation, document intelligence and predictive support for end-to-end contact-center operations.',
             },
             {
               name: 'Mobility Stream',
@@ -147,7 +148,7 @@ const resume = {
               role: 'App Developer and Azure Administrator',
               tools: 'C#, WPF, App Services, Notification Hub, MSSQL, JavaScript, HTML, CSS, Apache Cordova',
               summary:
-                'Developed enterprise-scale Windows Phone and hybrid applications for event management and field technician job tracking, featuring integrated barcode scanning and push notification solutions.',
+                'Built enterprise Windows Phone and hybrid apps for event management and field-technician job tracking, with barcode scanning and push notifications.',
             },
           ],
         },
@@ -160,7 +161,7 @@ const resume = {
               end: 'Apr 2016',
               role: 'Business System Analyst',
               tools: 'Visio, Draw.io, MSSQL',
-              summary: "Performed technical and functional analysis of business systems in a European Airline's transformation project.",
+              summary: "Performed technical and functional analysis of the airline's business systems for its transformation programme.",
             },
             {
               name: 'VAT Invoicing',
@@ -169,7 +170,7 @@ const resume = {
               role: 'Development Engineer and Business Analyst',
               tools: 'C#, Windows Service, MSSQL, Visual Studio, Agile, TFS',
               summary:
-                'Developed a solution to reverse engineer invoices of billions of bookings across various countries to ensure compliance. Accuracy and performance SLAs were 98% and 150ms/booking. Results were 99.2% and 10ms/booking respectively.',
+                'Reverse-engineered invoices for billions of bookings across countries for tax compliance; delivered **99.2% accuracy at 10ms/booking** against SLAs of 98% and 150ms.',
             },
           ],
         },
@@ -183,11 +184,11 @@ const resume = {
           role: 'Architect | UI/UX Expert',
           tools: 'Node.js, React.js, MongoDB, Express.js, Microservices, GitLab, OpenShift',
           summary:
-            'Integrated different assets created in AI/ML stream into one SaaS product. Alive Intelligence powered an AI-enabled enterprise grade contact center ecosystem. Alive Intelligence is a combination of Masterbot, Botify.kit, Smart Search, Ticket Prediction, Ontofy, Live Chat and Automatic Test. With more than **5 million users**, it won **€10M+** for Sopra Steria.',
+            'Unified the AI/ML assets (Masterbot, Botify.kit, Smart Search, Ticket Prediction, Ontofy, Live Chat, Automatic Test) into one SaaS platform powering AI-enabled contact centers. **5M+ users**; won **€10M+** for Sopra Steria.',
           bullets: [
-            'Led team of 12 developers; designed RESTful APIs for microservices integration.',
-            'Optimized deployment requirements and created demo environments for Finance/Airline/Medical/Telecom domains.',
-            'Delivered product to 2 production customers (1 on-premise); demonstrated to 30+ customers.',
+            'Led 12 developers; designed the RESTful APIs that integrate the microservices.',
+            'Cut deployment requirements and built demo environments for finance, airline, medical and telecom.',
+            'Shipped to 2 production customers (1 on-premise); demonstrated to 30+ prospects.',
           ],
         },
         {
@@ -197,11 +198,11 @@ const resume = {
           role: 'Architect | Algorithm Specialist | Development Lead',
           tools: 'Python, Node.js, React.js, MongoDB, Express.js, GitLab, Keycloak, OpenShift, JMeter',
           summary:
-            'Created an enterprise search solution for searching across a large number of documents with smart suggestions, Fasttext based paragraph extraction and BERT based short answers. Supported various sources of documents like SharePoint, JIVE, JIRA, local repositories, etc. Smart Search had the ability to fetch relevant documents and paragraphs in less than 1 second for a given query with ~100 simultaneous user load.',
+            'Enterprise search across large document corpora with smart suggestions, FastText paragraph extraction and BERT short answers; sources included SharePoint, JIVE, JIRA and local repositories. Returned relevant documents and paragraphs in **under 1 second** at ~100 concurrent users.',
           bullets: [
-            'Led 25 developers; architected database, microservices APIs, and adapters for SharePoint/JIVE/JIRA sources.',
-            'Benchmarked BERT models; designed *Discriminator* algorithm for smart document filtering; implemented WebSockets.',
-            'Deployed to 5 customers (2 on-premise) + 45,000 internal Sopra Steria employees.',
+            'Led 25 developers; architected the database, microservice APIs and source adapters for SharePoint, JIVE and JIRA.',
+            'Benchmarked BERT models, designed the *Discriminator* algorithm for smart document filtering and implemented WebSockets.',
+            'Deployed to 5 customers (2 on-premise) and 45,000 internal Sopra Steria employees.',
           ],
         },
         {
@@ -211,10 +212,10 @@ const resume = {
           role: 'Architect | Development Lead',
           tools: 'Node.js, React.js, MySQL, PHP, GitLab, Keycloak, OpenShift',
           summary:
-            'Live Chat is a cross-platform operator assistance solution for end-users who are using a chatbot. It provides seamless integration with the chatbot and has features like cobrowsing, fair queue management, context carry-over, etc.',
+            'Cross-platform operator hand-off for chatbot users, with seamless bot integration, cobrowsing, fair queue management and context carry-over.',
           bullets: [
             'Led 8 developers; migrated PHP → Node.js and MySQL → MongoDB.',
-            'Architected WebRTC-based cobrowsing solution; integrated with Botify.kit.',
+            'Architected the WebRTC-based cobrowsing solution and integrated it with Botify.kit.',
           ],
         },
         {
@@ -223,11 +224,10 @@ const resume = {
           end: 'Nov 2021',
           role: 'Subscription Owner | Configuration Manager',
           tools: 'PowerShell',
-          summary:
-            'Digital team in Sopra Steria have been using an Azure subscription for creating various resources like virtual machines, app services, cognitive services, etc.',
+          summary: "Owned the Digital team's Azure subscription for VMs, app services, cognitive services and other resources.",
           bullets: [
-            'Led 3 DevOps engineers managing Azure infrastructure and resources.',
-            'Enabled 60+ team members with VMs during COVID; optimized security and cost via JIT and resource cleanup.',
+            'Led 3 DevOps engineers managing the infrastructure.',
+            'Provisioned VMs for 60+ team members during COVID; tightened security and cut cost through JIT access and resource clean-up.',
           ],
         },
         {
@@ -237,10 +237,10 @@ const resume = {
           role: 'Architect | Development Lead | UI/UX Expert | Product Owner',
           tools: 'Python, Angular, Vue.js, Bokeh, Leaflet, GitLab, OpenShift',
           summary:
-            "Anti Financial Crime is a tool to monitor transactions and customer behaviours to identify suspicious activities. On the dashboard, multiple graphs are plotted to have an overview about the bank's respective Transaction Monitoring systems, including information like: number of customers/accounts/transactions in monitoring, number of indicator hits, number of alerts, etc. The alerts could also be visualized on a map.",
+            "Anti-Financial-Crime dashboard that monitors transactions and customer behaviour for suspicious activity, charting a bank's transaction-monitoring systems (customers, accounts and transactions under watch, indicator hits, alerts) and plotting alerts on a map.",
           bullets: [
-            'Led 3 developers; rewrote APIs and frontend to support infinite graphs with zero effort overhead.',
-            'Created complex Bokeh dataframe queries for transaction monitoring visualizations.',
+            'Led 3 developers; rewrote the APIs and frontend to support unlimited graphs with no added effort per graph.',
+            'Wrote complex Bokeh dataframe queries for transaction-monitoring visualizations.',
           ],
         },
         {
@@ -249,11 +249,8 @@ const resume = {
           end: 'Mar 2021',
           role: 'Architect | Individual Contributor | UI/UX Expert',
           tools: 'Azure Functions, React.js, Cosmos DB, Azure Storage, GitLab, Keycloak',
-          summary: 'Global Assets Showcase is an extremely cost effective solution for showcasing various products of AI/ML, Blockchain and IoT.',
-          bullets: [
-            'Solo-developed cost-effective SaaS product showcase for AI/ML, Blockchain, IoT.',
-            'Added 32 assets with database design and technical documentation.',
-          ],
+          summary: 'Low-cost SaaS showcase for the AI/ML, Blockchain and IoT product portfolio.',
+          bullets: ['Solo-built the platform and onboarded 32 assets with database design and technical documentation.'],
         },
         {
           name: 'Unified Billing Portal',
@@ -261,10 +258,10 @@ const resume = {
           end: 'Aug 2020',
           role: 'Architect | UI/UX Expert | Development Lead | Product Owner',
           tools: 'Node.js, React.js, MongoDB, Express.js, Microservices, GitLab, Keycloak, OpenShift',
-          summary: 'Created a multitenant portal for billing of all our internal assets with support for writing complex billing and invoicing rules.',
+          summary: 'Multitenant billing portal for all internal assets, with a rules engine for complex billing and invoicing.',
           bullets: [
-            'Led 3 developers; architected multitenant billing platform with complex rules engine.',
-            'Designed database, microservices APIs, and integrated with Document Reader asset.',
+            'Led 3 developers; architected the platform and rules engine.',
+            'Designed the database and microservice APIs; integrated the Document Reader asset.',
           ],
         },
         {
@@ -273,8 +270,8 @@ const resume = {
           end: 'Apr 2020',
           role: 'Architect | Configuration Manager | Individual Contributor',
           tools: 'Keycloak, OpenShift',
-          summary: 'Created a KeyCloak based single sign-on application that was later used by all products developed in the team.',
-          bullets: ['Implemented KeyCloak-based SSO used across all team products.'],
+          summary: 'Keycloak-based single sign-on adopted by every product in the team.',
+          bullets: [],
         },
         {
           name: 'Ontofy 2.0',
@@ -283,11 +280,10 @@ const resume = {
           role: 'Architect | Algorithm Specialist | UI/UX Expert | Product Owner',
           tools: 'Python, Java, Node.js, React.js, MongoDB, Express.js, GitLab, Keycloak, OpenShift',
           summary:
-            'Ontofy was a tool for creating semi-automatic ontologies. It was rebooted and revamped to increase quality and intelligence in different services. Improvements made in the revamp resulted in a **reduction of 80% manual effort** and a massive **1400% quality** boost. Support for knowledge graph was also added during the revamp.',
+            'Rebuilt the semi-automatic ontology tool with knowledge-graph support, cutting manual effort by **80%** and improving quality **1400%**.',
           bullets: [
-            'Led 5 developers; architected ontology revamp achieving **80% effort reduction, 1400% quality boost**.',
-            'Designed Disambiguator, nGrammer, knowledge graph seeder; migrated Java → Node.js.',
-            'Benchmarked vs. Cogito Studio, OntoText, IBM Watson—**6-550% better**; created Python guidelines for 100+ team.',
+            'Led 5 developers; designed the Disambiguator, nGrammer and knowledge-graph seeder; migrated Java → Node.js.',
+            'Benchmarked **6–550% better** than Cogito Studio, OntoText and IBM Watson; wrote Python guidelines for a 100+ person team.',
           ],
         },
         {
@@ -297,8 +293,8 @@ const resume = {
           role: 'Consultant | Developer',
           tools: 'Azure Speech to Text, Azure Translator, Node.js, React.js, MongoDB, GitLab, OpenShift',
           summary:
-            'Live Speech Translation was created to enable people working in different geographies to work together. All users could speak, hear and read in their choice of language even if other users are speaking a different language.',
-          bullets: ['Optimized cost using browser APIs; implemented WebSocket-based rooms for real-time translation.'],
+            'Let geographically distributed teams speak, hear and read in their own language while others use a different one.',
+          bullets: ['Implemented WebSocket rooms for real-time translation and cut cost by using browser APIs.'],
         },
         {
           name: 'Automatic Test',
@@ -307,11 +303,10 @@ const resume = {
           role: 'Architect | Developer | UI/UX Expert | Product Owner',
           tools: 'Node.js, React.js, MongoDB, GitLab, Keycloak, OpenShift',
           summary:
-            'Automatic Test is a cross-platform application created for automation testing of chatbots. It can detect regressions in the classifier and can also record test cases. Most powerful feature of Automatic Test is that it can automatically create test cases based on conversation trees created in the chatbot. Reduced the manual effort by **22 times**.',
+            'Cross-platform chatbot test automation that detects classifier regressions, records test cases and generates them from conversation trees, cutting manual effort **22x**.',
           bullets: [
-            'Led 12 developers; architected multitenant chatbot automation testing platform reducing effort **22x**.',
-            'Created Next.js template with auth, i18n, multitenancy, data table (used by 8+ assets).',
-            'Created contributor guidelines for 100+ developers.',
+            'Led 12 developers on the multitenant platform.',
+            'Created the Next.js template (auth, i18n, multitenancy, data table) reused by 8+ assets, and contributor guidelines for 100+ developers.',
           ],
         },
         {
@@ -320,11 +315,10 @@ const resume = {
           end: 'Jan 2018',
           role: 'Development Lead | UI/UX Expert',
           tools: 'Node.js, React.js, MongoDB, GitLab',
-          summary:
-            'Botify.kit was integration of IK Bot and Botify. IK Bot was a virtual assistant creation tool created by French counterparts. It supported complex conversation trees.',
+          summary: 'Integrated Botify with IK Bot, a French-built virtual-assistant tool supporting complex conversation trees.',
           bullets: [
-            'Led 5 developers; migrated MSSQL → MongoDB; implemented cross-origin communication.',
-            'Wrote conversation tree algorithms; benchmarked vs. LivingActor, Recast.ai—**20% better**.',
+            'Led 5 developers; migrated MSSQL → MongoDB and implemented cross-origin communication.',
+            'Wrote the conversation-tree algorithms; benchmarked **20% better** than LivingActor and Recast.ai.',
           ],
         },
         {
@@ -333,10 +327,9 @@ const resume = {
           end: 'Sep 2017',
           role: 'Architect | Algorithm Expert | Developer | UI/UX Expert | Product Owner',
           tools: 'Node.js, Lync SDK, MSSQL, IBM Bluemix, Elastic Search, HTML, JavaScript, CSS, VSTS',
-          summary: 'Botify was created to convert documents into FAQ bots **reducing SME efforts by up to 80%** compared to IBM Watson Assistant.',
+          summary: 'Converted documents into FAQ bots, cutting SME effort by up to **80%** versus IBM Watson Assistant.',
           bullets: [
-            'Led 6 developers on document-to-FAQ bot converter, **reducing SME effort 80%** vs. IBM Watson.',
-            'Designed database, UI, text mining algorithms for intent/entity/answer detection.',
+            'Led 6 developers; designed the database, UI and text-mining algorithms for intent, entity and answer detection.',
             'Demonstrated to 10+ customers; deployed to 3 internal customers.',
           ],
         },
@@ -346,11 +339,10 @@ const resume = {
           end: 'May 2017',
           role: 'Developer',
           tools: 'Apache Cordova, HTML, JavaScript, CSS, Azure Notification Hub',
-          summary:
-            'Project Ekho was a solution for cross-platform barcode scanning and push notifications in a Telco Services website created for job management of on-site technicians.',
+          summary: 'Cross-platform barcode scanning and push notifications for a telco job-management site used by on-site technicians.',
           bullets: [
-            'Implemented barcode scanning (Quagga.js) and push notifications (Firebase, Azure Hub).',
-            'Delivered customer demo and knowledge transfer to Telco Services company.',
+            'Implemented scanning (Quagga.js) and notifications (Firebase, Azure Notification Hub).',
+            'Delivered the customer demo and knowledge transfer.',
           ],
         },
         {
@@ -360,8 +352,8 @@ const resume = {
           role: 'Business Analyst',
           tools: 'Visio, Draw.io, MSSQL',
           summary:
-            'FCP was a revamp project of a European Airline. They were using age-old technologies and techniques in their systems. They wanted to move to latest technology. Because almost all the work was outsourced by them to various consultancies, they wanted technical documentation of their current systems.',
-          bullets: ['Analyzed complex booking, cancellation, invoicing systems; created technical documentation.'],
+            "Modernization programme for a European airline whose outsourced legacy systems lacked documentation; produced the technical documentation of the current systems.",
+          bullets: ['Analyzed the booking, cancellation and invoicing systems and documented them.'],
         },
         {
           name: 'Sopra Steria Events',
@@ -369,11 +361,10 @@ const resume = {
           end: 'Feb 2017',
           role: 'Developer | UI/UX Expert | Individual Contributor',
           tools: 'WPF, C#, Azure App Services, MSSQL, JavaScript, HTML, CSS, VSTS',
-          summary:
-            'Sopra Steria Events app was an enterprise-scale event management application. It had features like attendees list, schedule, activity alerts, geofencing, etc.',
+          summary: 'Enterprise event-management app with attendee lists, schedules, activity alerts and geofencing.',
           bullets: [
-            'Created Windows Phone/UWP application with session management.',
-            'Built hybrid components (attendees list, quiz) reducing cross-platform effort.',
+            'Built the Windows Phone/UWP app with session management.',
+            'Built hybrid components (attendee list, quiz) to reduce cross-platform effort.',
           ],
         },
         {
@@ -383,10 +374,10 @@ const resume = {
           role: 'Developer | Business Analyst',
           tools: 'C#, Windows Service, MSSQL, VSTS',
           summary:
-            'Developed a solution to reverse engineer invoices of billions of bookings across various countries to ensure compliance for a European Airline. **Accuracy and performance SLAs were 98% and 150ms/booking. Results were 99.2% and 10ms/booking respectively**.',
+            'Reverse-engineered invoices for billions of bookings across countries to ensure tax compliance for a European airline. Delivered **99.2% accuracy at 10ms/booking** against SLAs of 98% and 150ms.',
           bullets: [
-            'Analyzed charge codes for tax compliance; built processors achieving **99.2% accuracy, 10ms/booking** (vs. SLA 98%, 150ms).',
-            'Created automated unit test tool with random booking data.',
+            'Analyzed charge codes for tax compliance and built the processing engine.',
+            'Created an automated unit-test tool using randomized booking data.',
           ],
         },
       ],
@@ -397,38 +388,45 @@ const resume = {
     {
       institution: 'Rajasthan Technical University',
       logo: 'rtu.png',
-      detail: 'Global Institute of Technology | Jaipur',
+      detail: 'Global Institute of Technology, Jaipur',
       start: 'Sep 2010',
       end: 'Oct 2014',
-      summary: 'Completed Bachelor of Technology in Information Technology with 66.25%.',
+      summary: 'B.Tech in Information Technology, 66.25%.',
     },
     {
       institution: 'Central Board of Secondary Education',
       logo: 'cbse.png',
-      detail: 'Kendriya Vidyalaya | Jaipur and New Delhi',
+      detail: 'Kendriya Vidyalaya, Jaipur and New Delhi',
       start: 'Mar 1997',
       end: 'May 2009',
-      summary: 'Completed class 10th in May 2007 with 83.4% and class 12th in May 2009 with 73.2% in Science & Math Stream.',
+      summary: 'Class 12 (Science & Math), 73.2%, May 2009; Class 10, 83.4%, May 2007.',
     },
   ],
 
   certifications: [
-    { name: 'MongoDB Certified Developer and DBA', logo: 'mdbuniv.png', start: 'Apr 2022', end: 'Present', detail: 'Associate Level' },
-    { name: 'AWS Associate Solutions Architect', logo: 'aws.png', start: 'Dec 2023', end: 'Present', detail: 'Credential ID 2W7C1JEBSMF11FKH' },
-    { name: 'GCP Professional Cloud Architect', logo: 'gcp.png', start: 'Dec 2023', end: 'Present', detail: 'Credential ID 90962143' },
-    { name: 'Microsoft Certified Solutions Developer', logo: 'mcsd.png', start: 'Mar 2013', end: 'Mar 2015', detail: 'Windows Store Apps using HTML5 | Charter Member | E223-0215' },
+    { name: 'MongoDB Certified Developer and DBA', logo: 'mdbuniv.png', start: 'Apr 2022', end: 'Present', detail: 'Associate level' },
+    { name: 'AWS Certified Solutions Architect – Associate', logo: 'aws.png', start: 'Dec 2023', end: 'Present', detail: 'Credential ID 2W7C1JEBSMF11FKH' },
+    { name: 'Google Cloud Professional Cloud Architect', logo: 'gcp.png', start: 'Dec 2023', end: 'Present', detail: 'Credential ID 90962143' },
+    {
+      name: 'Microsoft Certified Solutions Developer',
+      logo: 'mcsd.png',
+      start: 'Mar 2013',
+      end: 'Mar 2015',
+      detail:
+        'Windows Store Apps using HTML5, Charter Member (E223-0215). Also Microsoft Certified Professional and Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3 (Mar 2013).',
+    },
   ],
 
   research: {
     title: 'Research Work (Unpublished)',
     items: [
-      'Discriminating concepts - Find the most relevant question to ask in progressive search on large corpus.',
-      'AURAmarker - Using colored bitmaps to store more data compared to QR codes with auto-correction bits.',
-      'Cheerleader algorithm - Find winners in large pool of unrated players with minimum matches played.',
-      'Fantasy advisor - Find optimal fantasy combinations based on tournament schedule and team strengths.',
-      'Disambiguator - Find the types, synonyms and relationships of keywords by disambiguating through corelation.',
-      'nGrammer - Extract keywords from documents using inverse global frequency corpus and TFIDF.',
-      'Vocabulary learning - Learning new words and their relationships through graph models and image mnemonics.',
+      '**Discriminating concepts** — the most relevant next question in progressive search over a large corpus.',
+      '**AURAmarker** — colored bitmaps that store more data than QR codes, with auto-correction bits.',
+      '**Cheerleader algorithm** — winners from a large pool of unrated players with the fewest matches.',
+      '**Fantasy advisor** — optimal fantasy line-ups from tournament schedule and team strengths.',
+      '**Disambiguator** — types, synonyms and relationships of keywords via correlation.',
+      '**nGrammer** — keyword extraction using an inverse global-frequency corpus and TF-IDF.',
+      '**Vocabulary learning** — new words and their relationships through graph models and image mnemonics.',
     ],
   },
 
@@ -445,7 +443,7 @@ const resume = {
         end: 'Jun 2014',
         brief: true,
         summary:
-          'Developed over 40 software applications ranging from Internet Security to Media management to Enterprise Feedback Management System. Finalists in OpenSoft competition in Kshitij technical fest, IIT Kharagpur in 2011. Developed strong competency in **Visual Basic**, **VB.NET**, **VB Script**, **C** and **Microsoft Office**.',
+          'Built 40+ applications spanning internet security, media management and enterprise feedback management. OpenSoft finalist at Kshitij, IIT Kharagpur, 2011. Strong competency in **Visual Basic**, **VB.NET**, **VB Script**, **C** and **Microsoft Office**.',
       },
       {
         name: 'Microsoft',
@@ -455,7 +453,7 @@ const resume = {
         end: 'Jun 2014',
         brief: true,
         summary:
-          'Created presentations, conducted sessions and evangelized Microsoft technologies among colleagues in college. Also created various apps for Windows 8. Globally ranked one in round 1 of Microsoft Imagine Cup 2012.',
+          'Evangelized Microsoft technologies on campus through presentations and sessions; built Windows 8 apps. **Ranked #1 globally** in round 1 of Microsoft Imagine Cup 2012.',
       },
       {
         name: 'Augpace',
@@ -463,7 +461,7 @@ const resume = {
         role: 'Cofounder and CTO',
         start: 'Jun 2012',
         end: 'Aug 2012',
-        summary: 'Invented an augmented reality technology, called AURAmarker to store far more information than QR codes.',
+        summary: 'Invented AURAmarker, an augmented-reality marker that stores far more information than QR codes.',
       },
       {
         name: 'Chessamo',
@@ -471,7 +469,7 @@ const resume = {
         role: 'Cofounder',
         start: 'Jun 2013',
         end: 'Dec 2013',
-        summary: 'Worked as the designer and programmer. Chessamo was an online chess website.',
+        summary: 'Designed and programmed an online chess website.',
       },
       {
         name: 'nanoWE',
@@ -479,8 +477,7 @@ const resume = {
         role: 'Developer and Social Media Manager',
         start: 'Jan 2012',
         end: 'Jun 2012',
-        summary:
-          'Developed a metro app prototype for nanoWE that aimed at commercializing nanotechnology. Pitched the idea at Global Entrepreneurship Summit, IIT Kharagpur in 2012.',
+        summary: 'Prototyped a Metro app for commercializing nanotechnology; pitched at the Global Entrepreneurship Summit, IIT Kharagpur, 2012.',
       },
       {
         name: 'SWAT',
@@ -488,7 +485,7 @@ const resume = {
         role: 'Cofounder and President',
         start: 'May 2013',
         end: 'Jun 2014',
-        summary: 'Students working for advanced technology is a college community aimed at building competency in students.',
+        summary: 'Students Working for Advanced Technology, a college community for building technical competency.',
       },
       {
         name: 'C.E.O',
@@ -496,25 +493,25 @@ const resume = {
         role: 'Vice President',
         start: 'Aug 2011',
         end: 'Aug 2012',
-        summary: 'Led 30 colleagues in creativity department of center for entrepreneurial opportunities, e-cell of the college.',
+        summary: "Led 30 colleagues in the creativity department of the college's Centre for Entrepreneurial Opportunities (e-cell).",
       },
     ],
   },
 
   scores: [
-    { exam: 'GRE', score: '326/340', note: 'Sectionwise best', details: [['Quantitative', '169/170'], ['Verbal', '158/170'], ['Analytical writing', '4.5/6']] },
+    { exam: 'GRE', score: '326/340', note: 'section-wise best', details: [['Quantitative', '169/170'], ['Verbal', '158/170'], ['Analytical writing', '4.5/6']] },
     { exam: 'TOEFL', score: '113/120', details: [['Listening', '30/30'], ['Speaking', '29/30'], ['Reading', '29/30'], ['Writing', '25/30']] },
     { exam: 'IELTS', score: '7.5/9', details: [['Listening', '8.5/9'], ['Speaking', '7.5/9'], ['Reading', '7.5/9'], ['Writing', '7/9']] },
     { exam: 'CAT', score: '96.2 percentile', details: [['Quantitative', '93.96'], ['Verbal', '94.27']] },
-    { exam: 'eLitmus', score: 'Percentile', details: [['Quantitative', '99.37'], ['Problem solving', '99.36'], ['Verbal', '87.71']] },
+    { exam: 'eLitmus', score: 'percentiles', details: [['Quantitative', '99.37'], ['Problem solving', '99.36'], ['Verbal', '87.71']] },
   ],
 
   personal: [
     { label: 'Date of birth', value: '16 May 1991' },
     { label: 'Languages', value: 'Fluent in Hindi and English' },
-    { label: 'Hobbies', value: 'Recreational mathematics, cricket, table tennis, travelling, programming, chess and listening to music.' },
-    { label: 'Active VISA(s)', value: 'USA R B1/B2 (Exp 2028), Singapore MJV (Exp 2028)' },
-    { label: 'Past VISA(s)', value: 'Schengen Tourist, UK Visitor' },
+    { label: 'Hobbies', value: 'Recreational mathematics, cricket, table tennis, travelling, programming, chess and music.' },
+    { label: 'Active visas', value: 'USA R B1/B2 (exp. 2028), Singapore MJV (exp. 2028)' },
+    { label: 'Past visas', value: 'Schengen tourist, UK visitor' },
     { label: 'Permanent address', value: 'B-279, Alpha 1, Greater Noida' },
     { label: 'Other', value: 'Indian | Male | Married', icon: 'india.png' },
   ],

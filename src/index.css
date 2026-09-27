@@ -71,10 +71,10 @@ h3 {
 }
 
 h4 {
-  font-size: 13.5px;
-  color: #222;
+  font-size: 13px;
+  color: var(--accent);
   font-family: sans-serif;
-  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .subtitle {
@@ -220,6 +220,21 @@ h4 {
   margin-top: 8px;
 }
 
+.children {
+  margin: 8px 0 4px 2px;
+  padding-left: 12px;
+  border-left: 2px solid var(--accent);
+}
+
+.children .entry:first-child,
+.children .group:first-child {
+  margin-top: 0;
+}
+
+.children .group:first-child .group-name {
+  margin-top: 0;
+}
+
 .role,
 .tools {
   font-size: 12px;
@@ -232,8 +247,10 @@ h4 {
 }
 
 .group-name {
-  font-weight: bold;
-  margin: 8px 0 0;
+  margin: 10px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
 }
 
 dl.kv {
@@ -281,11 +298,15 @@ dl.kv dd {
   }
 
   .entry {
-    margin-top: 5px;
+    margin-top: 4px;
   }
 
   .job {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+  }
+
+  .children {
+    margin: 5px 0 2px 2px;
   }
 
   body {
@@ -327,7 +348,7 @@ dl.kv dd {
 
   h2 {
     font-size: 12pt;
-    margin: 6pt 0 2pt;
+    margin: 5pt 0 2pt;
   }
 
   section ul,
