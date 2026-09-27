@@ -9,7 +9,7 @@
 const resume = {
   name: 'Ajay Singh Raghav',
   headline: 'Pre-Sales Advisory Solutions Architect',
-  lastUpdated: 'September 27, 2026',
+  lastUpdated: 'September 28, 2026',
   site: 'https://ajayraghav37.vercel.app',
   location: 'Gurugram/Delhi NCR, India',
   contact: {
