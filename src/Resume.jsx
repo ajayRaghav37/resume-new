@@ -39,33 +39,38 @@ const Header = () => {
       <p className="contact">
         <a href={`mailto:${contact.email}`}>{contact.email}</a>
         {contact.phones.map((p) => (
-          <span key={p}>
+          <span key={p} className="contact-item">
             {' | '}
             {p}
           </span>
         ))}
-        {contact.links.map((l) => (
-          <span key={l.label}>
-            {' | '}
-            <img className="icon" src={l.icon} alt="" />
+      </p>
+      <p className="contact">
+        {contact.links.map((l, i) => (
+          <span key={l.label} className="contact-item">
+            {i > 0 && ' | '}
             <a href={l.url} target="_blank" rel="noreferrer">
+              <img className="icon" src={l.icon} alt="" />
               {l.text}
             </a>
           </span>
         ))}
-      </p>
-      <p className="contact social">
-        {contact.social.map((s) => (
-          <a key={s.label} href={s.url} target="_blank" rel="noreferrer" title={s.label} aria-label={s.label}>
-            <img className="icon" src={s.icon} alt={s.label} />
+        <span className="contact-item">
+          {' | '}
+          {contact.social.map((s) => (
+            <a key={s.label} href={s.url} target="_blank" rel="noreferrer" title={s.label} aria-label={s.label}>
+              <img className="icon" src={s.icon} alt={s.label} />
+            </a>
+          ))}
+          {contact.socialHandle}
+        </span>
+        <span className="contact-item">
+          {' | '}
+          <a href={contact.youtube.url} target="_blank" rel="noreferrer" title={contact.youtube.label}>
+            <img className="icon" src={contact.youtube.icon} alt={contact.youtube.label} />
+            {contact.youtube.text}
           </a>
-        ))}
-        <span>{contact.socialHandle}</span>
-        {' | '}
-        <a href={contact.youtube.url} target="_blank" rel="noreferrer" title={contact.youtube.label}>
-          <img className="icon" src={contact.youtube.icon} alt={contact.youtube.label} />
-          {contact.youtube.text}
-        </a>
+        </span>
       </p>
     </header>
   );
@@ -101,22 +106,34 @@ const Titles = ({ titles }) => (
   </p>
 );
 
-const SubEntry = ({ name, start, end, role, tools, summary, bullets, detailed }) => (
+const SubEntry = ({ name, start, end, role, summary, bullets, detailed }) => (
   <div className="entry">
     <div className="row">
       <h4>{name}</h4>
       <span className="dates">{range(start, end)}</span>
     </div>
     {role && <p className="role">{role}</p>}
-    {tools && (
-      <p className="tools">
-        <b>Tools:</b> {tools}
-      </p>
-    )}
     {summary && <p>{rich(summary)}</p>}
     {bullets && <Bullets items={bullets} detailed={detailed} />}
   </div>
 );
+
+const jobSkills = (job) => {
+  const seen = new Set();
+  const out = [];
+  const add = (csv) =>
+    (csv || '').split(',').forEach((s) => {
+      const t = s.trim();
+      if (t && !seen.has(t.toLowerCase())) {
+        seen.add(t.toLowerCase());
+        out.push(t);
+      }
+    });
+  (job.segments || []).forEach((s) => add(s.tools));
+  (job.groups || []).forEach((g) => g.items.forEach((i) => add(i.tools)));
+  (job.projects || []).forEach((p) => add(p.tools));
+  return out;
+};
 
 const Awards = ({ text }) => (
   <span className="awards">
@@ -137,6 +154,9 @@ const Experience = ({ detailed }) => (
           sub={job.awards && <Awards text={job.awards} />}
         />
         <Titles titles={job.titles} />
+        <p className="tools">
+          <b>Skills:</b> {jobSkills(job).join(', ')}
+        </p>
 
         {job.segments && !detailed && <p>{job.summary}</p>}
         {job.segments && detailed && (
@@ -158,7 +178,6 @@ const Experience = ({ detailed }) => (
               start={s.start}
               end={s.end}
               role={s.role}
-              tools={s.tools}
               bullets={s.bullets}
               detailed={detailed}
             />
@@ -186,33 +205,6 @@ const Experience = ({ detailed }) => (
           ))}
       </div>
     ))}
-  </section>
-);
-
-const deriveSkills = () => {
-  if (resume.skills) return resume.skills;
-  const seen = new Set();
-  const out = [];
-  const add = (csv) =>
-    csv.split(',').forEach((s) => {
-      const t = s.trim();
-      if (t && !seen.has(t.toLowerCase())) {
-        seen.add(t.toLowerCase());
-        out.push(t);
-      }
-    });
-  resume.experience.forEach((job) => {
-    (job.segments || []).forEach((s) => add(s.tools));
-    (job.groups || []).forEach((g) => g.items.forEach((i) => add(i.tools)));
-    (job.projects || []).forEach((p) => add(p.tools));
-  });
-  return out;
-};
-
-const Skills = () => (
-  <section>
-    <h2>Skills</h2>
-    <p>{deriveSkills().join(', ')}</p>
   </section>
 );
 
@@ -310,7 +302,6 @@ export default function Resume({ detailed = false }) {
     <main className="resume">
       <Header />
       <Experience detailed={detailed} />
-      <Skills />
       <Education />
       <Certifications />
       <Research />

@@ -5,7 +5,7 @@ All content lives in `src/data/resume.js`. To update the resume, edit that file 
 - `/` is the brief resume, `/detailed` includes every project. Print either with the browser (A4) to produce the PDF.
 - Bullets are strings (detailed only) or `{ text, brief }` objects. `brief: true` shows the same text in the brief resume; a string gives shorter wording for it.
 - `**bold**` and `*italic*` are supported in text.
-- Set `skills: [...]` at the top level to curate the Skills section; otherwise it is derived from every `tools` field.
+- Each company's **Skills** line is derived from the `tools` fields of its segments and projects.
 - Update `lastUpdated` when publishing.
 
 # Getting Started with Create React App

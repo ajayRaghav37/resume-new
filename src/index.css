@@ -163,12 +163,16 @@ h4 {
 }
 
 .contact {
-  font-size: 13px;
-  margin-top: 6px;
+  font-size: 12.5px;
+  margin: 4px 0 0;
 }
 
-.contact.social {
-  margin-top: 2px;
+.contact-item {
+  white-space: nowrap;
+}
+
+.contact .icon {
+  margin-right: 3px;
 }
 
 .header {
@@ -181,10 +185,6 @@ h4 {
   height: 13px;
   vertical-align: -2px;
   margin-right: 4px;
-}
-
-.contact.social a {
-  margin-right: 2px;
 }
 
 /* Entries */

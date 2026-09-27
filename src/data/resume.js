@@ -29,14 +29,10 @@ const resume = {
     youtube: { label: 'YouTube', text: 'PerfectMusicMismatch', url: 'https://www.youtube.com/PerfectMusicMismatch', icon: 'youtube.ico' },
   },
 
-  // Optional. When omitted, the Skills section is derived from every `tools`
-  // field below (deduplicated, in order of appearance).
-  // skills: ['MongoDB Atlas', 'Node.js', ...],
-
   experience: [
     {
       company: 'MongoDB',
-      logo: 'mdb.png',
+      logo: 'mdb.ico',
       title: 'Pre-Sales Advisory Solutions Architect',
       start: 'Nov 2021',
       end: 'Present',
@@ -114,8 +110,8 @@ const resume = {
     },
     {
       company: 'Sopra Steria',
-      logo: 'soprasteria.png',
-      title: 'Architect',
+      logo: 'soprasteria.ico',
+      title: 'Lead Developer and Architect',
       start: 'Jul 2014',
       end: 'Nov 2021',
       awards: '5x Star of Sopra Steria | 3x Einstein Award | Code Ninja | 5 promotions in 6.5 years',
@@ -128,8 +124,7 @@ const resume = {
         { title: 'Software Engineer Trainee', start: 'Jul 2014', end: 'Jul 2015' },
       ],
       notes: [
-        '**Promotions:** Architect in Jan 2021, Senior Product Analyst in Jan 2019, Product Analyst in Jan 2018, Senior Software Engineer in Jan 2017, Software Engineer in Jul 2015. Started as Software Engineer Trainee in Jul 2014.',
-        '**Projects:** Worked on 16 different projects over a span of 7.5 years, many of them were done parallely.',
+        '**Projects:** Worked on 17 different projects over a span of 7.5 years, many of them were done parallely.',
       ],
       // Brief resume: streams grouped by client.
       groups: [
@@ -139,7 +134,7 @@ const resume = {
             {
               name: 'AI/ML Stream',
               start: 'Mar 2017',
-              end: 'Nov 2022',
+              end: 'Nov 2021',
               role: 'Architect | Technical Lead | Algorithm Specialist | UI/UX Expert',
               tools: 'Node.js, React.js, MongoDB, Python, GitLab, OpenShift, Azure, Keycloak, Angular',
               summary:
@@ -447,7 +442,7 @@ const resume = {
         logo: 'anico.in.png',
         role: 'Cofounder and Open Source Evangelist',
         start: 'Feb 2009',
-        end: 'Dec 2016',
+        end: 'Jun 2014',
         brief: true,
         summary:
           'Developed over 40 software applications ranging from Internet Security to Media management to Enterprise Feedback Management System. Finalists in OpenSoft competition in Kshitij technical fest, IIT Kharagpur in 2011. Developed strong competency in **Visual Basic**, **VB.NET**, **VB Script**, **C** and **Microsoft Office**.',
