@@ -274,12 +274,17 @@ const Experience = ({ detailed }) => (
 );
 
 // Brief resume: one row per item with the logo as an inline icon.
-const CompactRow = ({ logo, name, start, end, when, rest }) => (
-  <li>
-    {logo && <img className="icon" src={logo} alt="" />}
-    <b>{name}</b> ({when || range(start, end)}) — {rest}
-  </li>
-);
+const CompactRow = ({ logo, name, start, end, when, rest }) => {
+  const span = when || (start ? range(start, end) : null);
+  return (
+    <li>
+      {logo && <img className="icon" src={logo} alt="" />}
+      <b>{name}</b>
+      {span && ` (${span})`}
+      {rest && <> — {rest}</>}
+    </li>
+  );
+};
 
 const Education = ({ detailed }) => (
   <section>

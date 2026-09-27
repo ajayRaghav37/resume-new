@@ -32,7 +32,7 @@ const resume = {
   // Aggregates below are derived from the MongoDB segments: NARR 4.3 + 2.2 + 4.7,
   // opportunities 37 + 32 + 73, largest team led at Sopra Steria = 25.
   summary:
-    'Pre-sales Solutions Architect with 12+ years in software, including nearly five at MongoDB serving enterprise and digital-native accounts in India. Contributed to **$11.2M NARR** across 140+ opportunities, with aligned AEs attaining **196–248%** of quota, and prevented **$3.1M+** in churn. Previously led teams of up to 25 developers at Sopra Steria building a **€10M+** AI/ML product suite. MongoDB, AWS and GCP certified.',
+    'Pre-sales Solutions Architect with 12+ years in software, including nearly five at MongoDB serving enterprise and digital-native accounts in India. Contributed to **$11.2M NARR** across 140+ opportunities, with aligned AEs attaining **196–248%** of quota, and prevented **$3.1M+** in churn. Previously led teams of up to 25 developers at Sopra Steria building a **€10M+** AI/ML product suite. Holds all four MongoDB associate certifications, plus AWS and GCP.',
 
   experience: [
     {
@@ -439,7 +439,13 @@ const resume = {
   ],
 
   certifications: [
-    { name: 'MongoDB Certified Developer and DBA', logo: 'mdbuniv.png', start: 'Apr 2022', end: 'Present', detail: 'Associate level' },
+    {
+      name: 'MongoDB Certified Associate (all four)',
+      logo: 'mdbuniv.png',
+      start: 'Apr 2022',
+      end: 'Present',
+      detail: 'Developer, Database Administrator, Data Modeler and Atlas Administrator',
+    },
     { name: 'AWS Certified Solutions Architect – Associate', logo: 'aws.png', start: 'Dec 2023', end: 'Present', detail: 'Credential ID 2W7C1JEBSMF11FKH' },
     { name: 'Google Cloud Professional Cloud Architect', logo: 'gcp.png', start: 'Dec 2023', end: 'Present', detail: 'Credential ID 90962143' },
     {
