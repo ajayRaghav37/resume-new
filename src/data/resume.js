@@ -9,7 +9,7 @@
 const resume = {
   name: 'Ajay Singh Raghav',
   headline: 'Pre-Sales Advisory Solutions Architect',
-  lastUpdated: 'September 28, 2026',
+  lastUpdated: 'November 9, 2026',
   site: 'https://ajayraghav37.vercel.app',
   location: 'Gurugram/Delhi NCR, India',
   contact: {
@@ -29,10 +29,10 @@ const resume = {
     socialHandle: '@ajayRaghav37',
   },
 
-  // Aggregates below are derived from the MongoDB segments: NARR 4.3 + 2.2 + 4.7,
+  // Aggregates below are derived from the MongoDB segments: NARR 4.8 + 2.2 + 4.7,
   // opportunities 37 + 32 + 73, largest team led at Sopra Steria = 25.
   summary:
-    'Pre-sales Solutions Architect with 12+ years in software, including nearly five at MongoDB serving enterprise and digital-native accounts in India. Contributed to **$11.2M NARR** across 140+ opportunities, with aligned AEs attaining **196–248%** of quota, and prevented **$3.1M+** in churn. Previously led teams of up to 25 developers at Sopra Steria building a **€10M+** AI/ML product suite. Holds all four MongoDB associate certifications, plus AWS and GCP.',
+    'Pre-sales Solutions Architect with 12+ years in software, including nearly five at MongoDB serving enterprise and digital-native accounts in India. Contributed to **$11.7M NARR** across 140+ opportunities, with aligned AEs attaining **180–248%** of quota, and prevented **$3.1M+** in churn. Previously led teams of up to 25 developers at Sopra Steria building a **€10M+** AI/ML product suite. Holds all four MongoDB associate certifications, plus AWS and GCP.',
 
   experience: [
     {
@@ -69,8 +69,8 @@ const resume = {
           role: 'Advisory Solutions Architect (since Aug 2025)',
           tools: 'MongoDB Atlas and EA, SFDC, Tableau, Google Workspace, AI tools for dev & research',
           bullets: [
-            { text: 'Aligned to 1 AE; **196% attainment over 5 quarters** (FY26 Q2 – FY27 Q2).', brief: true },
-            { text: "**$4.3M NARR** from 37 opportunities across 27 accounts; became the team's Retail SME.", brief: true },
+            { text: 'Aligned to 1 AE; **180% average attainment over 6 quarters** (FY26 Q2 – FY27 Q3).', brief: true },
+            { text: "**$4.8M NARR** from 37 opportunities across 27 accounts; became the team's Retail SME.", brief: true },
             {
               text: 'Prevented **$3.1M+ churn** in crucial accounts against Firestore, Percona and MongoDB Community, averting cascading losses.',
               brief: 'Prevented **$3.1M+ churn** against Firestore, Percona and MongoDB Community.',
